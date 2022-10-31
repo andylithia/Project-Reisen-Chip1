@@ -1,0 +1,12 @@
+read_verilog prsgen8.v
+read_verilog -lib ../../yosys/prim_cells.v
+
+proc;; memory;; techmap;;
+
+dfflibmap -liberty ../../yosys/prim_cells.lib
+abc -liberty ../../yosys/prim_cells.lib;;
+
+write_verilog prsgen8_syn.v
+write_spice -neg d_low -pos d_high prsgen8_ngspice.mod
+
+show

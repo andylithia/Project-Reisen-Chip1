@@ -1,0 +1,71 @@
+** sch_path: /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/xschem/sky130_tests/tb_ft_test_2.sch
+**.subckt tb_ft_test_2
+VDS D GND 1.5
+VGS net4 GND 1
+Vd net7 net5 0
+.save  i(vd)
+L1 G net4 1m m=1
+Vg G net3 0
+.save  i(vg)
+L2 net2 net5 1m m=1
+C1 net2 net7 1m m=1
+C2 G net6 1m m=1
+VGS1 net6 GND ac 1 0 sin(0 0.01 10G)
+Vd_dc D net2 0
+.save  i(vd_dc)
+.save  v(g)
+.save  v(d)
+Vb net1 GND 0
+.save  i(vb)
+XM2 GND GND GND GND sky130_fd_pr__rf_nfet_01v8_lvt_bM02W5p00L0p18 L=0.18 W=5.05 nf=1 ad=0 as=0 pd=0
++ ps=0 nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM3 GND GND GND GND sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5.05 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net5 net3 GND net1 sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5.05 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 GND D GND GND sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5.05 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+
+
+* this experimental option enables mos model bin
+* selection based on W/NF instead of W
+.option wnflag=1
+.options method=gear savecurrents
+.save all
+
+.control
+  save all
+* save @m.xm1.msky130_fd_pr__rf_nfet_01v8_lvt_bm02w5p00l0p18[gm]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+
+  op
+  write tb_ft_test_2.raw
+  tran 0.001n 2n
+  set appendwrite
+  write tb_ft_test_2.raw
+  ac dec 10 1000 1000G
+  set appendwrite
+  write tb_ft_test_2.raw
+
+  setplot tran1
+  plot i(vg) i(vd)
+
+  setplot ac1
+  plot db(i(vd)/i(vg))
+.endc
+
+
+
+
+** opencircuitdesign pdks install
+.lib /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

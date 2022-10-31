@@ -1,0 +1,73 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ctle_2.sch
+**.subckt ctle_2
+V2 VDD GND 1.8
+XM5 net5 vref GND GND sky130_fd_pr__nfet_01v8 L=1.2 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=20 m=20
+XM6 vref vref GND GND sky130_fd_pr__nfet_01v8 L=1.2 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+I0 VDD vref 0.001m
+V3 net2 net4 AC 0.5
+V4 net4 GND 1.0
+V5 vmid net5 0
+V1 net3 net4 AC -0.5
+XM7 net6 vref GND GND sky130_fd_pr__nfet_01v8 L=1.2 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=20 m=20
+V6 net1 net6 0
+R1 net1 vmid 5k m=1
+R2 VDD von 5k m=1
+R3 VDD vop 5k m=1
+C1 vmid GND 0.1p m=1
+C2 net1 GND 0.1p m=1
+XM3 net7 net9 net8 GND sky130_fd_pr__nfet_01v8_lvt L=0.3 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+V7 net9 GND 0
+XM1 von net2 vmid GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=40 m=40
+XM2 vop net3 net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=40 m=40
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+* .include
+*+ /home/andylithia/openmpw/pdk_1/sky130B/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+
+
+
+.options savecurrents
+.save all
+* .tran 25ps 5n
+*.dc I0 0.001m 0.01m 0.001m
+.op
+.ac dec 100 1e3 10e9
+.control
+let t_start = 1.0
+let t_stop  = 1.6
+let t_delta = 0.1
+let t = t_start
+*while t le t_stop
+ alter V7=t
+ op
+ * print vmid
+ * print vop
+ save vop
+ ac dec 100 1e3 10e9
+ plot vdb(vop) xlog
+ echo RUN $&t
+ * set filetype=ascii
+ * print vop > ./data_test_{$&t}.raw
+ let t=t+t_delta
+*end
+* write ota_1.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end

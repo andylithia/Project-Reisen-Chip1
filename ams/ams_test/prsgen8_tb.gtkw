@@ -1,0 +1,34 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Fri Oct 28 02:47:48 2022
+[*]
+[dumpfile] "/home/andylithia/openmpw/Project-Reisen-Chip1/ams/prsgen8_tb.vcd"
+[dumpfile_mtime] "Fri Oct 28 02:47:09 2022"
+[dumpfile_size] 14239
+[savefile] "/home/andylithia/openmpw/Project-Reisen-Chip1/ams/prsgen8_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 33095 32929
+*-4.000000 18 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] prsgen8_tb.
+[sst_width] 214
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 151
+@28
+prsgen8_tb.prs.clk
+@22
+prsgen8_tb.prs.compare[8:1]
+@28
+prsgen8_tb.prs.out
+prsgen8_tb.prs.rst
+@22
+prsgen8_tb.prs.sr[8:1]
+@10022
+prsgen8_tb.prs.sr[8:1]
+@20000
+-
+-
+-
+[pattern_trace] 1
+[pattern_trace] 0

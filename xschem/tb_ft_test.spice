@@ -1,0 +1,77 @@
+** sch_path: /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/xschem/sky130_tests/tb_ft_test.sch
+**.subckt tb_ft_test
+XM1 D G GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+VDS D GND 1.5
+Idref D G 1
+XM2 G G GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+
+
+
+* .options filetype=ascii
+.save all
+
+.op
+.control
+*dc Idref 0.1e-3 10e-3 0.1e-3
+
+let n_idx = 101
+
+let start_iref = 0.1e-3
+let stop_iref = 10e-3
+let delta_iref = (stop_iref - start_iref) / n_idx
+let iref_act = start_iref
+
+let vgs = unitvec(n_idx)
+let gms = unitvec(n_idx)
+let ids = unitvec(n_idx)
+
+let cgss = unitvec(n_idx)
+let cgds = unitvec(n_idx)
+
+let idxs = 0
+let idx = idxs
+
+*loop
+while iref_act le stop_iref
+  alter idref iref_act
+  run
+  *print @m.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
+
+  let gms[idx] = @m.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
+  let ids[idx] = @m.xm2.msky130_fd_pr__nfet_01v8_lvt[id]
+
+  let cgss[idx] = @m.xm2.msky130_fd_pr__nfet_01v8_lvt[cgs]
+  let cgds[idx] = @m.xm2.msky130_fd_pr__nfet_01v8_lvt[cgd]
+  let vgs[idx] = v(G)
+
+  let iref_act = iref_act + delta_iref
+  let idxs = idx + 1
+  let idx = idxs
+end
+
+let ft = -gms/(2*pi*(cgss+cgds))
+settype voltage vgs
+settype current ids
+setscale ids
+plot gms vs ids
+plot xlog ft vs ids
+plot xlog vgs vs ids
+write tb_ft_test.raw
+.endc
+.end
+
+
+
+** opencircuitdesign pdks install
+.lib /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
