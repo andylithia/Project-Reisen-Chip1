@@ -1,0 +1,146 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/rx_interleave_test.sch
+**.subckt rx_interleave_test
+V1 VDD GND 2
+R2 VIP net1 1 m=1
+V5 net40 GND 1.45
+R4 Vref net40 50 m=1
+Vck0 net41 GND PULSE(0 1.8 0 0.05n 0.05n 0.4n 0.8n)
+Vck1 net42 GND PULSE(0 1.8 0.1n 0.05n 0.05n 0.4n 0.8n)
+Vck2 net43 GND PULSE(0 1.8 0.2n 0.05n 0.05n 0.4n 0.8n)
+Vck3 net44 GND PULSE(0 1.8 0.3n 0.05n 0.05n 0.4n 0.8n)
+Vck4 net45 GND PULSE(0 1.8 0.4n 0.05n 0.05n 0.4n 0.8n)
+Vck5 net46 GND PULSE(0 1.8 0.5n 0.05n 0.05n 0.4n 0.8n)
+Vck6 net47 GND PULSE(0 1.8 0.6n 0.05n 0.05n 0.4n 0.8n)
+Vck7 net48 GND PULSE(0 1.8 0.7n 0.05n 0.05n 0.4n 0.8n)
+x1 net41 GND GND VDD VDD CK0 sky130_fd_sc_hs__clkbuf_4
+x2 net42 GND GND VDD VDD CK1 sky130_fd_sc_hs__clkbuf_4
+x4 net43 GND GND VDD VDD CK2 sky130_fd_sc_hs__clkbuf_4
+x5 net44 GND GND VDD VDD CK3 sky130_fd_sc_hs__clkbuf_4
+x6 net45 GND GND VDD VDD CK4 sky130_fd_sc_hs__clkbuf_4
+x7 net46 GND GND VDD VDD CK5 sky130_fd_sc_hs__clkbuf_4
+x10 net47 GND GND VDD VDD CK6 sky130_fd_sc_hs__clkbuf_4
+x11 net48 GND GND VDD VDD CK7 sky130_fd_sc_hs__clkbuf_4
+x12 net8 E0 VDD GND E0_pre net2 adc_strongarm_latch
+x13 VDD E0_pre net2 VIP Vref CK0 GND net18 adc_strongarm
+x14 net19 DM0 VDD GND DM0_pre net3 adc_strongarm_latch
+x15 VDD DM0_pre net3 VIP Vref CK1 GND net20 adc_strongarm
+x16 net26 E1 VDD GND net4 net5 adc_strongarm_latch
+x17 VDD net4 net5 VIP Vref CK2 GND net27 adc_strongarm
+x18 net28 DM1 VDD GND net6 net7 adc_strongarm_latch
+x19 VDD net6 net7 VIP Vref CK3 GND net29 adc_strongarm
+x20 net17 E2 VDD GND net9 net10 adc_strongarm_latch
+x21 VDD net9 net10 VIP Vref CK4 GND net23 adc_strongarm
+x22 net21 DM2 VDD GND net11 net12 adc_strongarm_latch
+x23 VDD net11 net12 VIP Vref CK5 GND net22 adc_strongarm
+x24 net24 E3 VDD GND net13 net14 adc_strongarm_latch
+x25 VDD net13 net14 VIP Vref CK6 GND net25 adc_strongarm
+x26 net30 DM3 VDD GND net15 net16 adc_strongarm_latch
+x27 VDD net15 net16 VIP Vref CK7 GND net31 adc_strongarm
+x29 CK3 DM3 gnd gnd vdd vdd net35 sky130_fd_sc_hs__dfxtp_1
+x30 CK5 DM2 gnd gnd vdd vdd net34 sky130_fd_sc_hs__dfxtp_1
+x31 CK7 DM1 gnd gnd vdd vdd net33 sky130_fd_sc_hs__dfxtp_1
+x32 CK1 DM0 gnd gnd vdd vdd net32 sky130_fd_sc_hs__dfxtp_1
+x33 CK5 net32 gnd gnd vdd vdd DMR0 sky130_fd_sc_hs__dfxtp_1
+x34 CK1 net33 gnd gnd vdd vdd net36 sky130_fd_sc_hs__dfxtp_1
+x35 CK1 net34 gnd gnd vdd vdd net37 sky130_fd_sc_hs__dfxtp_1
+x36 CK5 net35 gnd gnd vdd vdd net38 sky130_fd_sc_hs__dfxtp_1
+x37 CK5 net36 gnd gnd vdd vdd DMR1 sky130_fd_sc_hs__dfxtp_1
+x38 CK5 net37 gnd gnd vdd vdd DMR2 sky130_fd_sc_hs__dfxtp_1
+x39 CK1 net38 gnd gnd vdd vdd net39 sky130_fd_sc_hs__dfxtp_1
+x40 CK5 net39 gnd gnd vdd vdd DMR3 sky130_fd_sc_hs__dfxtp_1
+V2 __UNCONNECTED_PIN__0 GND PULSE(0.89 0.91 0 25n 0 1 2)
+Vck8 net1 GND PULSE(1.2 1.7 0 0.05n 0.05n 0.395n 0.79n)
+**** begin user architecture code
+
+.tran 1000p 25n
+.control
+run
+display
+plot CKIN CKBUF
+plot VIP Vref
+plot VOP VON CKBUF VIP Vref
+plot VONL VOPL
+plot E0 E1 E2 E3
+plot DM0 DM1 DM2 DM3
+plot EQ0 EQ1 EQ2 EQ3
+.endc
+
+
+.lib /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130B/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  adc_strongarm_latch.sym # of pins=6
+** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm_latch.sym
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm_latch.sch
+.subckt adc_strongarm_latch  VONL VOPL vdd gnd VP VN
+*.iopin vdd
+*.iopin gnd
+*.ipin VP
+*.ipin VN
+*.opin VOPL
+*.opin VONL
+XM11 VOPL net1 gnd gnd sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM12 VONL net2 gnd gnd sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+x6 VOPL gnd gnd vdd vdd VONL sky130_fd_sc_hs__inv_1
+x7 VONL gnd gnd vdd vdd VOPL sky130_fd_sc_hs__inv_1
+x1 VP gnd gnd vdd vdd net1 sky130_fd_sc_hs__inv_1
+x2 VN gnd gnd vdd vdd net2 sky130_fd_sc_hs__inv_1
+.ends
+
+
+* expanding   symbol:  adc_strongarm.sym # of pins=8
+** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm.sym
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm.sch
+.subckt adc_strongarm  vdd vop von vip vin ckin_c16 gnd ckbuf
+*.ipin vip
+*.ipin vin
+*.iopin gnd
+*.iopin vdd
+*.opin vop
+*.opin von
+*.iopin ckin_c16
+*.opin ckbuf
+XM1 net3 vip net1 gnd sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM2 net2 vin net1 gnd sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM3 net1 ckbuf gnd gnd sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM4 vop von net3 gnd sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM5 von vop net2 gnd sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM6 von vop vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM7 vop von vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM8 vop ckbuf vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM9 von ckbuf vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+x1 ckbuf gnd gnd vdd vdd net4 sky130_fd_sc_hs__inv_4
+XM10 net2 net4 net3 gnd sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+x2 ckin_c16 gnd gnd vdd vdd ckbuf sky130_fd_sc_hs__clkbuf_16
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

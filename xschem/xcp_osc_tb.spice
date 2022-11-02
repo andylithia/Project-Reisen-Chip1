@@ -1,37 +1,26 @@
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/xcp_osc_tb.sch
 **.subckt xcp_osc_tb
 V1 VDD GND 1.8
-x1 vsp v315 v135 GND v180 v0 xcpinv_cell
-x2 vsp v0 v180 GND v225 v45 xcpinv_cell
-XM1 v180 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3 m=3
-XM2 v0 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3 m=3
-XM3 v225 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3 m=3
-XM4 v45 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3 m=3
 XM5 vsp GND VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-x3 vsp v45 v225 GND v270 v90 xcpinv_cell
-XM6 v270 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+x1 vsp v0_ref __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 __UNCONNECTED_PIN__2 net2
++ __UNCONNECTED_PIN__3 __UNCONNECTED_PIN__4 __UNCONNECTED_PIN__5 GND GND GND GND GND GND GND GND GND ILMPCG_ILOSC
+x2 net1 v0_il v45_il v90_il v135_il v180_il v225_il v270_il v315_il v0 v45 v90 v135 v180 v225 v270
++ v315 GND ILMPCG_ILOSC
+XM1 net1 GND VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3 m=3
-XM7 v90 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ sa=0 sb=0 sd=0 mult=1 m=1
+x3 vsp_fudged v0_nil __UNCONNECTED_PIN__6 __UNCONNECTED_PIN__7 __UNCONNECTED_PIN__8
++ __UNCONNECTED_PIN__9 __UNCONNECTED_PIN__10 __UNCONNECTED_PIN__11 __UNCONNECTED_PIN__12 GND GND GND GND GND GND GND GND
++ GND ILMPCG_ILOSC
+XM2 vsp_fudged GND VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x4 net3 v0 v45 v90 v135 v180 v225 v270 v315 GND v0_ref net2 ILMPCG_delayline
+XM3 net3 GND VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3 m=3
-x4 vsp v90 v270 GND v315 v135 xcpinv_cell
-XM8 v315 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3 m=3
-XM9 v135 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3 m=3
++ sa=0 sb=0 sd=0 mult=1 m=1
 **** begin user architecture code
 .lib /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/ngspice/sky130.lib.spice tt
 * .include
@@ -45,15 +34,124 @@ XM9 v135 GND GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2)
 run
 display
 plot v0 v45 v90 v135 v180 v225 v270 v315
+plot v0_ref v0 v0_il v0_nil
 plot vsp
-fft v0
-plot mag(v0)
+fft v0_ref v0 v0_il v0_nil
+plot db(v0_ref) db(v0) db(v0_il) db(v0_nil)
 
 .endc
 
 
 **** end user architecture code
 **.ends
+
+* expanding   symbol:  ILMPCG_ILOSC.sym # of pins=18
+** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ILMPCG_ILOSC.sym
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ILMPCG_ILOSC.sch
+.subckt ILMPCG_ILOSC  vctrl ph0 ph45 ph90 ph135 ph180 ph225 ph270 ph315 inj0 inj45 inj90 inj135
++ inj180 inj225 inj270 inj315 vlo
+*.iopin vctrl
+*.opin ph0
+*.opin ph45
+*.opin ph90
+*.opin ph135
+*.opin ph180
+*.opin ph225
+*.opin ph270
+*.opin ph315
+*.iopin vlo
+*.ipin inj0
+*.ipin inj45
+*.ipin inj90
+*.ipin inj135
+*.ipin inj180
+*.ipin inj225
+*.ipin inj270
+*.ipin inj315
+x1 vctrl ph315 ph135 vlo ph180 ph0 xcpinv_cell
+x2 vctrl ph0 ph180 vlo ph225 ph45 xcpinv_cell
+XM1 ph180 inj315 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM2 ph0 inj135 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM3 ph225 inj0 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM4 ph45 inj180 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+x3 vctrl ph45 ph225 vlo ph270 ph90 xcpinv_cell
+XM6 ph270 inj45 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM7 ph90 inj225 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+x4 vctrl ph90 ph270 vlo ph315 ph135 xcpinv_cell
+XM8 ph315 inj90 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM9 ph135 inj270 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+.ends
+
+
+* expanding   symbol:  ILMPCG_delayline.sym # of pins=12
+** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ILMPCG_delayline.sym
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ILMPCG_delayline.sch
+.subckt ILMPCG_delayline  vctrl ph0 ph45 ph90 ph135 ph180 ph225 ph270 ph315 vlo ckin_p ckin_n
+*.iopin vctrl
+*.ipin ckin_p
+*.ipin ckin_n
+*.opin ph0
+*.opin ph45
+*.opin ph90
+*.opin ph135
+*.opin ph180
+*.opin ph225
+*.opin ph270
+*.opin ph315
+*.iopin vlo
+x1 vctrl ckin_p ckin_n vlo ph180 ph0 xcpinv_cell
+x2 vctrl ph0 ph180 vlo ph225 ph45 xcpinv_cell
+XM1 ph180 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM2 ph0 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM3 ph225 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM4 ph45 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+x3 vctrl ph45 ph225 vlo ph270 ph90 xcpinv_cell
+XM6 ph270 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM7 ph90 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+x4 vctrl ph90 ph270 vlo ph315 ph135 xcpinv_cell
+XM8 ph315 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM9 ph135 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+x5 vctrl ph135 ph315 vlo net1 net2 xcpinv_cell
+XM10 net1 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+XM11 net2 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3
+.ends
+
 
 * expanding   symbol:  xcpinv_cell.sym # of pins=6
 ** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/xcpinv_cell.sym
