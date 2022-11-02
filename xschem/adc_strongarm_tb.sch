@@ -73,7 +73,7 @@ N 1330 420 1330 460 {
 lab=VDD}
 C {devices/vsource.sym} 830 690 0 0 {name=V1 value=1.8}
 C {devices/lab_wire.sym} 1160 580 0 0 {name=l1 sig_type=std_logic lab=CKIN}
-C {devices/vsource.sym} 1140 680 0 0 {name=V2 value="PULSE(0 1.8 0 0.1n 0.1n 0.5n 1n)"}
+C {devices/vsource.sym} 1140 680 0 0 {name=V2 value="PULSE(0 1.8 0 0.1n 0.1n 0.2n 0.4n)"}
 C {devices/vsource.sym} 950 680 0 0 {name=V3 value="PULSE(0.899 0.901 0 25n 0 1 2)"}
 C {devices/lab_wire.sym} 1240 500 0 0 {name=l1 sig_type=std_logic lab=VIP}
 C {devices/lab_wire.sym} 1240 540 0 0 {name=l1 sig_type=std_logic lab=VIN}

@@ -473,7 +473,7 @@ C {devices/lab_wire.sym} 560 -280 0 0 {name=l18 sig_type=std_logic lab=vcenter}
 C {devices/lab_wire.sym} 410 -400 0 0 {name=l19 sig_type=std_logic lab=vmid_amp}
 C {devices/lab_wire.sym} 760 -400 0 0 {name=l20 sig_type=std_logic lab=vmid_hold}
 C {devices/gnd.sym} -460 440 0 0 {name=l13 lab=GND}
-C {devices/vsource.sym} -460 370 0 0 {name=V8 value="PULSE(0 1.8 0 0.01n 0.01n 0.1n 0.2n)"}
+C {devices/vsource.sym} -460 370 0 0 {name=V8 value="PULSE(0 1.8 0 0.01n 0.01n 0.4n 0.8n)"}
 C {sky130_stdcells/clkinv_8.sym} -290 290 0 0 {name=x4 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
 C {sky130_stdcells/clkinv_4.sym} -290 230 0 0 {name=x3 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
 C {sky130_stdcells/clkinv_16.sym} -210 230 0 0 {name=x5 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
