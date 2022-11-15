@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -143,7 +144,8 @@ format="tcleval(@value )" value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spic
 * .include \\\\$::PDKPATH\\\\/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 "}
 C {devices/code_shown.sym} 1190 -790 0 0 {name=s2 only_toplevel=false value="
-.options savecurrents
+* .options savecurrents
+.save all
 .tran 25ps 5n
 .control
 run
@@ -175,7 +177,7 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 1650 -1340 0 0 {name=l2 lab=VDD}
 C {devices/gnd.sym} 1580 -1220 0 0 {name=W6 lab=GND}
-C {devices/lab_wire.sym} 1650 -1130 0 0 {name=l3 sig_type=std_logic lab=vsp}
+C {devices/lab_wire.sym} 1650 -1180 0 0 {name=l3 sig_type=std_logic lab=vsp}
 C {devices/gnd.sym} 1650 -850 0 0 {name=W10 lab=GND}
 C {ILMPCG_ILOSC.sym} 1650 -1010 0 0 {name=x1}
 C {devices/lab_wire.sym} 2160 -1080 0 0 {name=l4 sig_type=std_logic lab=v0}

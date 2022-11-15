@@ -1,19 +1,18 @@
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/xcp_osc_tb.sch
 **.subckt xcp_osc_tb
 V1 VDD GND 1.8
+.save i(v1)
 XM5 vsp GND VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-x1 vsp v0_ref __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 __UNCONNECTED_PIN__2 net2
-+ __UNCONNECTED_PIN__3 __UNCONNECTED_PIN__4 __UNCONNECTED_PIN__5 GND GND GND GND GND GND GND GND GND ILMPCG_ILOSC
+x1 vsp v0_ref net4 net5 net6 net2 net7 net8 net9 GND GND GND GND GND GND GND GND GND ILMPCG_ILOSC
 x2 net1 v0_il v45_il v90_il v135_il v180_il v225_il v270_il v315_il v0 v45 v90 v135 v180 v225 v270
 + v315 GND ILMPCG_ILOSC
 XM1 net1 GND VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-x3 vsp_fudged v0_nil __UNCONNECTED_PIN__6 __UNCONNECTED_PIN__7 __UNCONNECTED_PIN__8
-+ __UNCONNECTED_PIN__9 __UNCONNECTED_PIN__10 __UNCONNECTED_PIN__11 __UNCONNECTED_PIN__12 GND GND GND GND GND GND GND GND
-+ GND ILMPCG_ILOSC
+x3 vsp_fudged v0_nil net10 net11 net12 net13 net14 net15 net16 GND GND GND GND GND GND GND GND GND
++ ILMPCG_ILOSC
 XM2 vsp_fudged GND VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
@@ -28,7 +27,8 @@ XM3 net3 GND VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=32 nf=1 ad='int((nf+1)/2) 
 
 
 
-.options savecurrents
+* .options savecurrents
+.save all
 .tran 25ps 5n
 .control
 run
@@ -48,7 +48,7 @@ plot db(v0_ref) db(v0) db(v0_il) db(v0_nil)
 * expanding   symbol:  ILMPCG_ILOSC.sym # of pins=18
 ** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ILMPCG_ILOSC.sym
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ILMPCG_ILOSC.sch
-.subckt ILMPCG_ILOSC  vctrl ph0 ph45 ph90 ph135 ph180 ph225 ph270 ph315 inj0 inj45 inj90 inj135
+.subckt ILMPCG_ILOSC vctrl ph0 ph45 ph90 ph135 ph180 ph225 ph270 ph315 inj0 inj45 inj90 inj135
 + inj180 inj225 inj270 inj315 vlo
 *.iopin vctrl
 *.opin ph0
@@ -102,7 +102,7 @@ XM9 ph135 inj270 vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1
 * expanding   symbol:  ILMPCG_delayline.sym # of pins=12
 ** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ILMPCG_delayline.sym
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ILMPCG_delayline.sch
-.subckt ILMPCG_delayline  vctrl ph0 ph45 ph90 ph135 ph180 ph225 ph270 ph315 vlo ckin_p ckin_n
+.subckt ILMPCG_delayline vctrl ph0 ph45 ph90 ph135 ph180 ph225 ph270 ph315 vlo ckin_p ckin_n
 *.iopin vctrl
 *.ipin ckin_p
 *.ipin ckin_n
@@ -156,7 +156,7 @@ XM11 net2 vlo vlo vlo sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2
 * expanding   symbol:  xcpinv_cell.sym # of pins=6
 ** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/xcpinv_cell.sym
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/xcpinv_cell.sch
-.subckt xcpinv_cell  vhi vip vin vlo vop von
+.subckt xcpinv_cell vhi vip vin vlo vop von
 *.iopin vhi
 *.iopin vlo
 *.ipin vip

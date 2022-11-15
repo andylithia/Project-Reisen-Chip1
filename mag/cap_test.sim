@@ -1,0 +1,6 @@
+| units: 500000 tech: sky130B format: MIT
+C BOT TOP 21.88
+C TOP2 BOT2 9.99
+C BOT2 GND 3.98
+C TOP GND 2.06
+C BOT GND 10.98

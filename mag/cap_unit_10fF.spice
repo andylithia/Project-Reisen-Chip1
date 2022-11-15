@@ -1,0 +1,5 @@
+* NGSPICE file created from cap_unit_10fF.ext - technology: sky130B
+
+C0 BOT TOP 9.99fF
+C1 TOP VSUBS 0.58fF
+C2 BOT VSUBS 3.98fF

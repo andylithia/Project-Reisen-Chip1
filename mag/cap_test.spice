@@ -1,0 +1,5 @@
+* NGSPICE file created from cap_test.ext - technology: sky130B
+
+C2 TOP2 BOT2 9.99fF
+C3 TOP2 VSUBS 0.58fF
+C4 BOT2 VSUBS 3.98fF

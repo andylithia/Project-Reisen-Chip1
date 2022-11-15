@@ -1,0 +1,46 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/ztest.sch
+**.subckt ztest
+V1 vgs GND 1.8
+.save i(v1)
+V2 vsweep GND 0.9
+.save i(v2)
+XM1 vds vgs GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 vds_lvt vgs GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmeaslvt vds_lvt vsweep 0
+.save i(vmeaslvt)
+Vmeas vds vsweep 0
+.save i(vmeas)
+VmeasTgate vds_tgate vsweep 0
+.save i(vmeastgate)
+V3 vdd GND 1.8
+.save i(v3)
+XM3 vds_tgate vgs GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 GND GND vds_tgate VDD sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130B/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+
+
+.dc V2 0 1.8 0.1
+.save all
+.control
+run
+let r_lvt      = vds_lvt / -I(Vmeaslvt)
+let r          = vds / -I(Vmeas)
+let r_tgate = vds_tgate / -I(VmeasTgate)
+plot r_lvt r r_tgate
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

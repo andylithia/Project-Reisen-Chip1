@@ -1,17 +1,33 @@
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm_tb.sch
 **.subckt adc_strongarm_tb
 V1 VDD GND 1.8
-V2 CKIN GND PULSE(0 1.8 0 0.1n 0.1n 0.2n 0.4n)
-V3 net1 GND PULSE(0.899 0.901 0 25n 0 1 2)
-x3 CKIN GND GND VDD VDD net3 sky130_fd_sc_hs__clkbuf_4
-R2 VIP net1 0.5k m=1
-x8 VONL VOPL VDD GND VOP VON adc_strongarm_latch
-x9 VDD VOP VON VIP VIN net3 GND CKBUF adc_strongarm
-V5 net2 GND 0.9
-R4 VIN net2 0.5k m=1
+.save i(v1)
+V2 CKIN GND PULSE(0 1.8 0 0.01n 0.01n 0.5n 1n)
+.save i(v2)
+V3 net1 GND PULSE(0.8 1.0 0 100n 0 1 2)
+.save i(v3)
+x3 asclk GND GND VDD VDD net12 sky130_fd_sc_hs__clkbuf_4
+R2 net9 net1 0.5k m=1
+x8 net5 net4 VDD GND net2 net3 adc_strongarm_latch
+x9 VDD net2 net3 net9 net8 net12 GND net6 adc_strongarm
+V5 net7 GND 0.9
+.save i(v5)
+R4 net8 net7 0.5k m=1
+x1 net2 net3 gnd gnd vdd vdd asclk sky130_fd_sc_hs__xnor2_2
+V7 net10 GND PULSE(0.8 1.0 0 100n 0 1 2)
+.save i(v7)
+x4 asclk1 GND GND VDD VDD net13 sky130_fd_sc_hs__clkbuf_4
+R1 VIP net10 0.5k m=1
+x5 VONL VOPL VDD GND VOP VON adc_strongarm_latch
+x7 VDD VOP VON VIP VIN net13 GND CKBUF adc_strongarm
+V8 net11 GND 0.9
+.save i(v8)
+R3 VIN net11 0.5k m=1
+x12 VOP VON gnd gnd vdd vdd asclk1 sky130_fd_sc_hs__and2_2
 **** begin user architecture code
 
-.tran 1p 25n
+.tran 1p 100n
+.save all
 .control
 run
 display
@@ -31,7 +47,7 @@ plot VONL VOPL
 * expanding   symbol:  adc_strongarm_latch.sym # of pins=6
 ** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm_latch.sym
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm_latch.sch
-.subckt adc_strongarm_latch  VONL VOPL vdd gnd VP VN
+.subckt adc_strongarm_latch VONL VOPL vdd gnd VP VN
 *.iopin vdd
 *.iopin gnd
 *.ipin VP
@@ -54,7 +70,7 @@ x2 VN gnd gnd vdd vdd net2 sky130_fd_sc_hs__inv_1
 * expanding   symbol:  adc_strongarm.sym # of pins=8
 ** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm.sym
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/adc_strongarm.sch
-.subckt adc_strongarm  vdd vop von vip vin ckin_c16 gnd ckbuf
+.subckt adc_strongarm vdd vop von vip vin ckin_c16 gnd ckbuf
 *.ipin vip
 *.ipin vin
 *.iopin gnd

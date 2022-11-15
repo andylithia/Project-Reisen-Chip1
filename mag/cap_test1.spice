@@ -1,0 +1,9 @@
+* NGSPICE file created from /home/andylithia/openmpw/Project-Reisen-Chip1/mag/cap_test1.ext - technology: sky130B
+
+C0 TOPL BOT 9.99fF
+C1 TOPR BOT 9.99fF
+C2 TOP BOT 9.99fF
+C3 TOPR VSUBS 0.58fF
+C4 TOP VSUBS 0.58fF
+C5 TOPL VSUBS 0.58fF
+C6 BOT VSUBS 5.54fF
