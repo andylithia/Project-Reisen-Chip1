@@ -91,4 +91,4 @@ catch {magic::query_my_projects}
 
 # Lifehacks
 set Opts(crosshair) 1
-
+addcommandentry .layout1
