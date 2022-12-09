@@ -1,0 +1,57 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/PLL_simple.sch
+**.subckt PLL_simple
+x1 cko net1 gnd gnd vdd vdd ckfb net1 sky130_fd_sc_hs__dfxbp_2
+x4 ref VDD net2 gnd gnd vdd vdd up sky130_fd_sc_hs__dfrtp_2
+x5 ckfb VDD net2 gnd gnd vdd vdd dn sky130_fd_sc_hs__dfrtp_2
+x6 up dn gnd gnd vdd vdd net2 sky130_fd_sc_hs__nand2_1
+V1 VDD GND 1.8
+V2 ref GND PULSE(0 1.8 0 1n 1n 40n 80n)
+XM1 vc dn GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 vc net4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+C1 net3 VDD 20p m=1
+R1 vc net3 100 m=1
+C2 vc VDD 5p m=1
+x7 cko gnd gnd vc vc net6 sky130_fd_sc_hs__inv_1
+x8 net6 gnd gnd vc vc net7 sky130_fd_sc_hs__inv_1
+x9 net7 gnd gnd vc vc net8 sky130_fd_sc_hs__inv_1
+x10 net8 gnd gnd vc vc net9 sky130_fd_sc_hs__inv_1
+x11 net9 gnd gnd vc vc net10 sky130_fd_sc_hs__inv_1
+x12 net10 gnd gnd vc vc net11 sky130_fd_sc_hs__inv_1
+x13 net11 gnd gnd vc vc net12 sky130_fd_sc_hs__inv_1
+x14 net12 gnd gnd vc vc net13 sky130_fd_sc_hs__inv_1
+x15 net14 gnd gnd vc vc cko sky130_fd_sc_hs__inv_1
+x16 net15 gnd gnd vc vc net14 sky130_fd_sc_hs__inv_1
+x17 net16 gnd gnd vc vc net15 sky130_fd_sc_hs__inv_1
+x18 net17 gnd gnd vc vc net16 sky130_fd_sc_hs__inv_1
+x19 net18 gnd gnd vc vc net17 sky130_fd_sc_hs__inv_1
+x20 net19 gnd gnd vc vc net18 sky130_fd_sc_hs__inv_1
+x21 net5 gnd gnd vc vc net19 sky130_fd_sc_hs__inv_1
+x2 up gnd gnd vdd vdd net4 sky130_fd_sc_hs__inv_1
+V3 __UNCONNECTED_PIN__0 GND 0.9
+x3 net13 gnd gnd vc vc net20 sky130_fd_sc_hs__inv_1
+x22 net20 gnd gnd vc vc net21 sky130_fd_sc_hs__inv_1
+x23 net21 gnd gnd vc vc net22 sky130_fd_sc_hs__inv_1
+x24 net22 gnd gnd vc vc net23 sky130_fd_sc_hs__inv_1
+x25 net23 gnd gnd vc vc net24 sky130_fd_sc_hs__inv_1
+x26 net24 gnd gnd vc vc net5 sky130_fd_sc_hs__inv_1
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130B/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+
+
+.tran 1n 1000n
+.control
+run
+display
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end
