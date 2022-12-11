@@ -1,0 +1,55 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/OTA_test.sch
+**.subckt OTA_test vout
+*.opin vout
+XM1 v1 vp vc vc sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=16 m=16
+XM2 vf vn vc vc sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=16 m=16
+XM3 vc vbias vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=24 m=24
+XM4 v1 vf GND GND sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=16 m=16
+XM5 vf vf GND GND sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=16 m=16
+XM6 vbias vbias vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=24 m=24
+XM7 vout vbias vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=48 m=48
+XM8 vout v1 GND GND sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=64 m=64
+XR1 v1 net1 GND sky130_fd_pr__res_xhigh_po W=0.35 L=0.5 mult=1 m=1
+XC2 net1 vout sky130_fd_pr__cap_mim_m3_1 W=14 L=14 MF=1 m=1
+I0 vbias GND 200u
+V1 vdd GND 1.8
+.save i(v1)
+V2 vp net2 AC 0.5
+.save i(v2)
+V3 vn net2 AC -0.5
+.save i(v3)
+V4 net2 GND 0.9
+.save i(v4)
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+
+
+* .dc v2 0 1.8 0.1
+.ac dec 100 1e3 1e9
+.save all
+.control
+run
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

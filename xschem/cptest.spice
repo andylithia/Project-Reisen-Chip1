@@ -1,0 +1,29 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/cptest.sch
+**.subckt cptest
+x5 vin gnd gnd vdd3 vdd3 vout sky130_fd_sc_hd__inv_1
+V2 vdd GND 1.8
+.save i(v2)
+Vcmeas1 vdd vdd3 0
+.save i(vcmeas1)
+x1 vin gnd gnd vdd3 vdd3 net1 sky130_fd_sc_hd__inv_1
+x2 net1 gnd gnd vdd3 vdd3 vout sky130_fd_sc_hd__inv_1
+V1 vin GND 1.8
+.save i(v1)
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+.tran 1ns 10000ns
+.save all
+.control
+run
+display
+
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

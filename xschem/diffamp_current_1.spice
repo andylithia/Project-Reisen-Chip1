@@ -1,21 +1,21 @@
 ** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/diffamp_current_1.sch
 **.subckt diffamp_current_1
-XM1 vlr vll GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=2.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM1 vlr vll GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM3 vll vll GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM3 vll vll GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM2 vlr vlr GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM2 vlr vlr GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM4 vll vlr GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=2.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM4 vll vlr GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM5 vop vlr GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM5 vop vlr GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=80 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM6 von vll GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM6 von vll GND GND sky130_fd_pr__nfet_01v8 L=0.5 W=80 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
 XM7 vll net3 vcs net1 sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -48,8 +48,8 @@ V4 net4 net6 AC -0.5
 V5 net3 net6 AC 0.5
 .save i(v5)
 **** begin user architecture code
-.lib /home/andylithia/openmpw/pdk_1/sky130B/libs.tech/ngspice/sky130.lib.spice tt
-.include /home/andylithia/openmpw/pdk_1/sky130B/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+.lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
 
 
 * .dc v2 0 1.8 0.1

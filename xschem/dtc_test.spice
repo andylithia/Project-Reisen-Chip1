@@ -1,0 +1,40 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/dtc_test.sch
+**.subckt dtc_test
+V1 vin1 net3 AC 1
+.save i(v1)
+V2 vdd GND 1.8
+.save i(v2)
+V3 net3 GND 0.9
+.save i(v3)
+V4 vin2 net4 AC 1
+.save i(v4)
+V5 net4 GND 0.9
+.save i(v5)
+x3 GND GND vin1 gnd gnd vdd1 vdd1 net1 sky130_fd_sc_hd__a21oi_4
+x1 vdd2 vdd2 vin2 gnd gnd vdd2 vdd2 net2 sky130_fd_sc_hd__a21oi_4
+Vcmeas1 vdd vdd1 0
+.save i(vcmeas1)
+Vcmeas2 vdd vdd2 0
+.save i(vcmeas2)
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+.ac dec 100 1e3 1e6
+.save all
+.control
+run
+display
+let zin1=-vin1/i(v1)
+let zin2=-vin2/i(v4)
+let c1 = abs(1/(frequency*zin1))
+let c2 = abs(1/(frequency*zin2))
+plot c1 c2
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

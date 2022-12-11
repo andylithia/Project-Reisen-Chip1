@@ -1,0 +1,59 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/5tamp_model_tb.sch
+**.subckt 5tamp_model_tb
+x1 vdd vout vp vn GND 5tamp_model
+V1 vdd GND 1.8
+.save i(v1)
+V2 vp net1 AC 0.5
+.save i(v2)
+V3 vn net1 AC -0.5
+.save i(v3)
+V4 net1 GND 0.9
+.save i(v4)
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+
+
+* .dc v2 0 1.8 0.1
+.ac dec 100 1e3 1e9
+.save all
+.control
+run
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  5tamp_model.sym # of pins=5
+** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/5tamp_model.sym
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/5tamp_model.sch
+.subckt 5tamp_model vhi vop vip vin vlo
+*.ipin vip
+*.ipin vin
+*.opin vop
+*.iopin vhi
+*.iopin vlo
+XM1 net1 vip vmid vlo sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+XM2 vop vin vmid vlo sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+XM3 vmid vbias vlo vlo sky130_fd_pr__nfet_01v8 L=5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+XM4 net1 net1 vhi vhi sky130_fd_pr__pfet_01v8 L=0.15 W=15 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 vop net1 vhi vhi sky130_fd_pr__pfet_01v8 L=0.15 W=15 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+I0 vhi vbias 10u
+XM7 vbias vbias vlo vlo sky130_fd_pr__nfet_01v8 L=5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end
