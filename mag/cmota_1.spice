@@ -1,0 +1,101 @@
+* NGSPICE file created from cmota_1.ext - technology: sky130A
+
+X0 VREF VREF VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+X1 VLO VREF VREF VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+X2 VREF VREF VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+X3 VLO VREF VREF VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+X4 VOP imirror_pfb_1_8_0/IOUT1 VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X5 VLO imirror_pfb_1_8_0/IOUT1 VOP VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X6 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X7 VOP imirror_pfb_1_8_0/IOUT1 VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X8 VLO imirror_pfb_1_8_0/IOUT1 VOP VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X9 VOP imirror_pfb_1_8_0/IOUT1 VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X10 VLO imirror_pfb_1_8_0/IOUT1 VOP VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X11 VOP imirror_pfb_1_8_0/IOUT1 VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X12 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X13 VLO imirror_pfb_1_8_0/IOUT1 VOP VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X14 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IOUT1 VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X15 VLO imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IOUT1 VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X16 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X17 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IOUT1 VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X18 VLO imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IOUT1 VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X19 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IOUT1 VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X20 VLO imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IOUT1 VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X21 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IOUT1 VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X22 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X23 VLO imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IOUT1 VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X24 VREF VIP imirror_pfb_1_8_0/IIN2 VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X25 imirror_pfb_1_8_0/IIN1 VIN VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X26 VREF VIN imirror_pfb_1_8_0/IIN1 VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X27 imirror_pfb_1_8_0/IIN2 VIP VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X28 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X29 imirror_pfb_1_8_0/IIN2 VIP VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X30 imirror_pfb_1_8_0/IIN1 VIN VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X31 VREF VIP imirror_pfb_1_8_0/IIN2 VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X32 VREF VLO VLO VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X33 VREF VIP imirror_pfb_1_8_0/IIN2 VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X34 VREF VIN imirror_pfb_1_8_0/IIN1 VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X35 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X36 VREF VIN imirror_pfb_1_8_0/IIN1 VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X37 VLO VLO VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X38 VREF VIP imirror_pfb_1_8_0/IIN2 VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X39 imirror_pfb_1_8_0/IIN1 VIN VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X40 imirror_pfb_1_8_0/IIN2 VIP VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X41 VREF VIN imirror_pfb_1_8_0/IIN1 VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X42 imirror_pfb_1_8_0/IIN1 VIN VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X43 imirror_pfb_1_8_0/IIN2 VIP VREF VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X44 VHI VHI VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X45 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IOUT1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X46 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X47 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IIN2 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X48 imirror_pfb_1_8_0/IIN2 imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X49 VHI imirror_pfb_1_8_0/IIN2 VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X50 VOP imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X51 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IOUT1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X52 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X53 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X54 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IOUT1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X55 VHI imirror_pfb_1_8_0/IIN2 imirror_pfb_1_8_0/IIN2 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X56 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X57 VHI imirror_pfb_1_8_0/IIN2 VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X58 VOP imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X59 VHI imirror_pfb_1_8_0/IIN2 VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X60 VHI imirror_pfb_1_8_0/IIN2 VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X61 VHI VHI VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X62 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X63 imirror_pfb_1_8_0/IIN2 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X64 VHI imirror_pfb_1_8_0/IIN2 imirror_pfb_1_8_0/IIN1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X65 VHI imirror_pfb_1_8_0/IIN2 VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X66 VHI VHI VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X67 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X68 VHI imirror_pfb_1_8_0/IIN2 VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X69 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X70 VHI imirror_pfb_1_8_0/IIN2 VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X71 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IOUT1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X72 imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X73 VOP imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X74 VOP imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X75 VOP imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X76 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X77 VOP imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X78 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IOUT1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X79 imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X80 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IOUT1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X81 VOP imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X82 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IOUT1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X83 VHI VHI VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X84 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IOUT1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X85 VOP imirror_pfb_1_8_0/IIN2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X86 VHI imirror_pfb_1_8_0/IIN2 VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X87 VHI imirror_pfb_1_8_0/IIN1 imirror_pfb_1_8_0/IIN1 VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+C0 imirror_pfb_1_8_0/IOUT1 VHI 35.92fF
+C1 imirror_pfb_1_8_0/IIN2 VREF 6.14fF
+C2 imirror_pfb_1_8_0/IIN1 VREF 6.12fF
+C3 VOP VHI 34.99fF
+C4 imirror_pfb_1_8_0/IIN2 VHI 13.02fF
+C5 imirror_pfb_1_8_0/IOUT1 imirror_pfb_1_8_0/IIN1 2.63fF
+C6 imirror_pfb_1_8_0/IIN1 VHI 13.04fF
+C7 VHI VLO 47.74fF $ **FLOATING
+C8 imirror_pfb_1_8_0/IOUT1 VLO 22.92fF $ **FLOATING
+C9 VOP VLO 17.38fF $ **FLOATING
+C10 VREF VLO 13.27fF $ **FLOATING

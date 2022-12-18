@@ -1,0 +1,67 @@
+timestamp 1671169241
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+node "IOUT2" 63459 -0.974054 1886 4891 pdif 0 0 0 0 0 0 0 0 0 0 928000 32928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 546176 32672 832000 32832 1068432 38012 0 0 0 0 0 0 0 0
+node "IOUT1" 63459 -1.25235 -946 4891 pdif 0 0 0 0 0 0 0 0 0 0 928000 32928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 546176 32672 832000 32832 1067792 37996 0 0 0 0 0 0 0 0
+node "IIN2" 17632 1349.06 1178 4891 pdif 0 0 0 0 0 0 0 0 0 0 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2648640 90640 0 0 221816 15768 417374 17224 230331 9390 0 0 0 0 0 0 0 0
+node "IIN1" 17631 1310.27 -1009 4794 p 0 0 0 0 0 0 0 0 0 0 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2648640 90640 0 0 221816 15768 414710 17130 227506 9188 0 0 0 0 0 0 0 0
+node "VDD" 64526 45679.8 -1438 4672 nw 0 0 0 0 13472388 15928 0 0 527136 31008 2900000 102900 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 529728 18128 0 0 2251888 134708 2841760 105728 3328668 118144 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "IIN2" "VDD" 12863.2
+cap "IIN1" "VDD" 12861.3
+cap "IIN2" "IOUT1" 170.566
+cap "IIN1" "IOUT1" 1699.25
+cap "IOUT2" "VDD" 34937.4
+cap "IOUT2" "IOUT1" 25.1137
+cap "VDD" "IOUT1" 34935.4
+cap "IIN1" "IIN2" 757.38
+cap "IIN2" "IOUT2" 1718.51
+cap "IIN1" "IOUT2" 167.703
+device msubckt sky130_fd_pr__pfet_01v8 3832 4891 3833 4892 l=60 w=2000 "VDD" "VDD" 120 0 "VDD" 0 0 "VDD" 4000 0
+device msubckt sky130_fd_pr__pfet_01v8 3714 4891 3715 4892 l=60 w=2000 "VDD" "VDD" 120 0 "VDD" 4000 0 "VDD" 0 0
+device msubckt sky130_fd_pr__pfet_01v8 3596 4891 3597 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IOUT2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 3478 4891 3479 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IOUT2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 3360 4891 3361 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IOUT2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 3242 4891 3243 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IOUT2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 3124 4891 3125 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IOUT2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 3006 4891 3007 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IOUT2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 2888 4891 2889 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IOUT2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 2770 4891 2771 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IOUT2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 2652 4891 2653 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IOUT2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 2534 4891 2535 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IOUT2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 2416 4891 2417 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IOUT2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 2298 4891 2299 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IOUT2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 2180 4891 2181 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IOUT2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 2062 4891 2063 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IOUT2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1944 4891 1945 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IOUT2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1826 4891 1827 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IOUT2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1708 4891 1709 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IIN2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1590 4891 1591 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IIN2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1472 4891 1473 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "IIN1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1354 4891 1355 4892 l=60 w=2000 "VDD" "IIN2" 120 0 "VDD" 2000 0 "IIN1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1236 4891 1237 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IIN2" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1118 4891 1119 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IIN2" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 1000 4891 1001 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IIN1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 882 4891 883 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IIN1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 764 4891 765 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IOUT1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 646 4891 647 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IOUT1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 528 4891 529 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IOUT1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 410 4891 411 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IOUT1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 292 4891 293 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IOUT1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 174 4891 175 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IOUT1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 56 4891 57 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IOUT1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -62 4891 -61 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IOUT1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -180 4891 -179 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IOUT1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -298 4891 -297 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IOUT1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -416 4891 -415 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IOUT1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -534 4891 -533 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IOUT1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -652 4891 -651 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IOUT1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -770 4891 -769 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IOUT1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -888 4891 -887 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "IOUT1" 2000 0 "VDD" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -1006 4891 -1005 4892 l=60 w=2000 "VDD" "IIN1" 120 0 "VDD" 2000 0 "IOUT1" 2000 0
+device msubckt sky130_fd_pr__pfet_01v8 -1124 4891 -1123 4892 l=60 w=2000 "VDD" "VDD" 120 0 "VDD" 4000 0 "VDD" 0 0
+device msubckt sky130_fd_pr__pfet_01v8 -1242 4891 -1241 4892 l=60 w=2000 "VDD" "VDD" 120 0 "VDD" 4000 0 "VDD" 0 0

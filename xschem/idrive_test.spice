@@ -12,7 +12,7 @@ XM3 net4 gp net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) 
 XM4 net3 gn net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-C1 vout vmid 1p m=1
+C1 vout vmid 0.1p m=1
 V1 vmid GND 0.9
 .save i(v1)
 V2 vdd GND 1.8
@@ -34,14 +34,14 @@ V5 net5 GND 1.2
 V6 net6 GND 0.6
 .save i(v6)
 x6 net8 vdd limn_pulse GND GND vdd gnd gnd vdd vdd enable enable_bar sky130_fd_sc_hs__sdfbbn_2
-V7 refclk GND PULSE(1.8 0 0 1n 1n 100n 200n)
+V7 refclk GND PULSE(1.8 0 0 1n 1n 10n 20n)
 .save i(v7)
 x7 refclk llim vdd GND GND vdd gnd gnd vdd vdd updn net7 sky130_fd_sc_hs__sdfbbn_2
 x8 enable updn gnd gnd vdd vdd gp sky130_fd_sc_hs__nand2_4
 x9 enable net7 gnd gnd vdd vdd gn sky130_fd_sc_hs__and2_4
 x1 refclk gnd gnd vdd vdd net8 sky130_fd_sc_hs__inv_2
 R6 net9 net11 100 m=1
-C5 net9 GND 1p m=1
+C5 net9 GND 100f m=1
 x13 net10 gnd gnd vdd vdd net11 sky130_fd_sc_hs__inv_1
 x14 net9 net10 gnd gnd vdd vdd net12 sky130_fd_sc_hs__nor2_1
 x2 ulim llim gnd gnd vdd vdd net10 sky130_fd_sc_hs__nor2_1

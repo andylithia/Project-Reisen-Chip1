@@ -140,21 +140,21 @@ lab=vlo}
 N 830 -160 890 -160 {
 lab=vop}
 N 660 -490 670 -490 {
-lab=#net3}
+lab=#net6}
 N 610 -450 660 -490 {
-lab=#net3}
+lab=#net6}
 N 600 -490 610 -490 {
-lab=#net4}
+lab=#net7}
 N 610 -490 660 -450 {
-lab=#net4}
+lab=#net7}
 N 660 -450 710 -450 {
-lab=#net4}
+lab=#net7}
 N 710 -460 710 -450 {
-lab=#net4}
+lab=#net7}
 N 560 -450 610 -450 {
-lab=#net3}
+lab=#net6}
 N 560 -460 560 -450 {
-lab=#net3}
+lab=#net6}
 N 560 -540 560 -520 {
 lab=vhi}
 N 560 -540 710 -540 {
@@ -173,10 +173,6 @@ N 540 -540 540 -490 {
 lab=vhi}
 N 540 -540 560 -540 {
 lab=vhi}
-N 560 -330 610 -330 {
-lab=#net3}
-N 660 -330 710 -330 {
-lab=#net4}
 N 420 -540 540 -540 {
 lab=vhi}
 N 420 -540 420 -410 {
@@ -197,8 +193,16 @@ N 290 -540 320 -540 {
 lab=vhi}
 N 290 90 320 90 {
 lab=vlo}
-N 610 -450 610 -330 {}
-N 660 -450 660 -330 {}
+N 750 -110 760 -110 {
+lab=#net8}
+N 740 -110 740 -70 {
+lab=#net8}
+N 740 -110 750 -110 {
+lab=#net8}
+N 740 -10 740 30 {
+lab=#net5}
+N 820 -110 830 -110 {
+lab=vop}
 C {sky130_fd_pr/nfet_01v8.sym} 620 -100 0 0 {name=M2
 L=2
 W=5
@@ -236,7 +240,7 @@ mult=1}
 C {devices/lab_wire.sym} 610 -160 0 0 {name=p2 sig_type=std_logic lab=vmid}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 540 -220 0 0 {name=M4
 L=0.15
-W=10
+W=20
 nf=1
 mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -250,7 +254,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 730 -220 0 1 {name=M1
 L=0.15
-W=10
+W=20
 nf=1
 mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -379,3 +383,13 @@ C {devices/ipin.sym} 520 -220 0 0 {name=p3 lab=vin}
 C {devices/opin.sym} 890 -160 0 0 {name=p4 lab=vop}
 C {devices/iopin.sym} 290 -540 0 1 {name=p5 lab=vhi}
 C {devices/iopin.sym} 290 90 0 1 {name=p6 lab=vlo}
+C {devices/capa.sym} 790 -110 1 0 {name=C1
+m=1
+value=500f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/res.sym} 740 -40 0 0 {name=R2
+value=2k
+footprint=1206
+device=resistor
+m=1}

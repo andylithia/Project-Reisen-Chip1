@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Sun Dec 11 20:39:58 2022
+[*] Mon Dec 12 16:35:14 2022
 [*]
 [dumpfile] "/home/andylithia/openmpw/Project-Reisen-Chip1/verilog/tb/sarcon_tb.vcd"
-[dumpfile_mtime] "Sun Dec 11 20:39:09 2022"
-[dumpfile_size] 66946
+[dumpfile_mtime] "Mon Dec 12 16:34:31 2022"
+[dumpfile_size] 257195
 [savefile] "/home/andylithia/openmpw/Project-Reisen-Chip1/verilog/tb/dacif_tb.gtkw"
 [timestart] 0
 [size] 2160 1299
 [pos] -1 -1
-*-17.660471 561000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-20.775618 950000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] sarcon_tb.
 [sst_width] 221
 [signals_width] 208
@@ -37,8 +37,12 @@ sarcon_tb.dq_result_r[11:0]
 sarcon_tb.u_DUT.sr[11:0]
 sarcon_tb.u_DUT.sr_dly[11:0]
 sarcon_tb.u_DUT.dr[11:0]
-@10023
+@10022
 sarcon_tb.u_DUT.dq[11:0]
+@10024
+sarcon_tb.dq_result_r[11:0]
+@29
+sarcon_tb.latch_en
 @20000
 -
 -

@@ -1,0 +1,55 @@
+| units: 500000 tech: sky130A format: MIT
+x VDD VDD VDD VDD l=60 w=2000 x=-1241 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IOUT1 VDD VDD l=60 w=2000 x=56 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IOUT1 VDD l=60 w=2000 x=174 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IIN2 VDD VDD l=60 w=2000 x=1236 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IIN2 VDD l=60 w=2000 x=1590 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IOUT2 VDD VDD l=60 w=2000 x=2416 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IOUT2 VDD l=60 w=2000 x=2770 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IOUT1 VDD VDD l=60 w=2000 x=-651 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IOUT1 VDD l=60 w=2000 x=-61 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IOUT1 VDD l=60 w=2000 x=410 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IOUT1 VDD VDD l=60 w=2000 x=-887 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IIN2 VDD VDD l=60 w=2000 x=1708 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IOUT1 VDD l=60 w=2000 x=646 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IOUT2 VDD VDD l=60 w=2000 x=2180 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IOUT2 VDD l=60 w=2000 x=3006 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IOUT2 VDD VDD l=60 w=2000 x=3360 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IOUT2 VDD VDD l=60 w=2000 x=3596 y=4891 sky130_fd_pr__pfet_01v8
+x VDD VDD VDD VDD l=60 w=2000 x=-1123 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IOUT1 VDD l=60 w=2000 x=-297 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IIN2 VDD l=60 w=2000 x=1118 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IIN1 VDD VDD l=60 w=2000 x=1472 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IOUT2 VDD VDD l=60 w=2000 x=2652 y=4891 sky130_fd_pr__pfet_01v8
+x VDD VDD VDD VDD l=60 w=2000 x=3832 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IOUT1 VDD l=60 w=2000 x=-533 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IOUT2 VDD VDD l=60 w=2000 x=2888 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IOUT1 VDD l=60 w=2000 x=-769 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IOUT2 VDD VDD l=60 w=2000 x=1944 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IOUT1 VDD VDD l=60 w=2000 x=528 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IIN1 VDD l=60 w=2000 x=882 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IOUT2 VDD l=60 w=2000 x=2062 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IOUT2 VDD l=60 w=2000 x=3242 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IOUT2 VDD l=60 w=2000 x=2298 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 VDD IOUT1 VDD l=60 w=2000 x=-1005 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IOUT2 VDD l=60 w=2000 x=3478 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IOUT1 VDD VDD l=60 w=2000 x=-179 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IIN1 VDD l=60 w=2000 x=1354 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IOUT1 VDD VDD l=60 w=2000 x=292 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IOUT2 VDD l=60 w=2000 x=2534 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IOUT1 VDD VDD l=60 w=2000 x=-415 y=4891 sky130_fd_pr__pfet_01v8
+x VDD VDD VDD VDD l=60 w=2000 x=3714 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IOUT1 VDD VDD l=60 w=2000 x=764 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 VDD IOUT2 VDD l=60 w=2000 x=1826 y=4891 sky130_fd_pr__pfet_01v8
+x IIN2 IOUT2 VDD VDD l=60 w=2000 x=3124 y=4891 sky130_fd_pr__pfet_01v8
+x IIN1 IIN1 VDD VDD l=60 w=2000 x=1000 y=4891 sky130_fd_pr__pfet_01v8
+C IOUT1 VDD 34.94
+C IIN2 VDD 12.86
+C IOUT2 VDD 34.94
+C IIN1 VDD 12.86
+R IOUT2 63459
+R IOUT1 63459
+R IIN2 54864
+R IIN1 54863
+C VDD GND 45.68
+R VDD 269452

@@ -370,7 +370,7 @@ spiceprefix=X
 C {devices/gnd.sym} 320 0 0 0 {name=l1 lab=GND}
 C {devices/capa.sym} 440 -150 0 0 {name=C1
 m=1
-value=1p
+value=0.1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 440 0 0 0 {name=l2 lab=GND}
@@ -464,7 +464,7 @@ C {devices/gnd.sym} 460 360 0 0 {name=l7 lab=GND}
 C {sky130_stdcells/sdfbbn_2.sym} 1480 120 0 0 {name=x6 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ 
 }
 C {devices/lab_wire.sym} 1360 40 0 0 {name=p11 sig_type=std_logic lab=vdd}
-C {devices/vsource.sym} 1150 490 0 0 {name=V7 value="PULSE(1.8 0 0 1n 1n 100n 200n)"}
+C {devices/vsource.sym} 1150 490 0 0 {name=V7 value="PULSE(1.8 0 0 1n 1n 10n 20n)"}
 C {devices/gnd.sym} 1150 540 0 0 {name=l8 lab=GND}
 C {devices/lab_wire.sym} 1200 390 0 0 {name=p12 sig_type=std_logic lab=refclk}
 C {devices/lab_wire.sym} 1610 70 0 0 {name=p13 sig_type=std_logic lab=enable}
@@ -489,7 +489,7 @@ device=resistor
 m=1}
 C {devices/capa.sym} 1040 240 0 0 {name=C5
 m=1
-value=1p
+value=100f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 1040 280 0 0 {name=l10 lab=GND}

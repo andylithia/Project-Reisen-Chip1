@@ -1,0 +1,17 @@
+| units: 500000 tech: sky130A format: MIT
+x S IN IN_GATED VSUB l=30 w=500 x=1244 y=150 sky130_fd_pr__nfet_01v8
+x SBAR IN_GATED VSUB VSUB l=30 w=500 x=1340 y=150 sky130_fd_pr__nfet_01v8
+x a_1634_538# IN_GATED OUT VSUB l=298 w=70 x=1634 y=538 sky130_fd_pr__res_xhigh_po
+x S IN_GATED IN VSUB l=30 w=500 x=1148 y=150 sky130_fd_pr__nfet_01v8
+x SBAR VSUB IN_GATED VSUB l=30 w=500 x=1436 y=150 sky130_fd_pr__nfet_01v8
+x VSUB OUT l=1400 w=5400 x=2300 y=-299 sky130_fd_pr__cap_mim_m3_1
+x OUT VSUB l=1400 w=5400 x=2300 y=-299 sky130_fd_pr__cap_mim_m3_2
+C OUT GND 45.88
+R OUT 196
+R a_1634_538# 10514
+R IN 1103
+C IN_GATED GND 2.05
+R IN_GATED 4163
+R SBAR 1870
+R S 1869
+R VSUB 22510

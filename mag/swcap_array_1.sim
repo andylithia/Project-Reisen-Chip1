@@ -1,0 +1,679 @@
+| units: 500000 tech: sky130A format: MIT
+x tcap_200f_60/a_173_157# C l=320 w=6280 x=-250 y=2823 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_60/a_173_157# VSUB l=30 w=400 x=207 y=2780 sky130_fd_pr__nfet_01v8
+x C tcap_200f_60/a_173_157# l=320 w=6280 x=-250 y=2823 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_50/a_173_157# C l=320 w=6280 x=-250 y=9963 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_50/a_173_157# VSUB l=30 w=400 x=207 y=9920 sky130_fd_pr__nfet_01v8
+x C tcap_200f_50/a_173_157# l=320 w=6280 x=-250 y=9963 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_61/a_173_157# C l=320 w=6280 x=-250 y=2109 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_61/a_173_157# VSUB l=30 w=400 x=207 y=2066 sky130_fd_pr__nfet_01v8
+x C tcap_200f_61/a_173_157# l=320 w=6280 x=-250 y=2109 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_40/a_173_157# C l=320 w=6280 x=-250 y=17103 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_40/a_173_157# VSUB l=30 w=400 x=207 y=17060 sky130_fd_pr__nfet_01v8
+x C tcap_200f_40/a_173_157# l=320 w=6280 x=-250 y=17103 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_51/a_173_157# C l=320 w=6280 x=-250 y=9249 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_51/a_173_157# VSUB l=30 w=400 x=207 y=9206 sky130_fd_pr__nfet_01v8
+x C tcap_200f_51/a_173_157# l=320 w=6280 x=-250 y=9249 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_62/a_173_157# C l=320 w=6280 x=-250 y=1395 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_62/a_173_157# VSUB l=30 w=400 x=207 y=1352 sky130_fd_pr__nfet_01v8
+x C tcap_200f_62/a_173_157# l=320 w=6280 x=-250 y=1395 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_30/a_173_157# C l=320 w=6280 x=1453 y=21387 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_30/a_173_157# VSUB l=30 w=400 x=996 y=21344 sky130_fd_pr__nfet_01v8
+x C tcap_200f_30/a_173_157# l=320 w=6280 x=1453 y=21387 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_41/a_173_157# C l=320 w=6280 x=-250 y=16389 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_41/a_173_157# VSUB l=30 w=400 x=207 y=16346 sky130_fd_pr__nfet_01v8
+x C tcap_200f_41/a_173_157# l=320 w=6280 x=-250 y=16389 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_52/a_173_157# C l=320 w=6280 x=-250 y=8535 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_52/a_173_157# VSUB l=30 w=400 x=207 y=8492 sky130_fd_pr__nfet_01v8
+x C tcap_200f_52/a_173_157# l=320 w=6280 x=-250 y=8535 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_63/a_173_157# C l=320 w=6280 x=-250 y=681 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_63/a_173_157# VSUB l=30 w=400 x=207 y=638 sky130_fd_pr__nfet_01v8
+x C tcap_200f_63/a_173_157# l=320 w=6280 x=-250 y=681 sky130_fd_pr__cap_mim_m3_1
+x tcap_50f_0/a_173_157# C l=320 w=1570 x=1453 y=-747 sky130_fd_pr__cap_mim_m3_2
+x B0 VSUB tcap_50f_0/a_173_157# VSUB l=30 w=400 x=996 y=-790 sky130_fd_pr__nfet_01v8
+x C tcap_50f_0/a_173_157# l=320 w=1570 x=1453 y=-747 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_31/a_173_157# C l=320 w=6280 x=1453 y=20673 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_31/a_173_157# VSUB l=30 w=400 x=996 y=20630 sky130_fd_pr__nfet_01v8
+x C tcap_200f_31/a_173_157# l=320 w=6280 x=1453 y=20673 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_42/a_173_157# C l=320 w=6280 x=-250 y=15675 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_42/a_173_157# VSUB l=30 w=400 x=207 y=15632 sky130_fd_pr__nfet_01v8
+x C tcap_200f_42/a_173_157# l=320 w=6280 x=-250 y=15675 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_20/a_173_157# C l=320 w=6280 x=1453 y=12819 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_20/a_173_157# VSUB l=30 w=400 x=996 y=12776 sky130_fd_pr__nfet_01v8
+x C tcap_200f_20/a_173_157# l=320 w=6280 x=1453 y=12819 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_53/a_173_157# C l=320 w=6280 x=-250 y=7821 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_53/a_173_157# VSUB l=30 w=400 x=207 y=7778 sky130_fd_pr__nfet_01v8
+x C tcap_200f_53/a_173_157# l=320 w=6280 x=-250 y=7821 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_64/a_173_157# C l=320 w=6280 x=-250 y=-33 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_64/a_173_157# VSUB l=30 w=400 x=207 y=-76 sky130_fd_pr__nfet_01v8
+x C tcap_200f_64/a_173_157# l=320 w=6280 x=-250 y=-33 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_32/a_173_157# C l=320 w=6280 x=1453 y=22101 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_32/a_173_157# VSUB l=30 w=400 x=996 y=22058 sky130_fd_pr__nfet_01v8
+x C tcap_200f_32/a_173_157# l=320 w=6280 x=1453 y=22101 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_33/a_173_157# C l=320 w=6280 x=-250 y=22101 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_33/a_173_157# VSUB l=30 w=400 x=207 y=22058 sky130_fd_pr__nfet_01v8
+x C tcap_200f_33/a_173_157# l=320 w=6280 x=-250 y=22101 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_43/a_173_157# C l=320 w=6280 x=-250 y=14961 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_43/a_173_157# VSUB l=30 w=400 x=207 y=14918 sky130_fd_pr__nfet_01v8
+x C tcap_200f_43/a_173_157# l=320 w=6280 x=-250 y=14961 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_22/a_173_157# C l=320 w=6280 x=1453 y=14247 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_22/a_173_157# VSUB l=30 w=400 x=996 y=14204 sky130_fd_pr__nfet_01v8
+x C tcap_200f_22/a_173_157# l=320 w=6280 x=1453 y=14247 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_44/a_173_157# C l=320 w=6280 x=-250 y=14247 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_44/a_173_157# VSUB l=30 w=400 x=207 y=14204 sky130_fd_pr__nfet_01v8
+x C tcap_200f_44/a_173_157# l=320 w=6280 x=-250 y=14247 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_21/a_173_157# C l=320 w=6280 x=1453 y=13533 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_21/a_173_157# VSUB l=30 w=400 x=996 y=13490 sky130_fd_pr__nfet_01v8
+x C tcap_200f_21/a_173_157# l=320 w=6280 x=1453 y=13533 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_10/a_173_157# C l=320 w=6280 x=1453 y=7107 sky130_fd_pr__cap_mim_m3_2
+x B5 VSUB tcap_200f_10/a_173_157# VSUB l=30 w=400 x=996 y=7064 sky130_fd_pr__nfet_01v8
+x C tcap_200f_10/a_173_157# l=320 w=6280 x=1453 y=7107 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_54/a_173_157# C l=320 w=6280 x=-250 y=7107 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_54/a_173_157# VSUB l=30 w=400 x=207 y=7064 sky130_fd_pr__nfet_01v8
+x C tcap_200f_54/a_173_157# l=320 w=6280 x=-250 y=7107 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_11/a_173_157# C l=320 w=6280 x=1453 y=6393 sky130_fd_pr__cap_mim_m3_2
+x B5 VSUB tcap_200f_11/a_173_157# VSUB l=30 w=400 x=996 y=6350 sky130_fd_pr__nfet_01v8
+x C tcap_200f_11/a_173_157# l=320 w=6280 x=1453 y=6393 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_55/a_173_157# C l=320 w=6280 x=-250 y=6393 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_55/a_173_157# VSUB l=30 w=400 x=207 y=6350 sky130_fd_pr__nfet_01v8
+x C tcap_200f_55/a_173_157# l=320 w=6280 x=-250 y=6393 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_65/a_173_157# C l=320 w=6280 x=-250 y=-747 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_65/a_173_157# VSUB l=30 w=400 x=207 y=-790 sky130_fd_pr__nfet_01v8
+x C tcap_200f_65/a_173_157# l=320 w=6280 x=-250 y=-747 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_34/a_173_157# C l=320 w=6280 x=-250 y=21387 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_34/a_173_157# VSUB l=30 w=400 x=207 y=21344 sky130_fd_pr__nfet_01v8
+x C tcap_200f_34/a_173_157# l=320 w=6280 x=-250 y=21387 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_23/a_173_157# C l=320 w=6280 x=1453 y=14961 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_23/a_173_157# VSUB l=30 w=400 x=996 y=14918 sky130_fd_pr__nfet_01v8
+x C tcap_200f_23/a_173_157# l=320 w=6280 x=1453 y=14961 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_45/a_173_157# C l=320 w=6280 x=-250 y=13533 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_45/a_173_157# VSUB l=30 w=400 x=207 y=13490 sky130_fd_pr__nfet_01v8
+x C tcap_200f_45/a_173_157# l=320 w=6280 x=-250 y=13533 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_12/a_173_157# C l=320 w=6280 x=1453 y=8535 sky130_fd_pr__cap_mim_m3_2
+x B5 VSUB tcap_200f_12/a_173_157# VSUB l=30 w=400 x=996 y=8492 sky130_fd_pr__nfet_01v8
+x C tcap_200f_12/a_173_157# l=320 w=6280 x=1453 y=8535 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_0/a_173_157# C l=320 w=6280 x=1453 y=5679 sky130_fd_pr__cap_mim_m3_2
+x B5 VSUB tcap_200f_0/a_173_157# VSUB l=30 w=400 x=996 y=5636 sky130_fd_pr__nfet_01v8
+x C tcap_200f_0/a_173_157# l=320 w=6280 x=1453 y=5679 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_56/a_173_157# C l=320 w=6280 x=-250 y=5679 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_56/a_173_157# VSUB l=30 w=400 x=207 y=5636 sky130_fd_pr__nfet_01v8
+x C tcap_200f_56/a_173_157# l=320 w=6280 x=-250 y=5679 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_35/a_173_157# C l=320 w=6280 x=-250 y=20673 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_35/a_173_157# VSUB l=30 w=400 x=207 y=20630 sky130_fd_pr__nfet_01v8
+x C tcap_200f_35/a_173_157# l=320 w=6280 x=-250 y=20673 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_24/a_173_157# C l=320 w=6280 x=1453 y=15675 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_24/a_173_157# VSUB l=30 w=400 x=996 y=15632 sky130_fd_pr__nfet_01v8
+x C tcap_200f_24/a_173_157# l=320 w=6280 x=1453 y=15675 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_46/a_173_157# C l=320 w=6280 x=-250 y=12819 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_46/a_173_157# VSUB l=30 w=400 x=207 y=12776 sky130_fd_pr__nfet_01v8
+x C tcap_200f_46/a_173_157# l=320 w=6280 x=-250 y=12819 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_13/a_173_157# C l=320 w=6280 x=1453 y=7821 sky130_fd_pr__cap_mim_m3_2
+x B5 VSUB tcap_200f_13/a_173_157# VSUB l=30 w=400 x=996 y=7778 sky130_fd_pr__nfet_01v8
+x C tcap_200f_13/a_173_157# l=320 w=6280 x=1453 y=7821 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_57/a_173_157# C l=320 w=6280 x=-250 y=4965 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_57/a_173_157# VSUB l=30 w=400 x=207 y=4922 sky130_fd_pr__nfet_01v8
+x C tcap_200f_57/a_173_157# l=320 w=6280 x=-250 y=4965 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_36/a_173_157# C l=320 w=6280 x=-250 y=19959 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_36/a_173_157# VSUB l=30 w=400 x=207 y=19916 sky130_fd_pr__nfet_01v8
+x C tcap_200f_36/a_173_157# l=320 w=6280 x=-250 y=19959 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_25/a_173_157# C l=320 w=6280 x=1453 y=16389 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_25/a_173_157# VSUB l=30 w=400 x=996 y=16346 sky130_fd_pr__nfet_01v8
+x C tcap_200f_25/a_173_157# l=320 w=6280 x=1453 y=16389 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_47/a_173_157# C l=320 w=6280 x=-250 y=12105 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_47/a_173_157# VSUB l=30 w=400 x=207 y=12062 sky130_fd_pr__nfet_01v8
+x C tcap_200f_47/a_173_157# l=320 w=6280 x=-250 y=12105 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_14/a_173_157# C l=320 w=6280 x=1453 y=9249 sky130_fd_pr__cap_mim_m3_2
+x B5 VSUB tcap_200f_14/a_173_157# VSUB l=30 w=400 x=996 y=9206 sky130_fd_pr__nfet_01v8
+x C tcap_200f_14/a_173_157# l=320 w=6280 x=1453 y=9249 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_58/a_173_157# C l=320 w=6280 x=-250 y=4251 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_58/a_173_157# VSUB l=30 w=400 x=207 y=4208 sky130_fd_pr__nfet_01v8
+x C tcap_200f_58/a_173_157# l=320 w=6280 x=-250 y=4251 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_37/a_173_157# C l=320 w=6280 x=-250 y=19245 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_37/a_173_157# VSUB l=30 w=400 x=207 y=19202 sky130_fd_pr__nfet_01v8
+x C tcap_200f_37/a_173_157# l=320 w=6280 x=-250 y=19245 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_26/a_173_157# C l=320 w=6280 x=1453 y=18531 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_26/a_173_157# VSUB l=30 w=400 x=996 y=18488 sky130_fd_pr__nfet_01v8
+x C tcap_200f_26/a_173_157# l=320 w=6280 x=1453 y=18531 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_15/a_173_157# C l=320 w=6280 x=1453 y=17103 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_15/a_173_157# VSUB l=30 w=400 x=996 y=17060 sky130_fd_pr__nfet_01v8
+x C tcap_200f_15/a_173_157# l=320 w=6280 x=1453 y=17103 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_48/a_173_157# C l=320 w=6280 x=-250 y=11391 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_48/a_173_157# VSUB l=30 w=400 x=207 y=11348 sky130_fd_pr__nfet_01v8
+x C tcap_200f_48/a_173_157# l=320 w=6280 x=-250 y=11391 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_59/a_173_157# C l=320 w=6280 x=-250 y=3537 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_59/a_173_157# VSUB l=30 w=400 x=207 y=3494 sky130_fd_pr__nfet_01v8
+x C tcap_200f_59/a_173_157# l=320 w=6280 x=-250 y=3537 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_3/a_173_157# C l=320 w=6280 x=1453 y=681 sky130_fd_pr__cap_mim_m3_2
+x B2 VSUB tcap_200f_3/a_173_157# VSUB l=30 w=400 x=996 y=638 sky130_fd_pr__nfet_01v8
+x C tcap_200f_3/a_173_157# l=320 w=6280 x=1453 y=681 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_38/a_173_157# C l=320 w=6280 x=-250 y=18531 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_38/a_173_157# VSUB l=30 w=400 x=207 y=18488 sky130_fd_pr__nfet_01v8
+x C tcap_200f_38/a_173_157# l=320 w=6280 x=-250 y=18531 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_27/a_173_157# C l=320 w=6280 x=1453 y=17817 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_27/a_173_157# VSUB l=30 w=400 x=996 y=17774 sky130_fd_pr__nfet_01v8
+x C tcap_200f_27/a_173_157# l=320 w=6280 x=1453 y=17817 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_16/a_173_157# C l=320 w=6280 x=1453 y=9963 sky130_fd_pr__cap_mim_m3_2
+x B5 VSUB tcap_200f_16/a_173_157# VSUB l=30 w=400 x=996 y=9920 sky130_fd_pr__nfet_01v8
+x C tcap_200f_16/a_173_157# l=320 w=6280 x=1453 y=9963 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_49/a_173_157# C l=320 w=6280 x=-250 y=10677 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_49/a_173_157# VSUB l=30 w=400 x=207 y=10634 sky130_fd_pr__nfet_01v8
+x C tcap_200f_49/a_173_157# l=320 w=6280 x=-250 y=10677 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_4/a_173_157# C l=320 w=6280 x=1453 y=1395 sky130_fd_pr__cap_mim_m3_2
+x B3 VSUB tcap_200f_4/a_173_157# VSUB l=30 w=400 x=996 y=1352 sky130_fd_pr__nfet_01v8
+x C tcap_200f_4/a_173_157# l=320 w=6280 x=1453 y=1395 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_28/a_173_157# C l=320 w=6280 x=1453 y=19959 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_28/a_173_157# VSUB l=30 w=400 x=996 y=19916 sky130_fd_pr__nfet_01v8
+x C tcap_200f_28/a_173_157# l=320 w=6280 x=1453 y=19959 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_39/a_173_157# C l=320 w=6280 x=-250 y=17817 sky130_fd_pr__cap_mim_m3_2
+x B7 VSUB tcap_200f_39/a_173_157# VSUB l=30 w=400 x=207 y=17774 sky130_fd_pr__nfet_01v8
+x C tcap_200f_39/a_173_157# l=320 w=6280 x=-250 y=17817 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_17/a_173_157# C l=320 w=6280 x=1453 y=10677 sky130_fd_pr__cap_mim_m3_2
+x B5 VSUB tcap_200f_17/a_173_157# VSUB l=30 w=400 x=996 y=10634 sky130_fd_pr__nfet_01v8
+x C tcap_200f_17/a_173_157# l=320 w=6280 x=1453 y=10677 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_5/a_173_157# C l=320 w=6280 x=1453 y=2109 sky130_fd_pr__cap_mim_m3_2
+x B3 VSUB tcap_200f_5/a_173_157# VSUB l=30 w=400 x=996 y=2066 sky130_fd_pr__nfet_01v8
+x C tcap_200f_5/a_173_157# l=320 w=6280 x=1453 y=2109 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_29/a_173_157# C l=320 w=6280 x=1453 y=19245 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_29/a_173_157# VSUB l=30 w=400 x=996 y=19202 sky130_fd_pr__nfet_01v8
+x C tcap_200f_29/a_173_157# l=320 w=6280 x=1453 y=19245 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_18/a_173_157# C l=320 w=6280 x=1453 y=11391 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_18/a_173_157# VSUB l=30 w=400 x=996 y=11348 sky130_fd_pr__nfet_01v8
+x C tcap_200f_18/a_173_157# l=320 w=6280 x=1453 y=11391 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_6/a_173_157# C l=320 w=6280 x=1453 y=2823 sky130_fd_pr__cap_mim_m3_2
+x B4 VSUB tcap_200f_6/a_173_157# VSUB l=30 w=400 x=996 y=2780 sky130_fd_pr__nfet_01v8
+x C tcap_200f_6/a_173_157# l=320 w=6280 x=1453 y=2823 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_19/a_173_157# C l=320 w=6280 x=1453 y=12105 sky130_fd_pr__cap_mim_m3_2
+x B6 VSUB tcap_200f_19/a_173_157# VSUB l=30 w=400 x=996 y=12062 sky130_fd_pr__nfet_01v8
+x C tcap_200f_19/a_173_157# l=320 w=6280 x=1453 y=12105 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_8/a_173_157# C l=320 w=6280 x=1453 y=4251 sky130_fd_pr__cap_mim_m3_2
+x B4 VSUB tcap_200f_8/a_173_157# VSUB l=30 w=400 x=996 y=4208 sky130_fd_pr__nfet_01v8
+x C tcap_200f_8/a_173_157# l=320 w=6280 x=1453 y=4251 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_7/a_173_157# C l=320 w=6280 x=1453 y=3537 sky130_fd_pr__cap_mim_m3_2
+x B4 VSUB tcap_200f_7/a_173_157# VSUB l=30 w=400 x=996 y=3494 sky130_fd_pr__nfet_01v8
+x C tcap_200f_7/a_173_157# l=320 w=6280 x=1453 y=3537 sky130_fd_pr__cap_mim_m3_1
+x tcap_200f_9/a_173_157# C l=320 w=6280 x=1453 y=4965 sky130_fd_pr__cap_mim_m3_2
+x B4 VSUB tcap_200f_9/a_173_157# VSUB l=30 w=400 x=996 y=4922 sky130_fd_pr__nfet_01v8
+x C tcap_200f_9/a_173_157# l=320 w=6280 x=1453 y=4965 sky130_fd_pr__cap_mim_m3_1
+x tcap_100f_0/a_173_157# C l=320 w=3140 x=1453 y=-33 sky130_fd_pr__cap_mim_m3_2
+x B1 VSUB tcap_100f_0/a_173_157# VSUB l=30 w=400 x=996 y=-76 sky130_fd_pr__nfet_01v8
+x C tcap_100f_0/a_173_157# l=320 w=3140 x=1453 y=-33 sky130_fd_pr__cap_mim_m3_1
+C tcap_200f_44/a_173_157# tcap_200f_45/a_173_157# 4.48
+C tcap_200f_22/a_173_157# tcap_200f_23/a_173_157# 4.47
+C tcap_200f_42/a_173_157# tcap_200f_41/a_173_157# 4.48
+C tcap_200f_23/a_173_157# tcap_200f_24/a_173_157# 4.47
+C tcap_200f_14/a_173_157# C 12.05
+C tcap_200f_56/a_173_157# tcap_200f_55/a_173_157# 4.48
+C tcap_200f_39/a_173_157# C 12.05
+C tcap_200f_62/a_173_157# C 12.05
+C C tcap_200f_6/a_173_157# 12.05
+C C tcap_200f_8/a_173_157# 12.05
+C tcap_200f_31/a_173_157# tcap_200f_28/a_173_157# 4.47
+C tcap_200f_26/a_173_157# C 12.05
+C tcap_200f_40/a_173_157# tcap_200f_39/a_173_157# 4.48
+C tcap_200f_65/a_173_157# C 10.91
+C tcap_200f_59/a_173_157# C 12.05
+C tcap_200f_60/a_173_157# tcap_200f_59/a_173_157# 4.48
+C tcap_200f_49/a_173_157# C 12.05
+C C tcap_200f_37/a_173_157# 12.05
+C tcap_200f_52/a_173_157# tcap_200f_53/a_173_157# 4.48
+C tcap_200f_5/a_173_157# C 12.05
+C tcap_200f_45/a_173_157# C 12.05
+C tcap_200f_10/a_173_157# C 12.05
+C tcap_200f_35/a_173_157# C 12.05
+C tcap_200f_64/a_173_157# C 11.71
+C tcap_200f_11/a_173_157# C 12.05
+C tcap_200f_39/a_173_157# tcap_200f_38/a_173_157# 4.48
+C tcap_200f_49/a_173_157# tcap_200f_48/a_173_157# 4.48
+C tcap_200f_52/a_173_157# tcap_200f_51/a_173_157# 4.48
+C tcap_200f_46/a_173_157# tcap_200f_45/a_173_157# 4.48
+C tcap_200f_29/a_173_157# C 12.05
+C tcap_200f_9/a_173_157# C 12.05
+C tcap_200f_51/a_173_157# tcap_200f_50/a_173_157# 4.48
+C tcap_200f_44/a_173_157# C 12.05
+C tcap_200f_30/a_173_157# C 11.79
+C tcap_200f_5/a_173_157# tcap_200f_4/a_173_157# 4.47
+C tcap_200f_36/a_173_157# tcap_200f_37/a_173_157# 4.48
+C tcap_200f_38/a_173_157# tcap_200f_37/a_173_157# 4.48
+C tcap_200f_16/a_173_157# tcap_200f_14/a_173_157# 4.47
+C tcap_200f_35/a_173_157# tcap_200f_36/a_173_157# 4.48
+C tcap_200f_57/a_173_157# tcap_200f_58/a_173_157# 4.48
+C tcap_200f_21/a_173_157# C 12.05
+C tcap_200f_61/a_173_157# C 12.05
+C tcap_200f_61/a_173_157# tcap_200f_60/a_173_157# 4.48
+C tcap_200f_12/a_173_157# C 12.05
+C tcap_200f_33/a_173_157# tcap_200f_34/a_173_157# 4.48
+C B6 B7 9.55
+C tcap_200f_57/a_173_157# tcap_200f_56/a_173_157# 4.48
+C tcap_200f_27/a_173_157# tcap_200f_26/a_173_157# 4.47
+C tcap_200f_44/a_173_157# tcap_200f_43/a_173_157# 4.48
+C tcap_200f_62/a_173_157# tcap_200f_63/a_173_157# 4.48
+C C tcap_100f_0/a_173_157# 5.85
+C tcap_200f_60/a_173_157# C 12.05
+C tcap_200f_31/a_173_157# tcap_200f_30/a_173_157# 4.47
+C tcap_200f_20/a_173_157# tcap_200f_21/a_173_157# 4.47
+C tcap_200f_46/a_173_157# C 12.05
+C C tcap_200f_48/a_173_157# 12.05
+C tcap_200f_7/a_173_157# tcap_200f_6/a_173_157# 4.47
+C tcap_200f_58/a_173_157# tcap_200f_59/a_173_157# 4.48
+C tcap_200f_13/a_173_157# tcap_200f_10/a_173_157# 4.47
+C tcap_200f_40/a_173_157# C 12.05
+C tcap_200f_7/a_173_157# tcap_200f_8/a_173_157# 4.47
+C tcap_200f_63/a_173_157# tcap_200f_64/a_173_157# 4.48
+C tcap_200f_43/a_173_157# C 12.05
+C tcap_200f_4/a_173_157# C 11.89
+C tcap_200f_36/a_173_157# C 12.05
+C tcap_200f_20/a_173_157# C 12.05
+C tcap_200f_38/a_173_157# C 12.05
+C tcap_200f_17/a_173_157# C 12.05
+C tcap_200f_42/a_173_157# C 12.05
+C tcap_200f_18/a_173_157# C 12.05
+C tcap_200f_11/a_173_157# tcap_200f_0/a_173_157# 4.47
+C tcap_200f_19/a_173_157# C 12.05
+C tcap_200f_31/a_173_157# C 12.05
+C tcap_200f_22/a_173_157# tcap_200f_21/a_173_157# 4.47
+C tcap_200f_55/a_173_157# C 12.05
+C tcap_200f_54/a_173_157# C 12.05
+C tcap_200f_9/a_173_157# tcap_200f_0/a_173_157# 4.47
+C tcap_200f_49/a_173_157# tcap_200f_50/a_173_157# 4.48
+C tcap_200f_25/a_173_157# C 12.05
+C tcap_200f_30/a_173_157# tcap_200f_32/a_173_157# 4.47
+C tcap_200f_35/a_173_157# tcap_200f_34/a_173_157# 4.48
+C tcap_200f_15/a_173_157# C 12.05
+C B4 B5 3.35
+C tcap_200f_13/a_173_157# tcap_200f_12/a_173_157# 4.47
+C tcap_200f_27/a_173_157# C 12.05
+C tcap_200f_47/a_173_157# C 12.05
+C tcap_200f_42/a_173_157# tcap_200f_43/a_173_157# 4.48
+C tcap_200f_22/a_173_157# C 12.05
+C tcap_200f_29/a_173_157# tcap_200f_28/a_173_157# 4.47
+C tcap_200f_53/a_173_157# C 12.05
+C C tcap_200f_24/a_173_157# 12.05
+C tcap_200f_16/a_173_157# C 12.05
+C C tcap_200f_23/a_173_157# 12.05
+C tcap_200f_47/a_173_157# tcap_200f_46/a_173_157# 4.48
+C tcap_200f_20/a_173_157# tcap_200f_19/a_173_157# 4.47
+C tcap_200f_17/a_173_157# tcap_200f_18/a_173_157# 4.47
+C tcap_200f_47/a_173_157# tcap_200f_48/a_173_157# 4.48
+C tcap_200f_51/a_173_157# C 12.05
+C tcap_200f_19/a_173_157# tcap_200f_18/a_173_157# 4.47
+C tcap_200f_13/a_173_157# C 12.05
+C tcap_200f_54/a_173_157# tcap_200f_55/a_173_157# 4.48
+C tcap_200f_63/a_173_157# C 12.04
+C tcap_200f_3/a_173_157# tcap_100f_0/a_173_157# 2.53
+C tcap_200f_5/a_173_157# tcap_200f_6/a_173_157# 4.47
+C tcap_200f_32/a_173_157# C 11.60
+C tcap_200f_58/a_173_157# C 12.05
+C tcap_200f_3/a_173_157# C 11.41
+C C tcap_200f_0/a_173_157# 12.05
+C tcap_200f_41/a_173_157# C 12.05
+C tcap_200f_56/a_173_157# C 12.05
+C tcap_200f_7/a_173_157# C 12.05
+C tcap_200f_65/a_173_157# tcap_200f_64/a_173_157# 4.48
+C tcap_200f_16/a_173_157# tcap_200f_17/a_173_157# 4.47
+C tcap_200f_9/a_173_157# tcap_200f_8/a_173_157# 4.47
+C C tcap_200f_33/a_173_157# 11.60
+C tcap_200f_25/a_173_157# tcap_200f_15/a_173_157# 4.47
+C tcap_200f_52/a_173_157# C 12.05
+C tcap_200f_54/a_173_157# tcap_200f_53/a_173_157# 4.48
+C tcap_200f_26/a_173_157# tcap_200f_29/a_173_157# 4.47
+C tcap_200f_11/a_173_157# tcap_200f_10/a_173_157# 4.47
+C C tcap_200f_34/a_173_157# 11.79
+C tcap_200f_25/a_173_157# tcap_200f_24/a_173_157# 4.47
+C tcap_200f_27/a_173_157# tcap_200f_15/a_173_157# 4.47
+C tcap_200f_40/a_173_157# tcap_200f_41/a_173_157# 4.48
+C C tcap_200f_50/a_173_157# 12.05
+C C tcap_200f_28/a_173_157# 12.05
+C tcap_200f_4/a_173_157# tcap_200f_3/a_173_157# 4.47
+C tcap_200f_12/a_173_157# tcap_200f_14/a_173_157# 4.47
+C B6 B5 6.53
+C tcap_50f_0/a_173_157# C 3.01
+C tcap_200f_57/a_173_157# C 12.05
+C tcap_200f_61/a_173_157# tcap_200f_62/a_173_157# 4.48
+C tcap_100f_0/a_173_157# GND 4.99
+R tcap_100f_0/a_173_157# 983
+R B1 935
+= B1 tcap_100f_0/S
+C tcap_200f_9/a_173_157# GND 7.94
+R tcap_200f_9/a_173_157# 983
+C tcap_200f_7/a_173_157# GND 7.94
+R tcap_200f_7/a_173_157# 983
+C tcap_200f_8/a_173_157# GND 7.94
+R tcap_200f_8/a_173_157# 983
+C tcap_200f_19/a_173_157# GND 7.94
+R tcap_200f_19/a_173_157# 983
+C tcap_200f_6/a_173_157# GND 7.94
+R tcap_200f_6/a_173_157# 983
+C B4 GND 5.01
+R B4 4152
+= B4 tcap_200f_9/S
+= B4 tcap_200f_8/S
+= B4 tcap_200f_7/S
+= B4 tcap_200f_6/S
+C tcap_200f_18/a_173_157# GND 7.94
+R tcap_200f_18/a_173_157# 983
+C B6 GND 22.15
+R B6 16986
+= B6 tcap_200f_32/S
+= B6 tcap_200f_30/S
+= B6 tcap_200f_31/S
+= B6 tcap_200f_28/S
+= B6 tcap_200f_29/S
+= B6 tcap_200f_26/S
+= B6 tcap_200f_27/S
+= B6 tcap_200f_15/S
+= B6 tcap_200f_25/S
+= B6 tcap_200f_24/S
+= B6 tcap_200f_23/S
+= B6 tcap_200f_22/S
+= B6 tcap_200f_21/S
+= B6 tcap_200f_20/S
+= B6 tcap_200f_19/S
+= B6 tcap_200f_18/S
+C tcap_200f_29/a_173_157# GND 7.94
+R tcap_200f_29/a_173_157# 983
+C tcap_200f_5/a_173_157# GND 7.94
+R tcap_200f_5/a_173_157# 983
+C tcap_200f_17/a_173_157# GND 7.94
+R tcap_200f_17/a_173_157# 983
+C tcap_200f_39/a_173_157# GND 7.96
+R tcap_200f_39/a_173_157# 983
+C tcap_200f_28/a_173_157# GND 7.94
+R tcap_200f_28/a_173_157# 983
+C tcap_200f_4/a_173_157# GND 7.94
+R tcap_200f_4/a_173_157# 983
+C B3 GND 2.41
+R B3 2012
+= B3 tcap_200f_5/S
+= B3 tcap_200f_4/S
+C tcap_200f_49/a_173_157# GND 7.96
+R tcap_200f_49/a_173_157# 983
+C tcap_200f_16/a_173_157# GND 7.94
+R tcap_200f_16/a_173_157# 983
+C tcap_200f_27/a_173_157# GND 7.94
+R tcap_200f_27/a_173_157# 983
+C tcap_200f_38/a_173_157# GND 7.96
+R tcap_200f_38/a_173_157# 983
+C tcap_200f_3/a_173_157# GND 7.94
+R tcap_200f_3/a_173_157# 983
+R B2 938
+= B2 tcap_200f_3/S
+C tcap_200f_59/a_173_157# GND 7.95
+R tcap_200f_59/a_173_157# 983
+C tcap_200f_48/a_173_157# GND 7.96
+R tcap_200f_48/a_173_157# 983
+C tcap_200f_15/a_173_157# GND 7.94
+R tcap_200f_15/a_173_157# 983
+C tcap_200f_26/a_173_157# GND 7.94
+R tcap_200f_26/a_173_157# 983
+C tcap_200f_37/a_173_157# GND 7.96
+R tcap_200f_37/a_173_157# 983
+C tcap_200f_58/a_173_157# GND 7.95
+R tcap_200f_58/a_173_157# 983
+C tcap_200f_14/a_173_157# GND 7.94
+R tcap_200f_14/a_173_157# 983
+C tcap_200f_47/a_173_157# GND 7.96
+R tcap_200f_47/a_173_157# 983
+C tcap_200f_25/a_173_157# GND 7.94
+R tcap_200f_25/a_173_157# 983
+C tcap_200f_36/a_173_157# GND 7.96
+R tcap_200f_36/a_173_157# 983
+C tcap_200f_57/a_173_157# GND 7.95
+R tcap_200f_57/a_173_157# 983
+C tcap_200f_13/a_173_157# GND 7.94
+R tcap_200f_13/a_173_157# 983
+C tcap_200f_46/a_173_157# GND 7.96
+R tcap_200f_46/a_173_157# 983
+C tcap_200f_24/a_173_157# GND 7.94
+R tcap_200f_24/a_173_157# 983
+C tcap_200f_35/a_173_157# GND 7.96
+R tcap_200f_35/a_173_157# 983
+C tcap_200f_56/a_173_157# GND 7.95
+R tcap_200f_56/a_173_157# 983
+C tcap_200f_0/a_173_157# GND 7.94
+R tcap_200f_0/a_173_157# 983
+C B5 GND 10.51
+R B5 8430
+= B5 tcap_200f_17/S
+= B5 tcap_200f_16/S
+= B5 tcap_200f_14/S
+= B5 tcap_200f_12/S
+= B5 tcap_200f_13/S
+= B5 tcap_200f_10/S
+= B5 tcap_200f_11/S
+= B5 tcap_200f_0/S
+C tcap_200f_12/a_173_157# GND 7.94
+R tcap_200f_12/a_173_157# 983
+C tcap_200f_45/a_173_157# GND 7.96
+R tcap_200f_45/a_173_157# 983
+C tcap_200f_23/a_173_157# GND 7.94
+R tcap_200f_23/a_173_157# 983
+C tcap_200f_34/a_173_157# GND 7.95
+R tcap_200f_34/a_173_157# 983
+C C GND 71.74
+R C 49
+= C tcap_200f_32/C
+= C tcap_200f_33/C
+= C tcap_200f_30/C
+= C tcap_200f_31/C
+= C tcap_200f_34/C
+= C tcap_200f_35/C
+= C tcap_200f_28/C
+= C tcap_200f_29/C
+= C tcap_200f_36/C
+= C tcap_200f_37/C
+= C tcap_200f_26/C
+= C tcap_200f_27/C
+= C tcap_200f_38/C
+= C tcap_200f_39/C
+= C tcap_200f_15/C
+= C tcap_200f_25/C
+= C tcap_200f_40/C
+= C tcap_200f_41/C
+= C tcap_200f_24/C
+= C tcap_200f_23/C
+= C tcap_200f_42/C
+= C tcap_200f_43/C
+= C tcap_200f_22/C
+= C tcap_200f_21/C
+= C tcap_200f_44/C
+= C tcap_200f_45/C
+= C tcap_200f_20/C
+= C tcap_200f_19/C
+= C tcap_200f_46/C
+= C tcap_200f_47/C
+= C tcap_200f_18/C
+= C tcap_200f_17/C
+= C tcap_200f_48/C
+= C tcap_200f_49/C
+= C tcap_200f_16/C
+= C tcap_200f_14/C
+= C tcap_200f_50/C
+= C tcap_200f_51/C
+= C tcap_200f_12/C
+= C tcap_200f_13/C
+= C tcap_200f_52/C
+= C tcap_200f_53/C
+= C tcap_200f_10/C
+= C tcap_200f_11/C
+= C tcap_200f_54/C
+= C tcap_200f_55/C
+= C tcap_200f_0/C
+= C tcap_200f_9/C
+= C tcap_200f_56/C
+= C tcap_200f_57/C
+= C tcap_200f_8/C
+= C tcap_200f_7/C
+= C tcap_200f_58/C
+= C tcap_200f_59/C
+= C tcap_200f_6/C
+= C tcap_200f_5/C
+= C tcap_200f_60/C
+= C tcap_200f_61/C
+= C tcap_200f_4/C
+= C tcap_200f_3/C
+= C tcap_50f_0/C
+= C tcap_100f_0/C
+= C tcap_200f_62/C
+= C tcap_200f_63/C
+= C tcap_200f_64/C
+= C tcap_200f_65/C
+C tcap_200f_65/a_173_157# GND 7.92
+R tcap_200f_65/a_173_157# 983
+C B7 GND 28.92
+R B7 35057
+= B7 tcap_200f_33/S
+= B7 tcap_200f_34/S
+= B7 tcap_200f_35/S
+= B7 tcap_200f_36/S
+= B7 tcap_200f_37/S
+= B7 tcap_200f_38/S
+= B7 tcap_200f_39/S
+= B7 tcap_200f_40/S
+= B7 tcap_200f_41/S
+= B7 tcap_200f_42/S
+= B7 tcap_200f_43/S
+= B7 tcap_200f_44/S
+= B7 tcap_200f_45/S
+= B7 tcap_200f_46/S
+= B7 tcap_200f_47/S
+= B7 tcap_200f_48/S
+= B7 tcap_200f_49/S
+= B7 tcap_200f_50/S
+= B7 tcap_200f_51/S
+= B7 tcap_200f_52/S
+= B7 tcap_200f_53/S
+= B7 tcap_200f_54/S
+= B7 tcap_200f_55/S
+= B7 tcap_200f_56/S
+= B7 tcap_200f_57/S
+= B7 tcap_200f_58/S
+= B7 tcap_200f_59/S
+= B7 tcap_200f_60/S
+= B7 tcap_200f_61/S
+= B7 tcap_200f_62/S
+= B7 tcap_200f_63/S
+= B7 tcap_200f_64/S
+= B7 tcap_200f_65/S
+R VSUB 743687
+= VSUB tcap_200f_32/VLO
+= VSUB tcap_200f_33/VLO
+= VSUB tcap_200f_30/VLO
+= VSUB tcap_200f_31/VLO
+= VSUB tcap_200f_34/VLO
+= VSUB tcap_200f_35/VLO
+= VSUB tcap_200f_28/VLO
+= VSUB tcap_200f_29/VLO
+= VSUB tcap_200f_36/VLO
+= VSUB tcap_200f_37/VLO
+= VSUB tcap_200f_26/VLO
+= VSUB tcap_200f_27/VLO
+= VSUB tcap_200f_38/VLO
+= VSUB tcap_200f_39/VLO
+= VSUB tcap_200f_15/VLO
+= VSUB tcap_200f_25/VLO
+= VSUB tcap_200f_40/VLO
+= VSUB tcap_200f_41/VLO
+= VSUB tcap_200f_24/VLO
+= VSUB tcap_200f_23/VLO
+= VSUB tcap_200f_42/VLO
+= VSUB tcap_200f_43/VLO
+= VSUB tcap_200f_22/VLO
+= VSUB tcap_200f_21/VLO
+= VSUB tcap_200f_44/VLO
+= VSUB tcap_200f_45/VLO
+= VSUB tcap_200f_20/VLO
+= VSUB tcap_200f_19/VLO
+= VSUB tcap_200f_46/VLO
+= VSUB tcap_200f_47/VLO
+= VSUB tcap_200f_18/VLO
+= VSUB tcap_200f_17/VLO
+= VSUB tcap_200f_48/VLO
+= VSUB tcap_200f_49/VLO
+= VSUB tcap_200f_16/VLO
+= VSUB tcap_200f_14/VLO
+= VSUB tcap_200f_50/VLO
+= VSUB tcap_200f_51/VLO
+= VSUB tcap_200f_12/VLO
+= VSUB tcap_200f_13/VLO
+= VSUB tcap_200f_52/VLO
+= VSUB tcap_200f_53/VLO
+= VSUB tcap_200f_10/VLO
+= VSUB tcap_200f_11/VLO
+= VSUB tcap_200f_54/VLO
+= VSUB tcap_200f_55/VLO
+= VSUB tcap_200f_0/VLO
+= VSUB tcap_200f_56/VLO
+= VSUB tcap_200f_8/VLO
+= VSUB tcap_200f_9/VLO
+= VSUB tcap_200f_57/VLO
+= VSUB tcap_200f_58/VLO
+= VSUB tcap_200f_7/VLO
+= VSUB tcap_200f_6/VLO
+= VSUB tcap_200f_59/VLO
+= VSUB tcap_200f_60/VLO
+= VSUB tcap_200f_5/VLO
+= VSUB tcap_200f_4/VLO
+= VSUB tcap_200f_3/VLO
+= VSUB tcap_50f_0/VLO
+= VSUB tcap_100f_0/VLO
+= VSUB tcap_200f_61/VLO
+= VSUB VSUBS
+= VSUB m1_380_n1000#
+= VSUB tcap_200f_62/VLO
+= VSUB tcap_200f_63/VLO
+= VSUB tcap_200f_64/VLO
+= VSUB tcap_200f_65/VLO
+C tcap_200f_55/a_173_157# GND 7.95
+R tcap_200f_55/a_173_157# 983
+C tcap_200f_11/a_173_157# GND 7.94
+R tcap_200f_11/a_173_157# 983
+C tcap_200f_54/a_173_157# GND 7.95
+R tcap_200f_54/a_173_157# 983
+C tcap_200f_10/a_173_157# GND 7.94
+R tcap_200f_10/a_173_157# 983
+C tcap_200f_21/a_173_157# GND 7.94
+R tcap_200f_21/a_173_157# 983
+C tcap_200f_44/a_173_157# GND 7.96
+R tcap_200f_44/a_173_157# 983
+C tcap_200f_22/a_173_157# GND 7.94
+R tcap_200f_22/a_173_157# 983
+C tcap_200f_43/a_173_157# GND 7.96
+R tcap_200f_43/a_173_157# 983
+C tcap_200f_33/a_173_157# GND 7.96
+R tcap_200f_33/a_173_157# 983
+C tcap_200f_32/a_173_157# GND 7.96
+R tcap_200f_32/a_173_157# 983
+C tcap_200f_64/a_173_157# GND 7.93
+R tcap_200f_64/a_173_157# 983
+C tcap_200f_53/a_173_157# GND 7.95
+R tcap_200f_53/a_173_157# 983
+C tcap_200f_20/a_173_157# GND 7.94
+R tcap_200f_20/a_173_157# 983
+C tcap_200f_42/a_173_157# GND 7.96
+R tcap_200f_42/a_173_157# 983
+C tcap_200f_31/a_173_157# GND 7.94
+R tcap_200f_31/a_173_157# 983
+C tcap_50f_0/a_173_157# GND 3.60
+R tcap_50f_0/a_173_157# 982
+R B0 933
+= B0 tcap_50f_0/S
+C tcap_200f_63/a_173_157# GND 7.94
+R tcap_200f_63/a_173_157# 983
+C tcap_200f_52/a_173_157# GND 7.95
+R tcap_200f_52/a_173_157# 983
+C tcap_200f_41/a_173_157# GND 7.96
+R tcap_200f_41/a_173_157# 983
+C tcap_200f_30/a_173_157# GND 7.94
+R tcap_200f_30/a_173_157# 983
+C tcap_200f_62/a_173_157# GND 7.94
+R tcap_200f_62/a_173_157# 983
+C tcap_200f_51/a_173_157# GND 7.95
+R tcap_200f_51/a_173_157# 983
+C tcap_200f_40/a_173_157# GND 7.96
+R tcap_200f_40/a_173_157# 983
+C tcap_200f_61/a_173_157# GND 7.95
+R tcap_200f_61/a_173_157# 983
+C tcap_200f_50/a_173_157# GND 7.95
+R tcap_200f_50/a_173_157# 983
+C tcap_200f_60/a_173_157# GND 7.95
+R tcap_200f_60/a_173_157# 983

@@ -1,0 +1,144 @@
+| units: 500000 tech: sky130A format: MIT
+x S VREF gated_iref_0/a_1086_150# VLO l=30 w=500 x=-4150 y=-6704 sky130_fd_pr__nfet_01v8
+x SBAR gated_iref_0/a_1086_150# VLO VLO l=30 w=500 x=-4150 y=-6608 sky130_fd_pr__nfet_01v8
+x gated_iref_0/a_1634_538# gated_iref_0/a_1086_150# gated_iref_0/OUT VLO l=298 w=70 x=-3762 y=-6314 sky130_fd_pr__res_xhigh_po
+x S gated_iref_0/a_1086_150# VREF VLO l=30 w=500 x=-4150 y=-6800 sky130_fd_pr__nfet_01v8
+x SBAR VLO gated_iref_0/a_1086_150# VLO l=30 w=500 x=-4150 y=-6512 sky130_fd_pr__nfet_01v8
+x VLO gated_iref_0/OUT l=1100 w=5400 x=-4300 y=-5648 sky130_fd_pr__cap_mim_m3_1
+x gated_iref_0/OUT VLO l=1100 w=5400 x=-4300 y=-5648 sky130_fd_pr__cap_mim_m3_2
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# VHI VHI l=60 w=2000 x=-1741 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# VHI VHI l=60 w=2000 x=-797 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VOP VHI VHI l=60 w=2000 x=855 y=-2915 sky130_fd_pr__pfet_01v8
+x VIN gated_iref_0/OUT cmota_1_flat_1_0/a_266_188# VLO l=30 w=500 x=-971 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_2626_188# VOP VHI VHI l=60 w=2000 x=1799 y=-2915 sky130_fd_pr__pfet_01v8
+x VIN cmota_1_flat_1_0/a_266_188# gated_iref_0/OUT VLO l=30 w=500 x=-299 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VIP gated_iref_0/OUT cmota_1_flat_1_0/a_2626_188# VLO l=30 w=500 x=373 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_147_n2312# VHI l=60 w=2000 x=-1859 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_147_n2312# VHI l=60 w=2000 x=-1623 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VOP VHI VHI l=60 w=2000 x=1563 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI cmota_1_flat_1_0/a_2626_188# VHI l=60 w=2000 x=29 y=-2915 sky130_fd_pr__pfet_01v8
+x VIP gated_iref_0/OUT cmota_1_flat_1_0/a_2626_188# VLO l=30 w=500 x=-11 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_2626_188# VHI VOP VHI l=60 w=2000 x=973 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# cmota_1_flat_1_0/a_147_n2312# VLO VLO l=60 w=2000 x=-2568 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VLO cmota_1_flat_1_0/a_147_n2312# VLO l=60 w=2000 x=-2450 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI VOP VHI l=60 w=2000 x=737 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI VOP VHI l=60 w=2000 x=1681 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI VOP VHI l=60 w=2000 x=1445 y=-2915 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=60 w=2000 x=-2804 y=-5423 sky130_fd_pr__nfet_01v8
+x VLO VLO gated_iref_0/OUT VLO l=30 w=500 x=-1067 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_147_n2312# VOP VLO VLO l=60 w=2000 x=1681 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# VHI VHI l=60 w=2000 x=-1977 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VLO VOP VLO l=60 w=2000 x=1799 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VOP VLO VLO l=60 w=2000 x=1917 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VLO VOP VLO l=60 w=2000 x=2035 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_2626_188# cmota_1_flat_1_0/a_2626_188# VHI VHI l=60 w=2000 x=-89 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VOP VHI VHI l=60 w=2000 x=619 y=-2915 sky130_fd_pr__pfet_01v8
+x VIP cmota_1_flat_1_0/a_2626_188# gated_iref_0/OUT VLO l=30 w=500 x=-107 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/VREF gated_iref_0/OUT VLO VLO l=400 w=2000 x=-665 y=-6539 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_147_n2312# VHI l=60 w=2000 x=-2095 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_147_n2312# VHI l=60 w=2000 x=-915 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VOP VHI VHI l=60 w=2000 x=1327 y=-2915 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=30 w=500 x=661 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/VREF gated_iref_0/OUT VLO VLO l=400 w=2000 x=251 y=-6539 sky130_fd_pr__nfet_01v8
+x VHI VHI VHI VHI l=60 w=2000 x=2271 y=-2915 sky130_fd_pr__pfet_01v8
+x VHI VHI VHI VHI l=60 w=2000 x=-2803 y=-2915 sky130_fd_pr__pfet_01v8
+x VIN cmota_1_flat_1_0/a_266_188# gated_iref_0/OUT VLO l=30 w=500 x=-683 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_147_n2312# VHI l=60 w=2000 x=-1151 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI cmota_1_flat_1_0/a_2626_188# VHI l=60 w=2000 x=-207 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_266_188# VHI l=60 w=2000 x=-443 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI VOP VHI l=60 w=2000 x=501 y=-2915 sky130_fd_pr__pfet_01v8
+x VIN gated_iref_0/OUT cmota_1_flat_1_0/a_266_188# VLO l=30 w=500 x=-395 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_147_n2312# cmota_1_flat_1_0/a_147_n2312# VLO VLO l=60 w=2000 x=-2332 y=-5423 sky130_fd_pr__nfet_01v8
+x VIP cmota_1_flat_1_0/a_2626_188# gated_iref_0/OUT VLO l=30 w=500 x=277 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# VHI VHI l=60 w=2000 x=-2213 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# VHI VHI l=60 w=2000 x=-1033 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI VOP VHI l=60 w=2000 x=1209 y=-2915 sky130_fd_pr__pfet_01v8
+x VHI VHI VHI VHI l=60 w=2000 x=2153 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VLO cmota_1_flat_1_0/a_147_n2312# VLO l=60 w=2000 x=-2214 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# cmota_1_flat_1_0/a_147_n2312# VLO VLO l=60 w=2000 x=-2096 y=-5423 sky130_fd_pr__nfet_01v8
+x VLO VLO VLO VLO l=60 w=2000 x=1209 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VLO VOP VLO l=60 w=2000 x=1327 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VOP VLO VLO l=60 w=2000 x=2153 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_266_188# VHI VHI l=60 w=2000 x=-325 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VOP VLO VLO l=60 w=2000 x=1445 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# VHI VHI l=60 w=2000 x=-2449 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# VHI VHI l=60 w=2000 x=-1269 y=-2915 sky130_fd_pr__pfet_01v8
+x VLO gated_iref_0/OUT VLO VLO l=30 w=500 x=565 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VIN gated_iref_0/OUT cmota_1_flat_1_0/a_266_188# VLO l=30 w=500 x=-779 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_266_188# VHI VHI l=60 w=2000 x=-561 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VOP VHI VHI l=60 w=2000 x=383 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VOP VHI VHI l=60 w=2000 x=2035 y=-2915 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=60 w=2000 x=-1742 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/VREF VLO gated_iref_0/OUT VLO l=400 w=2000 x=-1123 y=-6539 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_147_n2312# VHI l=60 w=2000 x=-2331 y=-2915 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=30 w=500 x=-1163 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VIN cmota_1_flat_1_0/a_266_188# gated_iref_0/OUT VLO l=30 w=500 x=-491 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/VREF VLO gated_iref_0/OUT VLO l=400 w=2000 x=-207 y=-6539 sky130_fd_pr__nfet_01v8
+x VIP gated_iref_0/OUT cmota_1_flat_1_0/a_2626_188# VLO l=30 w=500 x=181 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_147_n2312# VHI l=60 w=2000 x=-2567 y=-2915 sky130_fd_pr__pfet_01v8
+x VIN cmota_1_flat_1_0/a_266_188# gated_iref_0/OUT VLO l=30 w=500 x=-875 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_147_n2312# VHI l=60 w=2000 x=-1387 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI VOP VHI l=60 w=2000 x=265 y=-2915 sky130_fd_pr__pfet_01v8
+x VIP gated_iref_0/OUT cmota_1_flat_1_0/a_2626_188# VLO l=30 w=500 x=-203 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VLO VLO VLO VLO l=60 w=2000 x=2271 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_266_188# VHI cmota_1_flat_1_0/a_266_188# VHI l=60 w=2000 x=-679 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VHI VOP VHI l=60 w=2000 x=1917 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VLO cmota_1_flat_1_0/a_147_n2312# VLO l=60 w=2000 x=-1978 y=-5423 sky130_fd_pr__nfet_01v8
+x VIP cmota_1_flat_1_0/a_2626_188# gated_iref_0/OUT VLO l=30 w=500 x=469 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_147_n2312# VLO cmota_1_flat_1_0/a_147_n2312# VLO l=60 w=2000 x=-2686 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# cmota_1_flat_1_0/a_147_n2312# VLO VLO l=60 w=2000 x=-1860 y=-5423 sky130_fd_pr__nfet_01v8
+x cmota_1_flat_1_0/a_147_n2312# VLO VOP VLO l=60 w=2000 x=1563 y=-5423 sky130_fd_pr__nfet_01v8
+x VIP cmota_1_flat_1_0/a_2626_188# gated_iref_0/OUT VLO l=30 w=500 x=85 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VHI VHI VHI VHI l=60 w=2000 x=-2685 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# VHI VHI l=60 w=2000 x=-1505 y=-2915 sky130_fd_pr__pfet_01v8
+x VIN gated_iref_0/OUT cmota_1_flat_1_0/a_266_188# VLO l=30 w=500 x=-587 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x cmota_1_flat_1_0/a_2626_188# cmota_1_flat_1_0/a_2626_188# VHI VHI l=60 w=2000 x=147 y=-2915 sky130_fd_pr__pfet_01v8
+x cmota_1_flat_1_0/a_2626_188# VOP VHI VHI l=60 w=2000 x=1091 y=-2915 sky130_fd_pr__pfet_01v8
+x VHI VLO l=6400 w=2600 x=-7499 y=-6699 sky130_fd_pr__cap_mim_m3_1
+x VLO VHI l=6400 w=2600 x=-7499 y=-6699 sky130_fd_pr__cap_mim_m3_2
+C VHI cmota_1_flat_1_0/a_147_n2312# 36.19
+C gated_iref_0/OUT cmota_1_flat_1_0/a_2626_188# 5.97
+C gated_iref_0/OUT VHI 4.50
+C VOP VHI 35.24
+C cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# 2.70
+C VLO gated_iref_0/OUT 37.58
+C gated_iref_0/OUT cmota_1_flat_1_0/a_266_188# 6.42
+C gated_iref_0/OUT cmota_1_flat_1_0/a_147_n2312# 2.74
+C VHI cmota_1_flat_1_0/a_2626_188# 14.15
+C VLO VHI 74.47
+C cmota_1_flat_1_0/a_266_188# VHI 14.23
+C cmota_1_flat_1_0/VREF gated_iref_0/OUT 3.15
+C cmota_1_flat_1_0/VREF GND 7.19
+R cmota_1_flat_1_0/VREF 2774
+R VIP 7738
+= VIP cmota_1_flat_1_0/VIP
+R VIN 7738
+= VIN cmota_1_flat_1_0/VIN
+C VOP GND 17.35
+R VOP 83913
+= VOP cmota_1_flat_1_0/VOP
+C cmota_1_flat_1_0/a_147_n2312# GND 22.96
+R cmota_1_flat_1_0/a_147_n2312# 115146
+R cmota_1_flat_1_0/a_2626_188# 60147
+R cmota_1_flat_1_0/a_266_188# 60147
+C VHI GND 52.32
+R VHI 269398
+= VHI cmota_1_flat_1_0/VHI
+C VLO GND 12.48
+R VLO 308016
+= VLO cmota_1_flat_1_0/VLO
+= VLO gated_iref_0/VSUB
+= VLO VSUBS
+= VLO gated_iref_0/m1_960_880#
+C gated_iref_0/OUT GND 12.44
+R gated_iref_0/OUT 22631
+= gated_iref_0/OUT cmota_1_flat_1_0/a_1799_n900#
+= gated_iref_0/OUT m2_n1060_n4500#
+R gated_iref_0/a_1634_538# 10514
+R VREF 1103
+= VREF gated_iref_0/IN
+R gated_iref_0/a_1086_150# 4163
+R SBAR 1870
+= SBAR gated_iref_0/SBAR
+R S 1869
+= S gated_iref_0/S

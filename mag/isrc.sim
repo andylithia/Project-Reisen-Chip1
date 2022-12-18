@@ -1,0 +1,37 @@
+| units: 500000 tech: sky130A format: MIT
+x VLO VLO VLO VLO l=400 w=1000 x=-3 y=2010 sky130_fd_pr__nfet_01v8
+x GN IN VHI VHI l=30 w=2000 x=3746 y=3439 sky130_fd_pr__pfet_01v8
+x VHI VREFP VHI VHI l=400 w=2000 x=1828 y=3439 sky130_fd_pr__pfet_01v8
+x GP IP VLO VLO l=30 w=1000 x=3746 y=2010 sky130_fd_pr__nfet_01v8
+x VLO a_314_3386# VLO VLO l=400 w=1000 x=1828 y=2010 sky130_fd_pr__nfet_01v8
+x a_314_3818# a_314_3386# VREFP VLO l=1034 w=70 x=314 y=3818 sky130_fd_pr__res_xhigh_po
+x VHI VHI VHI VHI l=400 w=2000 x=912 y=3439 sky130_fd_pr__pfet_01v8
+x VLO VREFN VLO VLO l=400 w=1000 x=912 y=2010 sky130_fd_pr__nfet_01v8
+x VREFP VHI IP VHI l=400 w=2000 x=2286 y=3439 sky130_fd_pr__pfet_01v8
+x VREFN VLO IN VLO l=400 w=1000 x=2286 y=2010 sky130_fd_pr__nfet_01v8
+x GP IP IOUT VHI l=30 w=2000 x=3430 y=3439 sky130_fd_pr__pfet_01v8
+x VHI IP VHI VHI l=400 w=2000 x=2744 y=3439 sky130_fd_pr__pfet_01v8
+x VREFN VLO VREFN VLO l=400 w=1000 x=454 y=2010 sky130_fd_pr__nfet_01v8
+x GN IN IOUT VLO l=30 w=1000 x=3430 y=2010 sky130_fd_pr__nfet_01v8
+x VLO IN VLO VLO l=400 w=1000 x=2744 y=2010 sky130_fd_pr__nfet_01v8
+x VREFP VHI VREFP VHI l=400 w=2000 x=1370 y=3439 sky130_fd_pr__pfet_01v8
+x VREFN VLO a_314_3386# VLO l=400 w=1000 x=1370 y=2010 sky130_fd_pr__nfet_01v8
+C VHI VREFP 6.31
+C IP IOUT 2.22
+C VHI IN 2.47
+C VHI IP 3.75
+C VREFN GND 7.88
+R VREFN 4188
+C IN GND 2.16
+R IN 12761
+R GN 5559
+R IOUT 10031
+R GP 5558
+R IP 18019
+R VREFP 9025
+C a_314_3386# GND 2.09
+R a_314_3386# 2602
+R a_314_3818# 31543
+C VHI GND 30.82
+R VHI 100895
+R VLO 116637

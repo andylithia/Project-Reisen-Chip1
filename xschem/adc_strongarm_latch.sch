@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {}
@@ -78,13 +78,13 @@ spiceprefix=X
 C {devices/lab_wire.sym} -200 30 0 1 {name=l1 sig_type=std_logic lab=gnd}
 C {devices/lab_wire.sym} -200 -40 0 1 {name=l2 sig_type=std_logic lab=gnd}
 C {devices/lab_wire.sym} -40 -40 0 0 {name=l3 sig_type=std_logic lab=gnd}
-C {sky130_stdcells/inv_1.sym} -120 -160 0 0 {name=x6 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
-C {sky130_stdcells/inv_1.sym} -120 -90 0 1 {name=x7 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
+C {sky130_stdcells/inv_1.sym} -120 -160 0 0 {name=x6 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} -120 -90 0 1 {name=x7 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {devices/iopin.sym} -530 -90 0 1 {name=p1 lab=vdd}
 C {devices/iopin.sym} -530 -70 0 1 {name=p1 lab=gnd}
 C {devices/ipin.sym} -470 -40 0 0 {name=p1 lab=VP}
 C {devices/ipin.sym} -470 10 0 0 {name=p1 lab=VN}
 C {devices/opin.sym} 70 -120 0 0 {name=p1 lab=VOPL}
 C {devices/opin.sym} 70 -140 0 0 {name=p1 lab=VONL}
-C {sky130_stdcells/inv_1.sym} -390 -40 0 0 {name=x1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
-C {sky130_stdcells/inv_1.sym} -390 10 0 0 {name=x2 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
+C {sky130_stdcells/inv_1.sym} -390 -40 0 0 {name=x1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} -390 10 0 0 {name=x2 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }

@@ -1,0 +1,30 @@
+| units: 500000 tech: sky130A format: MIT
+x G2 D2 CS GND l=30 w=500 x=-6565 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G1 CS D1 GND l=30 w=500 x=-7237 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G1 D1 CS GND l=30 w=500 x=-7525 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G2 CS D2 GND l=30 w=500 x=-6853 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=500 x=-7813 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G2 CS D2 GND l=30 w=500 x=-6469 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G1 CS D1 GND l=30 w=500 x=-7429 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G2 D2 CS GND l=30 w=500 x=-6757 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x GND GND CS GND l=30 w=500 x=-7717 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G2 D2 CS GND l=30 w=500 x=-6181 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G1 D1 CS GND l=30 w=500 x=-7141 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=500 x=-5989 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G1 D1 CS GND l=30 w=500 x=-6949 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x GND CS GND GND l=30 w=500 x=-6085 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G2 D2 CS GND l=30 w=500 x=-6373 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G1 CS D1 GND l=30 w=500 x=-7045 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G2 CS D2 GND l=30 w=500 x=-6661 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G1 D1 CS GND l=30 w=500 x=-7333 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G1 CS D1 GND l=30 w=500 x=-7621 y=5242 sky130_fd_pr__nfet_01v8_lvt
+x G2 CS D2 GND l=30 w=500 x=-6277 y=5242 sky130_fd_pr__nfet_01v8_lvt
+C D1 CS 5.87
+C CS D2 5.87
+R D2 5271
+R D1 5271
+C CS GND 2.72
+R CS 12202
+R G2 7738
+R G1 7738
+R GND 45384

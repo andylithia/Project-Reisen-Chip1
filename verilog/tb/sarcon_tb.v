@@ -51,7 +51,7 @@ module sarcon_tb;
     sarcon_sync #(.N(N)) u_DUT(
         .clk        (tb_clk_r),
         .comp       (~comp    ),
-        .rst_n      ((~latch_en)&rst_n),
+        .rst_n      ((~valid)&rst_n),
         .dq         (dq      ),
         .valid      (valid   ),
         .last_cycle (latch_en)

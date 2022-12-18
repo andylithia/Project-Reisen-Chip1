@@ -88,7 +88,6 @@ plot vgp vgn
 .endc
 "}
 C {devices/lab_wire.sym} 250 -150 0 0 {name=p9 sig_type=std_logic lab=vbias}
-C {i_type_ota_model.sym} 420 -180 0 0 {name=x1}
 C {devices/lab_wire.sym} 420 -230 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {devices/gnd.sym} 420 -130 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 360 -200 0 0 {name=p3 sig_type=std_logic lab=vgp}
@@ -98,7 +97,7 @@ value=10k
 footprint=1206
 device=resistor
 m=1}
-C {devices/res.sym} 540 0 0 0 {name=R2
+C {devices/res.sym} 620 60 0 0 {name=R2
 value=5k
 footprint=1206
 device=resistor
@@ -106,3 +105,4 @@ m=1}
 C {devices/vsource.sym} 540 60 0 0 {name=V4 value=0.9}
 C {devices/gnd.sym} 540 90 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} 350 -160 0 0 {name=p5 sig_type=std_logic lab=vgn}
+C {i_type_ota_PEX.sym} 420 -180 0 0 {name=x1}

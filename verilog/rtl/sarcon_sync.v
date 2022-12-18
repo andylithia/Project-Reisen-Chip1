@@ -16,7 +16,7 @@ module sarcon_sync #(
     reg [N-1:0] dr;
     reg [N-1:0] sr;
     reg [N-1:0] sr_dly;
-    always @(posedge clk) begin
+    always @(posedge clk or negedge rst_n) begin
         if(~rst_n) begin
             sr     <= {1'b1,{(N-1){1'b0}}};
             sr_dly <= {N{1'b0}};
@@ -27,7 +27,7 @@ module sarcon_sync #(
     end
     generate
         for(gi=0;gi<N;gi=gi+1) begin: gen_datareg
-            always @(posedge clk) begin
+            always @(posedge clk or negedge rst_n) begin
                 if(~rst_n)          dr[gi] <= 1'b0;
                 else if(sr[gi])     dr[gi] <= 1'b1;
                 else if(sr_dly[gi]) dr[gi] <= comp;
@@ -37,6 +37,7 @@ module sarcon_sync #(
     endgenerate
 
     assign last_cycle = sr[0];
+    assign valid      = sr_dly[0];
     assign dq = dr;
 
 endmodule /* sarcon_sync */

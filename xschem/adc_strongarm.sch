@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {}
@@ -239,7 +239,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_stdcells/inv_4.sym} 1030 240 0 0 {name=x1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
+C {sky130_stdcells/inv_4.sym} 1030 240 0 0 {name=x1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {sky130_fd_pr/nfet_01v8.sym} 1250 30 1 0 {name=M10
 L=0.15
 W=10
@@ -254,7 +254,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_stdcells/clkbuf_16.sym} 930 240 0 0 {name=x2 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
+C {sky130_stdcells/clkbuf_16.sym} 930 240 0 0 {name=x2 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 980 200 0 0 {name=l4 sig_type=std_logic lab=ckbuf}
 C {devices/lab_wire.sym} 1210 250 0 0 {name=l7 sig_type=std_logic lab=ckbuf}
 C {devices/lab_wire.sym} 980 -160 0 0 {name=l5 sig_type=std_logic lab=ckbuf}
