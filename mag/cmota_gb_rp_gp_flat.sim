@@ -1,0 +1,118 @@
+| units: 500000 tech: sky130A format: MIT
+x a_n2179_n5512# a_n2179_n5512# VLO VLO l=60 w=2000 x=-1821 y=-5423 sky130_fd_pr__nfet_01v8
+x VLO VLO VLO VLO l=60 w=2000 x=-1703 y=-5423 sky130_fd_pr__nfet_01v8
+x VIP a_n644_n3012# a_n999_n4100# VLO l=30 w=500 x=507 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VREF_GATED a_n999_n4100# VLO VLO l=400 w=2000 x=-626 y=-6539 sky130_fd_pr__nfet_01v8
+x S a_n3594_n6504# VREF_GATED VLO l=30 w=500 x=-3549 y=-6073 sky130_fd_pr__nfet_01v8
+x VREF_GATED a_n999_n4100# VLO VLO l=400 w=2000 x=289 y=-6539 sky130_fd_pr__nfet_01v8
+x VIP a_n644_n3012# a_n999_n4100# VLO l=30 w=500 x=123 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x SBAR VLO a_n3594_n6504# VLO l=30 w=500 x=-3549 y=-6169 sky130_fd_pr__nfet_01v8
+x a_n644_n3012# VOP VHI VHI l=60 w=2000 x=1129 y=-2914 sky130_fd_pr__pfet_01v8
+x VLO a_n999_n4100# VLO VLO l=30 w=500 x=603 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x a_n644_n3012# VHI VOP VHI l=60 w=2000 x=1247 y=-2914 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=30 w=500 x=699 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VLO VLO VLO VLO l=60 w=2000 x=1247 y=-5423 sky130_fd_pr__nfet_01v8
+x a_n2179_n5512# VLO VOP VLO l=60 w=2000 x=1365 y=-5423 sky130_fd_pr__nfet_01v8
+x a_n644_n3012# VOP VHI VHI l=60 w=2000 x=1365 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n2179_n5512# VOP VLO VLO l=60 w=2000 x=1483 y=-5423 sky130_fd_pr__nfet_01v8
+x VLO VHI l=6200 w=2600 x=-6899 y=-6499 sky130_fd_pr__cap_mim_m3_2
+x a_n644_n3012# VHI VOP VHI l=60 w=2000 x=1483 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n2179_n5512# a_n2179_n5512# VLO VLO l=60 w=2000 x=-2057 y=-5423 sky130_fd_pr__nfet_01v8
+x a_n1942_n3012# a_n1942_n3012# VHI VHI l=60 w=2000 x=-758 y=-2914 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=60 w=2000 x=-2293 y=-5423 sky130_fd_pr__nfet_01v8
+x a_n2179_n5512# VLO a_n2179_n5512# VLO l=60 w=2000 x=-2175 y=-5423 sky130_fd_pr__nfet_01v8
+x a_n1942_n3012# a_n1942_n3012# VHI VHI l=60 w=2000 x=-994 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n1942_n3012# VHI a_n1942_n3012# VHI l=60 w=2000 x=-876 y=-2914 sky130_fd_pr__pfet_01v8
+x VIN a_n999_n4100# a_n1942_n3012# VLO l=30 w=500 x=-356 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x a_n1942_n3012# VHI a_127_n2915# VHI l=60 w=2000 x=67 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n2179_n5512# VLO a_n2179_n5512# VLO l=60 w=2000 x=-1939 y=-5423 sky130_fd_pr__nfet_01v8
+x VIN a_n1942_n3012# a_n999_n4100# VLO l=30 w=500 x=-836 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x a_n1942_n3012# VHI a_n2179_n5512# VHI l=60 w=2000 x=-1820 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n1942_n3012# a_n2179_n5512# VHI VHI l=60 w=2000 x=-1702 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n644_n3012# VHI a_n644_n3012# VHI l=60 w=2000 x=303 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n644_n3012# a_n644_n3012# VHI VHI l=60 w=2000 x=421 y=-2914 sky130_fd_pr__pfet_01v8
+x VIP a_n999_n4100# a_n644_n3012# VLO l=30 w=500 x=27 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VLO VREF_GATED l=5400 w=1100 x=-3699 y=-5647 sky130_fd_pr__cap_mim_m3_1
+x VIN a_n1942_n3012# a_n999_n4100# VLO l=30 w=500 x=-452 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VIN a_n999_n4100# a_n1942_n3012# VLO l=30 w=500 x=-932 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x SBAR a_n3594_n6504# VLO VLO l=30 w=500 x=-3549 y=-6265 sky130_fd_pr__nfet_01v8
+x VIP a_n999_n4100# a_n644_n3012# VLO l=30 w=500 x=219 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VHI VHI a_n2179_n5512# VHI l=60 w=2000 x=-2056 y=-2914 sky130_fd_pr__pfet_01v8
+x VREF_GATED VLO l=5400 w=1100 x=-3699 y=-5647 sky130_fd_pr__cap_mim_m3_2
+x a_n644_n3012# a_n1942_n3012# VHI VHI l=60 w=2000 x=-286 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n1942_n3012# VHI a_n644_n3012# VHI l=60 w=2000 x=-168 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n1942_n3012# a_n644_n3012# VHI VHI l=60 w=2000 x=-50 y=-2914 sky130_fd_pr__pfet_01v8
+x VHI VOP VHI VHI l=60 w=2000 x=1601 y=-2914 sky130_fd_pr__pfet_01v8
+x VIP a_n644_n3012# a_n999_n4100# VLO l=30 w=500 x=315 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x a_n2179_n5512# VLO VOP VLO l=60 w=2000 x=1601 y=-5423 sky130_fd_pr__nfet_01v8
+x a_n1942_n3012# a_n2179_n5512# VHI VHI l=60 w=2000 x=-1938 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n1942_n3012# VHI a_n1942_n3012# VHI l=60 w=2000 x=-1112 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n644_n3012# VHI a_n644_n3012# VHI l=60 w=2000 x=539 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n1942_n3012# a_n2179_n5512# VHI VHI l=60 w=2000 x=-1230 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n644_n3012# a_n644_n3012# VHI VHI l=60 w=2000 x=657 y=-2914 sky130_fd_pr__pfet_01v8
+x VIP a_n999_n4100# a_n644_n3012# VLO l=30 w=500 x=411 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x S VREF_GATED a_n3594_n6504# VLO l=30 w=500 x=-3549 y=-5977 sky130_fd_pr__nfet_01v8
+x a_n3162_n6670# VREF a_n3594_n6504# VLO l=298 w=70 x=-3161 y=-6669 sky130_fd_pr__res_xhigh_po
+x a_2258_n4784# a_n2179_n5512# a_2492_n4180# VLO l=1166 w=138 x=2258 y=-4783 sky130_fd_pr__res_high_po
+x a_n644_n3012# VHI VOP VHI l=60 w=2000 x=775 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n644_n3012# VOP VHI VHI l=60 w=2000 x=893 y=-2914 sky130_fd_pr__pfet_01v8
+x VLO VLO a_n999_n4100# VLO l=30 w=500 x=-1028 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VIN a_n999_n4100# a_n1942_n3012# VLO l=30 w=500 x=-548 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VREF_GATED VLO a_n999_n4100# VLO l=400 w=2000 x=-1084 y=-6539 sky130_fd_pr__nfet_01v8
+x VOP a_2492_n4180# l=2640 w=740 x=2032 y=-3069 sky130_fd_pr__cap_mim_m3_1
+x VIP a_n999_n4100# a_n644_n3012# VLO l=30 w=500 x=-164 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x a_n2179_n5512# VOP VLO VLO l=60 w=2000 x=1719 y=-5423 sky130_fd_pr__nfet_01v8
+x VLO VLO VLO VLO l=30 w=500 x=-1124 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VIN a_n1942_n3012# a_n999_n4100# VLO l=30 w=500 x=-644 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VLO VLO VLO VLO l=60 w=2000 x=1837 y=-5423 sky130_fd_pr__nfet_01v8
+x a_n644_n3012# VHI VOP VHI l=60 w=2000 x=1011 y=-2914 sky130_fd_pr__pfet_01v8
+x VIN a_n1942_n3012# a_n999_n4100# VLO l=30 w=500 x=-260 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x a_n1942_n3012# a_n2179_n5512# VHI VHI l=60 w=2000 x=-1466 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n1942_n3012# VHI a_n2179_n5512# VHI l=60 w=2000 x=-1348 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n644_n3012# VHI a_n1942_n3012# VHI l=60 w=2000 x=-404 y=-2914 sky130_fd_pr__pfet_01v8
+x VIN a_n999_n4100# a_n1942_n3012# VLO l=30 w=500 x=-740 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VREF_GATED VLO a_n999_n4100# VLO l=400 w=2000 x=-168 y=-6539 sky130_fd_pr__nfet_01v8
+x a_n1942_n3012# VHI a_n2179_n5512# VHI l=60 w=2000 x=-1584 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n644_n3012# VHI a_n581_n2915# VHI l=60 w=2000 x=-640 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n644_n3012# a_n581_n2915# VHI VHI l=60 w=2000 x=-522 y=-2914 sky130_fd_pr__pfet_01v8
+x a_n1942_n3012# a_127_n2915# VHI VHI l=60 w=2000 x=185 y=-2914 sky130_fd_pr__pfet_01v8
+x a_2492_n4180# VOP l=2640 w=740 x=2032 y=-3069 sky130_fd_pr__cap_mim_m3_2
+x VIP a_n644_n3012# a_n999_n4100# VLO l=30 w=500 x=-68 y=-4099 sky130_fd_pr__nfet_01v8_lvt
+x VHI VLO l=6200 w=2600 x=-6899 y=-6499 sky130_fd_pr__cap_mim_m3_1
+C a_n1942_n3012# VHI 17.11
+C a_n644_n3012# VHI 17.03
+C a_n999_n4100# VREF_GATED 2.52
+C a_n581_n2915# VHI 4.36
+C a_n2179_n5512# VHI 17.90
+C a_127_n2915# VHI 4.36
+C a_n999_n4100# a_n1942_n3012# 6.05
+C a_n999_n4100# a_n644_n3012# 6.02
+C a_2492_n4180# VOP 9.33
+C VREF_GATED VHI 4.82
+C a_2492_n4180# VHI 2.09
+C VOP VHI 18.36
+C a_2492_n4180# GND 3.01
+R a_2492_n4180# 114
+R a_2258_n4784# 3022
+R VREF 196
+R a_n3162_n6670# 10514
+R SBAR 1872
+C VREF_GATED GND 50.11
+R VREF_GATED 3905
+R S 1873
+R a_n3594_n6504# 4163
+C a_n999_n4100# GND 6.13
+R a_n999_n4100# 22543
+R VIP 7738
+R VIN 7738
+C VOP GND 9.31
+R VOP 41626
+R a_127_n2915# 7559
+R a_n581_n2915# 7559
+C a_n2179_n5512# GND 14.00
+R a_n2179_n5512# 56776
+R a_n644_n3012# 58133
+R a_n1942_n3012# 58133
+C VHI GND 113.86
+R VHI 189980
+R VLO 297109

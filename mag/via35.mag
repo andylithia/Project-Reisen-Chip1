@@ -1,0 +1,27 @@
+magic
+tech sky130A
+timestamp 1672075913
+<< error_p >>
+rect -20 115 140 135
+rect -20 -5 0 115
+rect -20 -25 140 -5
+<< metal3 >>
+rect -10 115 130 125
+rect -10 -5 0 115
+rect 120 -5 130 115
+rect -10 -15 130 -5
+<< via3 >>
+rect 0 -5 120 115
+<< metal4 >>
+rect -10 115 130 125
+rect -10 -5 0 115
+rect 120 -5 130 115
+rect -10 -15 130 -5
+<< via4 >>
+rect 0 -5 120 115
+<< metal5 >>
+rect -20 115 140 135
+rect -20 -5 0 115
+rect 120 -5 140 115
+rect -20 -25 140 -5
+<< end >>

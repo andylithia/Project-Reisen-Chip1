@@ -2,7 +2,6 @@
 
 X0 tcap_200f_60/a_173_157# C sky130_fd_pr__cap_mim_m3_2 l=1.6e+06u w=3.14e+07u
 X1 tcap_200f_60/a_173_157# B7 VSUB VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
-X2 C tcap_200f_60/a_173_157# sky130_fd_pr__cap_mim_m3_1 l=1.6e+06u w=3.14e+07u
 X3 tcap_200f_50/a_173_157# C sky130_fd_pr__cap_mim_m3_2 l=1.6e+06u w=3.14e+07u
 X4 tcap_200f_50/a_173_157# B7 VSUB VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
 X5 C tcap_200f_50/a_173_157# sky130_fd_pr__cap_mim_m3_1 l=1.6e+06u w=3.14e+07u

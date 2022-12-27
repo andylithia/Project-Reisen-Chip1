@@ -1,0 +1,21 @@
+* NGSPICE file created from cellselect_flat.ext - technology: sky130A
+
+X0 VLO S2 a_1121_26# VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X1 VHI S2 YNAND VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X2 a_732_26# S2 a_645_26# VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X3 YNAND S2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+D0 VLO S1 sky130_fd_pr__diode_pw2nd_05v5 pj=3.24e+06 area=6.417e+11
+X4 YAND a_645_26# VLO VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X5 VHI S1 YNAND VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X6 YNAND S1 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X7 VHI S1 a_645_26# VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 a_645_26# S2 VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 VHI a_645_26# YAND VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+D1 VLO S2 sky130_fd_pr__diode_pw2nd_05v5 pj=3.24e+06 area=6.417e+11
+X10 VLO a_645_26# YAND VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X11 YAND a_645_26# VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X12 VLO S1 a_732_26# VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X13 YNAND S1 a_1121_26# VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X14 a_1121_26# S2 VLO VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X15 a_1121_26# S1 YNAND VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+C0 VHI VLO 3.19fF $ **FLOATING

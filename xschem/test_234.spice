@@ -1,0 +1,54 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/test_234.sch
+**.subckt test_234
+x1 net3 net2 net1 GND test_123
+V1 net1 GND 1.8
+.save i(v1)
+V2 net2 GND PULSE(0 1.8 0 1n 1n 100n 200n)
+.save i(v2)
+V3 net3 GND PULSE(0 1.8 0 1n 1n 200n 400n)
+.save i(v3)
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+
+
+.tran 1ns 1000ns
+.save all
+.control
+run
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  test_123.sym # of pins=4
+** sym_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/test_123.sym
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/test_123.sch
+.subckt test_123 g1 g2 a vsub
+*.iopin g1
+*.iopin g2
+*.iopin a
+*.iopin vsub
+**** begin user architecture code
+
+.subckt test_123 G1 G2 A VSUBS
+
+    X0 VSUBS G2 A VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=150000u
+    X1 A G1 VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=150000u
+    C0 G1 G2 0.01fF
+    C1 A G2 0.01fF
+    C2 G1 A 0.02fF
+    C3 A VSUBS 3.23fF $ **FLOATING
+    C4 G1 VSUBS 0.26fF $ **FLOATING
+    C5 G2 VSUBS 0.27fF $ **FLOATING
+.ends
+
+XDUT g1 g2 a vsubs test_123
+
+
+**** end user architecture code
+.ends
+
+.GLOBAL GND
+.end

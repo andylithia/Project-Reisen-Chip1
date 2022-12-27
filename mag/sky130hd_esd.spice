@@ -1,0 +1,4 @@
+* NGSPICE file created from sky130hd_esd.ext - technology: sky130A
+
+D0 VGND DIODE sky130_fd_pr__diode_pw2nd_05v5 pj=2.64e+06 area=4.347e+11
+D1 DIODE VPWR sky130_fd_pr__diode_pd2nw_05v5 pj=3.34e+06 area=6.552e+11

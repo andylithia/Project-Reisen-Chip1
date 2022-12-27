@@ -44,9 +44,9 @@ lab=vbias}
 N -130 -100 20 -100 {
 lab=vbias}
 N -80 -200 -80 -190 {
-lab=#net4}
+lab=#net2}
 N -80 -200 -30 -200 {
-lab=#net4}
+lab=#net2}
 N -80 -130 -80 -30 {
 lab=GND}
 N 170 -140 190 -140 {
@@ -57,14 +57,22 @@ N 490 -120 510 -120 {
 lab=vout}
 N 490 -140 510 -140 {
 lab=vdd}
-N 510 -100 510 -70 {}
-N 490 -100 510 -100 {}
-N 20 -100 190 -100 {}
-N 50 -200 90 -200 {}
-N 90 -200 90 -60 {}
-N 90 -60 190 -60 {}
-N -40 -200 -40 -80 {}
-N -40 -80 190 -80 {}
+N 510 -100 510 -70 {
+lab=GND}
+N 490 -100 510 -100 {
+lab=GND}
+N 20 -100 190 -100 {
+lab=vbias}
+N 50 -200 90 -200 {
+lab=#net3}
+N 90 -200 90 -60 {
+lab=#net3}
+N 90 -60 190 -60 {
+lab=#net3}
+N -40 -200 -40 -80 {
+lab=#net2}
+N -40 -80 190 -80 {
+lab=#net2}
 C {sky130_fd_pr/nfet_01v8.sym} -170 -100 0 1 {name=M6
 L=2
 W=5
@@ -101,7 +109,6 @@ run
 "}
 C {devices/lab_wire.sym} -130 -150 0 0 {name=p9 sig_type=std_logic lab=vbias}
 C {devices/vsource.sym} 320 220 0 0 {name=V4 value="SINE(0 0.0001 -1e6)"}
-C {devices/lab_wire.sym} 1820 -90 0 1 {name=p13 sig_type=std_logic lab=VIN}
 C {sky130_stdcells/inv_1.sym} 10 -200 0 0 {name=x1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hs__ }
 C {devices/vsource.sym} -80 -160 0 0 {name=V5 value="PULSE(0 1.8 0 1n 1n 2500n 5000n)"}
 C {devices/gnd.sym} -80 -30 0 0 {name=l6 lab=GND}

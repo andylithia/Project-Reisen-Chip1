@@ -1,0 +1,394 @@
+timestamp 1671854482
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130hd_esd sky130hd_esd_0 0 -1 17360 -1 0 -10234
+use sky130hd_esd sky130hd_esd_1 1 0 22896 0 1 -7902
+use sky130hd_esd sky130hd_esd_2 1 0 23172 0 1 -7902
+use cmota_gb_rp_gp cmota_gb_rp_gp_1 1 0 20200 0 1 -2500
+node "m4_43700_n22600#" 0 178.976 43700 -22600 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120000 1600 0 0 0 0
+node "m4_42900_n22900#" 0 371.99 42900 -22900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 3600 0 0 0 0
+node "m4_42100_n22700#" 0 354.753 42100 -22700 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 3800 0 0 0 0
+node "m4_32500_n22900#" 0 344.874 32500 -22900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300000 3400 0 0 0 0
+node "m4_31700_n22900#" 0 283.942 31700 -22900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380000 4200 0 0 0 0
+node "m4_30900_n22900#" 0 273.404 30900 -22900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 370000 4200 0 0 0 0
+node "m4_30100_n22700#" 0 343.699 30100 -22700 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 3800 0 0 0 0
+node "m4_18100_n22900#" 1 361.4 18100 -22900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380000 4400 0 0 0 0
+node "m4_6100_n22900#" 1 489.323 6100 -22900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380000 4400 0 0 0 0
+node "m4_18100_n22000#" 0 164.511 18100 -22000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60000 1400 0 0 0 0
+node "m4_43700_n19600#" 0 290.915 43700 -19600 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 200000 2400 0 0 0 0
+node "m4_42900_n19800#" 0 334.979 42900 -19800 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360000 4000 0 0 0 0
+node "m4_42100_n19700#" 0 384.928 42100 -19700 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 3800 0 0 0 0
+node "m4_31700_n19600#" 0 304.139 31700 -19600 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 200000 2400 0 0 0 0
+node "m4_30900_n19900#" 0 338.676 30900 -19900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 3600 0 0 0 0
+node "m4_30100_n19700#" 0 388.688 30100 -19700 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 3800 0 0 0 0
+node "m4_19700_n19900#" 1 402.657 19700 -19900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380000 4400 0 0 0 0
+node "m4_18900_n19900#" 1 298.109 18900 -19900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380000 4400 0 0 0 0
+node "m4_18100_n19700#" 0 389.035 18100 -19700 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 3800 0 0 0 0
+node "m4_7700_n19900#" 0 409.369 7700 -19900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380000 4000 0 0 0 0
+node "m4_6900_n19900#" 0 296.463 6900 -19900 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380000 4000 0 0 0 0
+node "m4_6100_n19700#" 0 381.555 6100 -19700 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 3800 0 0 0 0
+node "VOP" 0 77239.5 42000 -19000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16113600 59680 16113600 59680 16113600 59680 21055800 111020 64000000 32000 0 0
+node "VLO" 0 66604.2 18000 -19000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16113600 59680 16113600 59680 16113600 59680 19053600 61080 64000000 32000 0 0
+node "VHI" 0 73078.8 6000 -19000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16113600 59680 16912200 66520 16113600 59680 21223600 67680 64000000 32000 0 0
+node "VREF" 0 77350.8 17030 -10750 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16127600 60160 16131200 60400 17959400 119940 16113600 59680 64000000 32000 0 0
+node "m1_17400_n10860#" 2 733.589 17400 -10860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43200 960 149600 2940 0 0 0 0 0 0 0 0
+node "m1_16700_n10860#" 0 173.693 16700 -10860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39600 940 0 0 0 0 0 0 0 0 0 0
+node "S" 0 70106.9 16460 -9730 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16124000 60200 16120000 60000 17173600 95000 16113600 59680 64000000 32000 0 0
+node "SBAR" 0 74206.6 6000 -31000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16120000 60000 16120000 60000 17237200 97080 16113600 59680 64000000 32000 0 0
+node "m1_23200_n8100#" 1 1129.08 23200 -8100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80000 1200 380000 4200 0 0 0 0 0 0 0 0
+node "VIN" 0 80403 23540 -7720 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16126400 60160 16150400 60460 19321600 139880 16113600 59680 64000000 32000 0 0
+node "VIP" 0 72973.9 23260 -7720 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16126400 60160 16153600 60500 17705600 99480 16113600 59680 64000000 32000 0 0
+node "m1_23200_n7400#" 4 3115.82 23200 -7400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80000 1200 1240000 12800 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_17400_n10860#" "S" 18.6274
+cap "m1_23200_n7400#" "VOP" 164.141
+cap "m4_18100_n19700#" "VLO" 591.968
+cap "VHI" "m4_6100_n19700#" 591.968
+cap "SBAR" "S" 4050.28
+cap "SBAR" "m4_6100_n22900#" 758.961
+cap "m4_43700_n19600#" "VOP" 394.646
+cap "m4_42900_n22900#" "m4_43700_n22600#" 36.5759
+cap "VREF" "VHI" 189.743
+cap "m4_7700_n19900#" "m4_6900_n19900#" 225.028
+cap "m4_42100_n19700#" "VOP" 591.968
+cap "VIN" "m4_31700_n22900#" 151.957
+cap "m1_16700_n10860#" "VLO" 3.61693
+cap "m4_30900_n19900#" "VIP" 696.79
+cap "m4_30900_n22900#" "m4_31700_n22900#" 217.797
+cap "VIP" "VLO" 704.922
+cap "m4_42900_n22900#" "VIN" 751.836
+cap "m4_43700_n19600#" "m4_42900_n19800#" 114.736
+cap "VREF" "m4_31700_n22900#" 726.166
+cap "VREF" "S" 9853.54
+cap "S" "m4_18100_n22000#" 29.8259
+cap "m1_16700_n10860#" "m1_17400_n10860#" 22.8969
+cap "m4_42900_n22900#" "m4_42100_n22700#" 146.586
+cap "m1_17400_n10860#" "VLO" 69.8342
+cap "m4_30100_n19700#" "m4_30900_n19900#" 146.586
+cap "m4_42100_n19700#" "m4_42900_n19800#" 165.497
+cap "SBAR" "m1_16700_n10860#" 3.20993
+cap "VIP" "m1_23200_n8100#" 174.301
+cap "m4_42900_n19800#" "VOP" 640.432
+cap "m4_30100_n19700#" "VIP" 591.968
+cap "VREF" "m4_18100_n19700#" 3.25886
+cap "m4_30900_n19900#" "m4_31700_n19600#" 99.4823
+cap "VIN" "m4_32500_n22900#" 162.253
+cap "m4_31700_n19600#" "VIP" 394.646
+cap "SBAR" "m1_17400_n10860#" 13.1748
+cap "VREF" "m4_32500_n22900#" 519.793
+cap "VIN" "VLO" 2445.23
+cap "VIP" "VIN" 8345.98
+cap "VREF" "m4_18100_n22900#" 145.899
+cap "m4_18100_n22900#" "m4_18100_n22000#" 263.551
+cap "VREF" "m1_16700_n10860#" 40.7543
+cap "S" "VHI" 99.5975
+cap "VIP" "m1_23200_n7400#" 200.663
+cap "VREF" "VLO" 780.237
+cap "m4_6900_n19900#" "m4_6100_n19700#" 175.707
+cap "m4_7700_n19900#" "VHI" 684.891
+cap "VIN" "m1_23200_n8100#" 463.885
+cap "m4_30100_n19700#" "VIN" 36.1504
+cap "VREF" "m1_17400_n10860#" 92.3618
+cap "m4_43700_n22600#" "VIN" 363.843
+cap "m1_23200_n7400#" "m1_23200_n8100#" 75.235
+cap "m4_19700_n19900#" "m4_18900_n19900#" 191.486
+cap "SBAR" "VREF" 58.8847
+cap "VIN" "m4_30100_n22700#" 159.368
+cap "VOP" "VLO" 657.838
+cap "m4_18100_n19700#" "m4_18900_n19900#" 196.609
+cap "VIP" "VOP" 7761.65
+cap "m4_30900_n22900#" "m4_30100_n22700#" 205.643
+cap "m4_18100_n19700#" "S" 0.0426993
+cap "VREF" "m4_30100_n22700#" 514.412
+cap "m1_16700_n10860#" "VHI" 190.774
+cap "VIN" "m4_30900_n22900#" 154.414
+cap "VHI" "VLO" 7.28697
+cap "m1_23200_n7400#" "VIN" 49.3898
+cap "VREF" "VIN" 3089.58
+cap "m4_32500_n22900#" "m4_31700_n22900#" 191.486
+cap "VOP" "m1_23200_n8100#" 17.711
+cap "VIN" "m4_42100_n22700#" 734.236
+cap "VREF" "m4_30900_n22900#" 609.151
+cap "VREF" "m4_18100_n22000#" 11.1039
+cap "m1_17400_n10860#" "VHI" 38.2191
+cap "m4_18900_n19900#" "VLO" 737.282
+cap "m4_18100_n22900#" "S" 709.06
+cap "m1_16700_n10860#" "S" 3.42229
+cap "VHI" "m4_6900_n19900#" 684.891
+cap "S" "VLO" 46.1728
+cap "SBAR" "VHI" 206.471
+cap "VIN" "VOP" 165
+cap "m4_19700_n19900#" "VLO" 737.282
+cap "VHI" "cmota_gb_rp_gp_1/VLO" 44.8338
+cap "VHI" "cmota_gb_rp_gp_1/VLO" 1419.75
+cap "VHI" "cmota_gb_rp_gp_1/VLO" 281.445
+cap "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" "VHI" 0.439179
+cap "cmota_gb_rp_gp_1/SBAR" "sky130hd_esd_0/DIODE" 1.27033
+cap "sky130hd_esd_0/VGND" "cmota_gb_rp_gp_1/SBAR" 128.091
+cap "sky130hd_esd_0/VPWR" "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" 0.645416
+cap "sky130hd_esd_0/DIODE" "VHI" 14.3098
+cap "sky130hd_esd_0/VGND" "VHI" 187.657
+cap "sky130hd_esd_0/VPWR" "sky130hd_esd_0/DIODE" 87.1709
+cap "sky130hd_esd_0/VGND" "sky130hd_esd_0/VPWR" 52.4805
+cap "cmota_gb_rp_gp_1/S" "VHI" 4.49732
+cap "sky130hd_esd_0/VPWR" "cmota_gb_rp_gp_1/S" 4.62352
+cap "VHI" "cmota_gb_rp_gp_1/VHI" 0.0949302
+cap "cmota_gb_rp_gp_1/SBAR" "VHI" 4.32562
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "sky130hd_esd_0/DIODE" 19.247
+cap "sky130hd_esd_0/VPWR" "cmota_gb_rp_gp_1/SBAR" 3.99671
+cap "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" "sky130hd_esd_0/DIODE" 1.83823e-05
+cap "sky130hd_esd_0/VPWR" "VHI" 45.7641
+cap "sky130hd_esd_0/VGND" "sky130hd_esd_0/DIODE" 253.105
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "VHI" 8.95102
+cap "cmota_gb_rp_gp_1/S" "sky130hd_esd_0/DIODE" 1.59782
+cap "sky130hd_esd_0/VGND" "cmota_gb_rp_gp_1/S" 74.9876
+cap "sky130hd_esd_0/VPWR" "cmota_gb_rp_gp_1/gated_iref_0/OUT" 4.57754
+cap "sky130hd_esd_0/VGND" "VHI" -0.159528
+cap "sky130hd_esd_0/VGND" "cmota_gb_rp_gp_1/SBAR" 0.169813
+cap "sky130hd_esd_0/VGND" "sky130hd_esd_0/VPWR" 29.4656
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "sky130hd_esd_0/DIODE" 0.423699
+cap "sky130hd_esd_0/VGND" "cmota_gb_rp_gp_1/gated_iref_0/OUT" 0.683145
+cap "sky130hd_esd_0/VGND" "sky130hd_esd_0/DIODE" 37.3256
+cap "sky130hd_esd_0/VGND" "cmota_gb_rp_gp_1/S" 0.197068
+cap "VHI" "cmota_gb_rp_gp_1/VLO" 128.065
+cap "cmota_gb_rp_gp_1/VLO" "VHI" 464.976
+cap "cmota_gb_rp_gp_1/SBAR" "cmota_gb_rp_gp_1/gated_iref_0/OUT" 48.8757
+cap "sky130hd_esd_0/VPWR" "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" 0.0717339
+cap "cmota_gb_rp_gp_1/SBAR" "sky130hd_esd_0/DIODE" 1.5664
+cap "sky130hd_esd_0/VGND" "VHI" 3.55038
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "VHI" 15.4995
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "sky130hd_esd_0/VGND" -2.07806
+cap "sky130hd_esd_0/DIODE" "VHI" 5.87853
+cap "sky130hd_esd_0/VGND" "sky130hd_esd_0/DIODE" 139.489
+cap "cmota_gb_rp_gp_1/SBAR" "cmota_gb_rp_gp_1/S" -54.73
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "sky130hd_esd_0/DIODE" 73.397
+cap "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" "VHI" 0.0125655
+cap "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" "sky130hd_esd_0/VGND" -0.0383871
+cap "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" "sky130hd_esd_0/DIODE" 1.7962
+cap "VHI" "cmota_gb_rp_gp_1/VHI" 0.0852675
+cap "cmota_gb_rp_gp_1/S" "VHI" 0.0026051
+cap "cmota_gb_rp_gp_1/S" "sky130hd_esd_0/VGND" 119.447
+cap "sky130hd_esd_0/VPWR" "sky130hd_esd_0/VGND" 14.0953
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "cmota_gb_rp_gp_1/S" 45.1324
+cap "sky130hd_esd_0/VPWR" "cmota_gb_rp_gp_1/gated_iref_0/OUT" 19.833
+cap "cmota_gb_rp_gp_1/SBAR" "VHI" 0.0026051
+cap "cmota_gb_rp_gp_1/SBAR" "sky130hd_esd_0/VGND" 197.078
+cap "cmota_gb_rp_gp_1/S" "sky130hd_esd_0/DIODE" 0.936322
+cap "sky130hd_esd_0/VPWR" "sky130hd_esd_0/DIODE" 14.7686
+cap "sky130hd_esd_0/VGND" "sky130hd_esd_0/DIODE" 19.9012
+cap "sky130hd_esd_0/VGND" "cmota_gb_rp_gp_1/S" 5.83805
+cap "sky130hd_esd_0/VGND" "cmota_gb_rp_gp_1/SBAR" 5.77026
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" "sky130hd_esd_0/VGND" 0.0642761
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" 0.0642761
+cap "VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" 33.6089
+cap "VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" 3.0115
+cap "sky130hd_esd_2/DIODE" "sky130hd_esd_1/VGND" 32.3469
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "sky130hd_esd_1/VGND" -0.0831832
+cap "sky130hd_esd_1/DIODE" "sky130hd_esd_1/VGND" 5.17048
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_1/VGND" -0.00140609
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_1/VGND" -0.00140609
+cap "cmota_gb_rp_gp_1/VLO" "cmota_gb_rp_gp_1/VHI" 439.11
+cap "cmota_gb_rp_gp_1/SBAR" "cmota_gb_rp_gp_1/S" 3.35695
+cap "cmota_gb_rp_gp_1/VLO" "cmota_gb_rp_gp_1/VREF" 0.669327
+cap "cmota_gb_rp_gp_1/VLO" "cmota_gb_rp_gp_1/gated_iref_0/OUT" -0.0132376
+cap "cmota_gb_rp_gp_1/SBAR" "cmota_gb_rp_gp_1/VREF" 2.58375
+cap "cmota_gb_rp_gp_1/VLO" "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" -0.000635796
+cap "cmota_gb_rp_gp_1/SBAR" "cmota_gb_rp_gp_1/gated_iref_0/OUT" 16.5929
+cap "cmota_gb_rp_gp_1/VLO" "cmota_gb_rp_gp_1/S" 0.639754
+cap "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" "cmota_gb_rp_gp_1/SBAR" 2.40248
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "cmota_gb_rp_gp_1/VREF" 0.525566
+cap "cmota_gb_rp_gp_1/VLO" "cmota_gb_rp_gp_1/SBAR" 11.0179
+cap "cmota_gb_rp_gp_1/gated_iref_0/a_1444_106#" "cmota_gb_rp_gp_1/VREF" 0.0510772
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 2.57695
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 0.1862
+cap "cmota_gb_rp_gp_1/gated_iref_0/VSUB" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" -2.27374e-13
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 16.9216
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" "cmota_gb_rp_gp_1/VIP" 516.547
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 71.3894
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 4.34185
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 79.8553
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 62.2216
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" "cmota_gb_rp_gp_1/VIN" 901.604
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 4.98144
+cap "sky130hd_esd_1/VGND" "sky130hd_esd_1/DIODE" 408.543
+cap "sky130hd_esd_1/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 43.4577
+cap "sky130hd_esd_1/VGND" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 0.180077
+cap "sky130hd_esd_1/VGND" "sky130hd_esd_1/VPWR" 76.246
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 2.09354
+cap "sky130hd_esd_2/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 11.4713
+cap "sky130hd_esd_2/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" 0.00183355
+cap "sky130hd_esd_1/VGND" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 0.418916
+cap "sky130hd_esd_1/VGND" "sky130hd_esd_2/DIODE" 430.393
+cap "sky130hd_esd_2/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 5.71177
+cap "sky130hd_esd_1/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 110.559
+cap "sky130hd_esd_1/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" 4.67269
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_1/DIODE" 16.1318
+cap "sky130hd_esd_1/VPWR" "sky130hd_esd_2/DIODE" 12.6077
+cap "sky130hd_esd_2/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 0.36198
+cap "sky130hd_esd_1/VPWR" "sky130hd_esd_1/VGND" 78.7084
+cap "sky130hd_esd_1/VGND" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 5.43533
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "sky130hd_esd_2/DIODE" 0.00410751
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 8.0751
+cap "sky130hd_esd_1/VGND" "sky130hd_esd_2/DIODE" 53.6116
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_2/DIODE" 0.826474
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_1/VGND" 3.80817
+cap "sky130hd_esd_1/VPWR" "sky130hd_esd_1/DIODE" 85.0294
+cap "sky130hd_esd_1/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 18.9
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "sky130hd_esd_1/DIODE" 1.27162
+cap "sky130hd_esd_1/DIODE" "sky130hd_esd_2/DIODE" 81.5114
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 5.36715
+cap "sky130hd_esd_1/VGND" "sky130hd_esd_1/DIODE" 90.0283
+cap "sky130hd_esd_1/DIODE" "sky130hd_esd_2/DIODE" 7.97897
+cap "sky130hd_esd_1/VPWR" "VOP" 17.5096
+cap "sky130hd_esd_1/DIODE" "VOP" 4.65116
+cap "VOP" "sky130hd_esd_1/VGND" 6.84604
+cap "sky130hd_esd_2/DIODE" "VOP" 9.66592
+cap "sky130hd_esd_1/VPWR" "sky130hd_esd_1/DIODE" 8.9291
+cap "sky130hd_esd_1/DIODE" "sky130hd_esd_1/VGND" 3.20385
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "cmota_gb_rp_gp_1/VIN" 0.144762
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VIP" 0.00192413
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "cmota_gb_rp_gp_1/VIN" 0.0481505
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "cmota_gb_rp_gp_1/VIN" 16.3086
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" -5.09107
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 2.28188
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" 9.35408
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "cmota_gb_rp_gp_1/VIN" 97.4431
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/VIP" -12.95
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" 0.264943
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" "cmota_gb_rp_gp_1/VIN" 0.372707
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 39.3299
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DN" "cmota_gb_rp_gp_1/VIN" 0.757799
+cap "cmota_gb_rp_gp_1/gated_iref_0/OUT" "cmota_gb_rp_gp_1/VIP" 1.71581
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIN" 0.602656
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 97.7239
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIN" 0.0739058
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DN" 21.445
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 23.3622
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 0.159633
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 1.0316
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" 104.48
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/VIP" 48.3592
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIN" 0.159633
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DN" 2.30058
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 17.5856
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2925_285#" 0.159633
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 12.6497
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 1.0316
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VREF" 582.222
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 0.087036
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 5.31678
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" 1.22452
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIP" 0.887087
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 1.0316
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 294.354
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" 93.1616
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/VIN" 1.64705
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIP" 1.0316
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DN" 3.73694
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 0.159633
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2925_285#" 1.0316
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 0.166368
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 10.317
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VREF" 490.478
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" 0.159633
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" 11.461
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 76.6496
+cap "cmota_gb_rp_gp_1/VIN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" 16.8732
+cap "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/COM" 204.837
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/VIP" 38.5441
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VREF" 20.4718
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" -0.232083
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" 15.5483
+cap "sky130hd_esd_2/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" 0.00907975
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 8.20933
+cap "sky130hd_esd_1/VGND" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" -2.14645
+cap "sky130hd_esd_1/VGND" "sky130hd_esd_1/DIODE" 6.24121
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 3.67073
+cap "sky130hd_esd_2/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 0.0115486
+cap "sky130hd_esd_1/VGND" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" -0.786151
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_2/DIODE" 1.9728
+cap "sky130hd_esd_1/VGND" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" -0.274434
+cap "sky130hd_esd_1/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" 3.4176
+cap "sky130hd_esd_1/VGND" "sky130hd_esd_1/VPWR" 53.8825
+cap "sky130hd_esd_1/DIODE" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 4.34477
+cap "sky130hd_esd_1/VGND" "sky130hd_esd_2/DIODE" 3.71778
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" -0.87122
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_1/DIODE" 3.19356
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "sky130hd_esd_1/VPWR" 154.081
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_1/VPWR" 12.7848
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "sky130hd_esd_1/VPWR" 31.0099
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "sky130hd_esd_1/VGND" -3.92467
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "sky130hd_esd_1/VGND" 0.00332401
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "sky130hd_esd_2/DIODE" 0.00246887
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "sky130hd_esd_1/DIODE" 0.927172
+cap "sky130hd_esd_1/VPWR" "sky130hd_esd_1/VGND" 123.413
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DN" "cmota_gb_rp_gp_1/VIN" 0.889211
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIN" 0.00767502
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" "cmota_gb_rp_gp_1/VIN" 0.530009
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIN" 0.188698
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" "cmota_gb_rp_gp_1/VIP" 3.82803
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/VIN" 0.00609807
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2925_285#" "cmota_gb_rp_gp_1/VIP" 0.0257468
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIP" 0.706399
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DN" "cmota_gb_rp_gp_1/VIN" 0.936334
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/VIP" 0.607813
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" "cmota_gb_rp_gp_1/VIN" 1.81917
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DN" "cmota_gb_rp_gp_1/VIP" 1.80454
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2925_285#" "cmota_gb_rp_gp_1/VIN" 0.00603648
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI" "cmota_gb_rp_gp_1/VIN" 0.276446
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" -0.296876
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" -0.225436
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" "sky130hd_esd_1/VPWR" 0.554015
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 0.454351
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" 0.0108052
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 6.70111
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" -2.56092
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" -7.82109
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 60.7661
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN" 3.88004
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" 382.705
+cap "sky130hd_esd_1/VPWR" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" 1.71345
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 113.679
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" "sky130hd_esd_1/VPWR" 2.53004
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960#" "cmota_gb_rp_gp_1/VHI" -10.5998
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/VHI" -2.23627
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" "cmota_gb_rp_gp_1/VHI" 0.0108052
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960#" "cmota_gb_rp_gp_1/VHI" 381.319
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/VHI" 124.594
+cap "cmota_gb_rp_gp_1/VHI" "cmota_gb_rp_gp_1/cmota_gb_rp_0/DP" 1.66285
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "cmota_gb_rp_gp_1/VHI" 13.5545
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960#" "cmota_gb_rp_gp_1/VHI" 17.1632
+cap "cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960#" "cmota_gb_rp_gp_1/VHI" 142.063
+cap "cmota_gb_rp_gp_1/VHI" "cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960#" 63.7428
+cap "cmota_gb_rp_gp_1/VHI" "cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960#" 13.1952
+cap "cmota_gb_rp_gp_1/VHI" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" 13.4239
+merge "cmota_gb_rp_gp_1/cmota_gb_rp_0/VREF" "sky130hd_esd_2/VGND" -9135.16 0 0 0 0 0 0 0 0 0 0 -3570 -278 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11538 -542 -1656432 -6499 -1635600 -5259 -1615600 -4439 -2175600 -11939 -1615600 -4439 0 0
+merge "sky130hd_esd_2/VGND" "sky130hd_esd_1/VGND"
+merge "sky130hd_esd_1/VGND" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO"
+merge "cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO" "m1_23200_n8100#"
+merge "m1_23200_n8100#" "cmota_gb_rp_gp_1/gated_iref_0/VSUB"
+merge "cmota_gb_rp_gp_1/gated_iref_0/VSUB" "cmota_gb_rp_gp_1/VLO"
+merge "cmota_gb_rp_gp_1/VLO" "VLO"
+merge "VLO" "sky130hd_esd_0/VGND"
+merge "sky130hd_esd_0/VGND" "m1_17400_n10860#"
+merge "m1_17400_n10860#" "cmota_gb_rp_gp_1/VSUBS"
+merge "cmota_gb_rp_gp_1/VSUBS" "VSUBS"
+merge "cmota_gb_rp_gp_1/S" "S" -32.879 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1326 -146 0 0 0 0 0 0 0 0 0 0
+merge "cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP" "VOP" -1905.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -772320 -9064 0 0 0 0
+merge "cmota_gb_rp_gp_1/VHI" "VHI" -1095.94 0 0 0 0 -53928 -978 0 0 -5950 -418 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16642 -718 -40032 -1332 -9400 -482 0 0 0 0 0 0 0 0
+merge "VHI" "sky130hd_esd_2/VPWR"
+merge "sky130hd_esd_2/VPWR" "sky130hd_esd_1/VPWR"
+merge "sky130hd_esd_1/VPWR" "m1_23200_n7400#"
+merge "cmota_gb_rp_gp_1/cmota_gb_rp_0/VIN" "cmota_gb_rp_gp_1/VIN" -1439.97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8700 -416 0 0 -5600 -300 0 0 0 0 0 0
+merge "cmota_gb_rp_gp_1/VIN" "sky130hd_esd_2/DIODE"
+merge "sky130hd_esd_2/DIODE" "VIN"
+merge "cmota_gb_rp_gp_1/VIP" "cmota_gb_rp_gp_1/cmota_gb_rp_0/VIP" -1723.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8700 -416 0 0 -5600 -300 0 0 0 0 0 0
+merge "cmota_gb_rp_gp_1/cmota_gb_rp_0/VIP" "sky130hd_esd_1/DIODE"
+merge "sky130hd_esd_1/DIODE" "VIP"
+merge "sky130hd_esd_0/VPWR" "m1_16700_n10860#" -133.877 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10800 -780 0 0 0 0 0 0 0 0 0 0
+merge "cmota_gb_rp_gp_1/VREF" "sky130hd_esd_0/DIODE" -206.201 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2660 -318 -3600 -240 0 0 0 0 0 0 0 0
+merge "sky130hd_esd_0/DIODE" "VREF"
+merge "cmota_gb_rp_gp_1/SBAR" "SBAR" -180.009 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2886 -226 0 0 0 0 0 0 0 0 0 0

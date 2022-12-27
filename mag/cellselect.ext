@@ -1,0 +1,113 @@
+timestamp 1671756445
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_sc_hs__tapvpwrvgnd_1 sky130_fd_sc_hs__tapvpwrvgnd_1_0 1 0 1574 0 1 -48
+use sky130_fd_sc_hs__tapvpwrvgnd_1 sky130_fd_sc_hs__tapvpwrvgnd_1_1 1 0 134 0 1 -48
+use sky130_fd_sc_hs__nand2_2 sky130_fd_sc_hs__nand2_2_0 1 0 1094 0 1 -48
+use sky130_fd_sc_hs__and2_2 sky130_fd_sc_hs__and2_2_0 1 0 614 0 1 -48
+use sky130_fd_sc_hs__diode_2 sky130_fd_sc_hs__diode_2_0 1 0 230 0 1 -48
+use sky130_fd_sc_hs__diode_2 sky130_fd_sc_hs__diode_2_1 1 0 422 0 1 -48
+node "m1_1010_n90#" 2 622.693 1010 -90 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50400 1300 50400 1300 50400 1300 0 0 0 0 0 0
+node "m1_230_570#" 2 562.147 230 570 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50400 1300 50400 1300 50400 1300 0 0 0 0 0 0
+node "li_1503_222#" 16 89.0716 1503 222 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3380 234 3380 234 3380 234 0 0 0 0 0 0 0 0
+node "li_982_212#" 16 51.3669 982 212 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3380 234 3380 234 3380 234 0 0 0 0 0 0 0 0
+node "li_440_210#" 116 371.131 440 210 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21760 968 24010 958 44770 2442 13000 460 0 0 0 0 0 0
+node "li_250_210#" 118 538.897 250 210 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21760 968 21760 968 63610 3638 13000 460 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_1010_n90#" "li_440_210#" 23.256
+cap "m1_1010_n90#" "li_1503_222#" 32.3908
+cap "li_440_210#" "m1_230_570#" 182.445
+cap "li_250_210#" "li_982_212#" 102.866
+cap "li_250_210#" "li_440_210#" 915.785
+cap "li_982_212#" "li_440_210#" 22.8644
+cap "li_250_210#" "li_1503_222#" 73.8765
+cap "li_982_212#" "li_1503_222#" 0.657204
+cap "li_440_210#" "li_1503_222#" 3.72423
+cap "m1_1010_n90#" "li_250_210#" 150.454
+cap "m1_1010_n90#" "li_982_212#" 11.174
+cap "li_250_210#" "m1_230_570#" 145.399
+cap "sky130_fd_sc_hs__and2_2_0/X" "sky130_fd_sc_hs__nand2_2_0/B" 10.4962
+cap "sky130_fd_sc_hs__and2_2_0/X" "sky130_fd_sc_hs__nand2_2_0/a_27_74#" 17.3535
+cap "sky130_fd_sc_hs__and2_2_0/X" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 25.4717
+cap "sky130_fd_sc_hs__and2_2_0/X" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 8.78604
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__nand2_2_0/Y" 20.6508
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__nand2_2_0/A" 170.253
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__nand2_2_0/B" 95.259
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__nand2_2_0/a_27_74#" 36.08
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 50.0046
+cap "sky130_fd_sc_hs__nand2_2_0/A" "sky130_fd_sc_hs__nand2_2_0/Y" 1.38304
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__nand2_2_0/B" 11.3458
+cap "sky130_fd_sc_hs__nand2_2_0/A" "sky130_fd_sc_hs__nand2_2_0/B" 188.163
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__nand2_2_0/a_27_74#" -0.387643
+cap "sky130_fd_sc_hs__nand2_2_0/A" "sky130_fd_sc_hs__nand2_2_0/a_27_74#" 9.37435
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 0.663279
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 3.81519
+cap "sky130_fd_sc_hs__nand2_2_0/B" "sky130_fd_sc_hs__nand2_2_0/a_27_74#" 2.37311
+cap "sky130_fd_sc_hs__nand2_2_0/A" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 108.885
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__and2_2_0/a_118_74#" 0.0792978
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" "sky130_fd_sc_hs__nand2_2_0/B" 178.78
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" "sky130_fd_sc_hs__nand2_2_0/a_27_74#" 3.55271e-15
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 1.31387
+cap "sky130_fd_sc_hs__nand2_2_0/A" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 20.4405
+cap "sky130_fd_sc_hs__nand2_2_0/B" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 82.2969
+cap "sky130_fd_sc_hs__and2_2_0/a_118_74#" "sky130_fd_sc_hs__nand2_2_0/Y" 0.0309537
+cap "sky130_fd_sc_hs__and2_2_0/a_118_74#" "sky130_fd_sc_hs__nand2_2_0/A" 1.24979
+cap "sky130_fd_sc_hs__nand2_2_0/a_27_74#" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 1.50888
+cap "sky130_fd_sc_hs__and2_2_0/a_118_74#" "sky130_fd_sc_hs__nand2_2_0/B" 0.284709
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__and2_2_0/X" 12.9731
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 7.99075
+cap "sky130_fd_sc_hs__and2_2_0/a_118_74#" "sky130_fd_sc_hs__nand2_2_0/a_27_74#" 0.254687
+cap "sky130_fd_sc_hs__and2_2_0/a_118_74#" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 0.776664
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__and2_2_0/X" 1.92744
+cap "sky130_fd_sc_hs__nand2_2_0/A" "sky130_fd_sc_hs__and2_2_0/X" -2.36368
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 0.207562
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__nand2_2_0/A" -4.58105
+cap "sky130_fd_sc_hs__nand2_2_0/a_27_74#" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" -2.34341
+cap "sky130_fd_sc_hs__and2_2_0/X" "sky130_fd_sc_hs__nand2_2_0/Y" 1.18364
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__nand2_2_0/B" 0.358678
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 25.8497
+cap "sky130_fd_sc_hs__and2_2_0/a_31_74#" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 0.196659
+cap "sky130_fd_sc_hs__nand2_2_0/A" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" 0.364377
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__nand2_2_0/a_27_74#" 1.64803
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__and2_2_0/a_118_74#" 0.0659593
+cap "sky130_fd_sc_hs__and2_2_0/X" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" 0.0905363
+cap "sky130_fd_sc_hs__nand2_2_0/B" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 0.188494
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__and2_2_0/a_31_74#" 0.879338
+cap "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 9.45322
+cap "sky130_fd_sc_hs__nand2_2_0/A" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 0.199995
+cap "sky130_fd_sc_hs__nand2_2_0/a_27_74#" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" 37.08
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__nand2_2_0/B" 0.80879
+cap "sky130_fd_sc_hs__and2_2_0/X" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR" 0.0903421
+cap "sky130_fd_sc_hs__nand2_2_0/Y" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" 10.0607
+merge "sky130_fd_sc_hs__diode_2_1/VNB" "sky130_fd_sc_hs__diode_2_1/VGND" -772.775 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -340 -50400 -2280 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hs__diode_2_1/VGND" "sky130_fd_sc_hs__diode_2_0/VNB"
+merge "sky130_fd_sc_hs__diode_2_0/VNB" "sky130_fd_sc_hs__diode_2_0/VGND"
+merge "sky130_fd_sc_hs__diode_2_0/VGND" "sky130_fd_sc_hs__and2_2_0/VNB"
+merge "sky130_fd_sc_hs__and2_2_0/VNB" "sky130_fd_sc_hs__and2_2_0/VGND"
+merge "sky130_fd_sc_hs__and2_2_0/VGND" "sky130_fd_sc_hs__nand2_2_0/VNB"
+merge "sky130_fd_sc_hs__nand2_2_0/VNB" "sky130_fd_sc_hs__nand2_2_0/VGND"
+merge "sky130_fd_sc_hs__nand2_2_0/VGND" "m1_1010_n90#"
+merge "m1_1010_n90#" "sky130_fd_sc_hs__tapvpwrvgnd_1_1/VGND"
+merge "sky130_fd_sc_hs__tapvpwrvgnd_1_1/VGND" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND"
+merge "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VGND" "VSUBS"
+merge "sky130_fd_sc_hs__diode_2_0/DIODE" "sky130_fd_sc_hs__and2_2_0/B" -514.147 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21760 -968 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hs__and2_2_0/B" "sky130_fd_sc_hs__nand2_2_0/A"
+merge "sky130_fd_sc_hs__nand2_2_0/A" "li_250_210#"
+merge "sky130_fd_sc_hs__diode_2_1/VPWR" "sky130_fd_sc_hs__diode_2_1/VPB" -1287.37 0 0 0 0 -141360 -4480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -340 -50400 -2280 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hs__diode_2_1/VPB" "sky130_fd_sc_hs__diode_2_0/VPWR"
+merge "sky130_fd_sc_hs__diode_2_0/VPWR" "sky130_fd_sc_hs__diode_2_0/VPB"
+merge "sky130_fd_sc_hs__diode_2_0/VPB" "sky130_fd_sc_hs__and2_2_0/VPWR"
+merge "sky130_fd_sc_hs__and2_2_0/VPWR" "sky130_fd_sc_hs__tapvpwrvgnd_1_1/VPWR"
+merge "sky130_fd_sc_hs__tapvpwrvgnd_1_1/VPWR" "m1_230_570#"
+merge "m1_230_570#" "sky130_fd_sc_hs__and2_2_0/VPB"
+merge "sky130_fd_sc_hs__and2_2_0/VPB" "sky130_fd_sc_hs__nand2_2_0/VPWR"
+merge "sky130_fd_sc_hs__nand2_2_0/VPWR" "sky130_fd_sc_hs__nand2_2_0/VPB"
+merge "sky130_fd_sc_hs__nand2_2_0/VPB" "sky130_fd_sc_hs__tapvpwrvgnd_1_0/VPWR"
+merge "sky130_fd_sc_hs__diode_2_1/DIODE" "sky130_fd_sc_hs__and2_2_0/A" -622.606 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21660 -966 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hs__and2_2_0/A" "sky130_fd_sc_hs__nand2_2_0/B"
+merge "sky130_fd_sc_hs__nand2_2_0/B" "li_440_210#"
+merge "sky130_fd_sc_hs__and2_2_0/X" "li_982_212#" -90.7939 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2210 -198 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hs__nand2_2_0/Y" "li_1503_222#" -80.3443 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2990 -222 0 0 0 0 0 0 0 0 0 0 0 0

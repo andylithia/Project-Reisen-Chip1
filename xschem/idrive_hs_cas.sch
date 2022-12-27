@@ -419,14 +419,10 @@ N -70 -240 -70 -200 {
 lab=vbiasl}
 N -70 -380 -70 -300 {
 lab=#net23}
-N 100 -350 210 -350 {
-lab=#net14}
 N 210 -160 210 -0 {
 lab=GND}
 N 100 0 210 -0 {
 lab=GND}
-N 100 -210 190 -210 {
-lab=#net15}
 N 190 -550 190 -470 {
 lab=vdd}
 N 100 -550 190 -550 {
@@ -463,6 +459,10 @@ N 150 -170 320 -170 {
 lab=vout}
 N 320 -280 320 -170 {
 lab=vout}
+N 100 -350 210 -350 {
+lab=#net14}
+N 100 -210 190 -210 {
+lab=#net15}
 C {sky130_fd_pr/nfet3_01v8.sym} 80 -60 0 0 {name=M1
 L=0.5
 W=10
@@ -526,7 +526,7 @@ spiceprefix=X
 C {devices/gnd.sym} 100 0 0 0 {name=l1 lab=GND}
 C {devices/capa.sym} 440 -150 0 0 {name=C1
 m=1
-value=0.1p
+value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 440 0 0 0 {name=l2 lab=GND}

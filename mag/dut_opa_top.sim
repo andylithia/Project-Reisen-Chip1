@@ -1,0 +1,170 @@
+| units: 500000 tech: sky130A format: MIT
+x cmota_gb_rp_gp_1/gated_iref_0/a_1278_538# VREF cmota_gb_rp_gp_1/gated_iref_0/a_1444_106# VLO l=298 w=70 x=17038 y=-9170 sky130_fd_pr__res_xhigh_po
+x S cmota_gb_rp_gp_1/gated_iref_0/a_1444_106# VLO VLO l=30 w=500 x=16650 y=-8766 sky130_fd_pr__nfet_01v8
+x SBAR cmota_gb_rp_gp_1/gated_iref_0/a_1444_106# VLO VLO l=30 w=500 x=16650 y=-8574 sky130_fd_pr__nfet_01v8
+x SBAR VLO cmota_gb_rp_gp_1/gated_iref_0/a_1444_106# VLO l=30 w=500 x=16650 y=-8478 sky130_fd_pr__nfet_01v8
+x S VLO cmota_gb_rp_gp_1/gated_iref_0/a_1444_106# VLO l=30 w=500 x=16650 y=-8670 sky130_fd_pr__nfet_01v8
+x VLO VLO l=1100 w=5400 x=16500 y=-8148 sky130_fd_pr__cap_mim_m3_1
+x VLO VLO l=1100 w=5400 x=16500 y=-8148 sky130_fd_pr__cap_mim_m3_2
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_n186_n86# cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960# VLO l=1166 w=138 x=22459 y=-6682 sky130_fd_pr__res_high_po
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VHI VHI l=60 w=2000 x=18497 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI VHI l=60 w=2000 x=19441 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VOP VHI VHI l=60 w=2000 x=21093 y=-5415 sky130_fd_pr__pfet_01v8
+x VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VLO l=30 w=500 x=19267 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=19939 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VLO l=30 w=500 x=20611 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VHI l=60 w=2000 x=18379 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VHI l=60 w=2000 x=18615 y=-5415 sky130_fd_pr__pfet_01v8
+x VHI VOP VHI VHI l=60 w=2000 x=21801 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2925_285# VHI l=60 w=2000 x=20267 y=-5415 sky130_fd_pr__pfet_01v8
+x VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VLO l=30 w=500 x=20227 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960# VOP l=2640 w=740 x=22232 y=-5570 sky130_fd_pr__cap_mim_m3_2
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI VOP VHI l=60 w=2000 x=21211 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI VOP VHI l=60 w=2000 x=20975 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI VOP VHI l=60 w=2000 x=21683 y=-5415 sky130_fd_pr__pfet_01v8
+x VLO VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=19171 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VOP VLO VLO l=60 w=2000 x=21919 y=-7923 sky130_fd_pr__nfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VHI VHI l=60 w=2000 x=18261 y=-5415 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=60 w=2000 x=22037 y=-7923 sky130_fd_pr__nfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI VHI l=60 w=2000 x=20149 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI VHI l=60 w=2000 x=20857 y=-5415 sky130_fd_pr__pfet_01v8
+x VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=20131 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO VLO l=400 w=2000 x=19573 y=-9039 sky130_fd_pr__nfet_01v8
+x VHI VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VHI l=60 w=2000 x=18143 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI l=60 w=2000 x=19323 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VOP VHI VHI l=60 w=2000 x=21565 y=-5415 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=30 w=500 x=20899 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO VLO l=400 w=2000 x=20489 y=-9039 sky130_fd_pr__nfet_01v8
+x VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=19555 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI l=60 w=2000 x=19087 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI l=60 w=2000 x=20031 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI l=60 w=2000 x=19795 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI l=60 w=2000 x=20739 y=-5415 sky130_fd_pr__pfet_01v8
+x VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VLO l=30 w=500 x=19843 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VLO VLO VLO VLO l=60 w=2000 x=17906 y=-7923 sky130_fd_pr__nfet_01v8
+x VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=20515 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI VHI l=60 w=2000 x=19205 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI VOP VHI l=60 w=2000 x=21447 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VLO l=60 w=2000 x=18024 y=-7923 sky130_fd_pr__nfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VLO VLO l=60 w=2000 x=18142 y=-7923 sky130_fd_pr__nfet_01v8
+x VLO VLO VLO VLO l=60 w=2000 x=21447 y=-7923 sky130_fd_pr__nfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VLO VOP VLO l=60 w=2000 x=21565 y=-7923 sky130_fd_pr__nfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI VHI l=60 w=2000 x=19913 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VOP VLO VLO l=60 w=2000 x=21683 y=-7923 sky130_fd_pr__nfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VHI VHI l=60 w=2000 x=18969 y=-5415 sky130_fd_pr__pfet_01v8
+x VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO VLO l=30 w=500 x=20803 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VLO l=30 w=500 x=19459 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2217_285# VHI VHI l=60 w=2000 x=19677 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI VHI l=60 w=2000 x=20621 y=-5415 sky130_fd_pr__pfet_01v8
+x VLO VLO VLO VLO l=60 w=2000 x=18496 y=-7923 sky130_fd_pr__nfet_01v8
+x VLO VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=400 w=2000 x=19115 y=-9039 sky130_fd_pr__nfet_01v8
+x VLO VLO VLO VLO l=30 w=500 x=19075 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=19747 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VLO VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=400 w=2000 x=20031 y=-9039 sky130_fd_pr__nfet_01v8
+x VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VLO l=30 w=500 x=20419 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=19363 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VHI l=60 w=2000 x=18851 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI l=60 w=2000 x=20503 y=-5415 sky130_fd_pr__pfet_01v8
+x VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VLO l=30 w=500 x=20035 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2217_285# VHI l=60 w=2000 x=19559 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VLO l=60 w=2000 x=18260 y=-7923 sky130_fd_pr__nfet_01v8
+x VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=20707 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VLO VLO l=60 w=2000 x=18378 y=-7923 sky130_fd_pr__nfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VLO VOP VLO l=60 w=2000 x=21801 y=-7923 sky130_fd_pr__nfet_01v8
+x VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM VLO l=30 w=500 x=20323 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN VHI VHI l=60 w=2000 x=18733 y=-5415 sky130_fd_pr__pfet_01v8
+x VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DN VLO l=30 w=500 x=19651 y=-6599 sky130_fd_pr__nfet_01v8_lvt
+x VOP cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960# l=2640 w=740 x=22232 y=-5570 sky130_fd_pr__cap_mim_m3_1
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DN cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2925_285# VHI VHI l=60 w=2000 x=20385 y=-5415 sky130_fd_pr__pfet_01v8
+x cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VOP VHI VHI l=60 w=2000 x=21329 y=-5415 sky130_fd_pr__pfet_01v8
+x VLO VHI l=6200 w=2600 x=13301 y=-8999 sky130_fd_pr__cap_mim_m3_2
+x VHI VLO l=6200 w=2600 x=13301 y=-8999 sky130_fd_pr__cap_mim_m3_1
+x VREF VLO VLO l=0 w=0 x=17332 y=-10618 sky130_fd_pr__diode_pw2nd_05v5
+x VREF sky130hd_esd_0/VPWR sky130hd_esd_0/VPWR l=0 w=0 x=17074 y=-10618 sky130_fd_pr__diode_pd2nw_05v5
+x VIP VLO VLO l=0 w=0 x=23279 y=-7875 sky130_fd_pr__diode_pw2nd_05v5
+x VIP VHI VHI l=0 w=0 x=23279 y=-7617 sky130_fd_pr__diode_pd2nw_05v5
+x VIN VLO VLO l=0 w=0 x=23555 y=-7875 sky130_fd_pr__diode_pw2nd_05v5
+x VIN VHI VHI l=0 w=0 x=23555 y=-7617 sky130_fd_pr__diode_pd2nw_05v5
+C S VREF 9.96
+C S SBAR 4.58
+C VIN VREF 3.09
+C VIN VIP 8.58
+C VOP VIP 7.94
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/DP cmota_gb_rp_gp_1/cmota_gb_rp_0/COM 6.02
+C VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/DN 17.11
+C VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960# 3.20
+C VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN 17.94
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/COM cmota_gb_rp_gp_1/cmota_gb_rp_0/DN 6.05
+C VOP cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960# 9.44
+C VOP VHI 18.76
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2925_285# VHI 4.36
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2217_285# VHI 4.36
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/DP VHI 17.03
+C VHI GND 196.30
+R VHI 194391
+= VHI cmota_gb_rp_gp_1/VHI
+= VHI cmota_gb_rp_gp_1/cmota_gb_rp_0/VHI
+= VHI sky130hd_esd_2/VPWR
+= VHI sky130hd_esd_1/VPWR
+= VHI m1_23200_n7400#
+R sky130hd_esd_0/VPWR 3044
+= sky130hd_esd_0/VPWR m1_16700_n10860#
+R VLO 266250
+= VLO sky130hd_esd_2/VGND
+= VLO sky130hd_esd_1/VGND
+= VLO m1_23200_n8100#
+= VLO VSUBS
+= VLO sky130hd_esd_0/VGND
+= VLO m1_17400_n10860#
+= VLO cmota_gb_rp_gp_1/VLO
+= VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/VREF
+= VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/VLO
+= VLO cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_n316_n648#
+= VLO cmota_gb_rp_gp_1/gated_iref_0/OUT
+= VLO cmota_gb_rp_gp_1/m1_n1200_n4510#
+= VLO cmota_gb_rp_gp_1/m3_n3200_n5800#
+= VLO cmota_gb_rp_gp_1/gated_iref_0/VSUB
+= VLO cmota_gb_rp_gp_1/VSUBS
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/COM GND 8.62
+R cmota_gb_rp_gp_1/cmota_gb_rp_0/COM 22543
+C VIP GND 75.09
+R VIP 7696
+= VIP sky130hd_esd_1/DIODE
+= VIP cmota_gb_rp_gp_1/VIP
+= VIP cmota_gb_rp_gp_1/cmota_gb_rp_0/VIP
+C VIN GND 85.48
+R VIN 7702
+= VIN sky130hd_esd_2/DIODE
+= VIN cmota_gb_rp_gp_1/VIN
+= VIN cmota_gb_rp_gp_1/cmota_gb_rp_0/VIN
+C VOP GND 85.39
+R VOP 41598
+= VOP cmota_gb_rp_gp_1/cmota_gb_rp_0/VOP
+R cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2925_285# 7559
+R cmota_gb_rp_gp_1/cmota_gb_rp_0/a_2217_285# 7559
+R cmota_gb_rp_gp_1/cmota_gb_rp_0/DP 58133
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/DN GND 2.07
+R cmota_gb_rp_gp_1/cmota_gb_rp_0/DN 58133
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960# GND 3.02
+R cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960# 114
+= cmota_gb_rp_gp_1/cmota_gb_rp_0/li_5300_n960# cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#
+C cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN GND 15.82
+R cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN 56776
+= cmota_gb_rp_gp_1/cmota_gb_rp_0/VMN cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_n186_n518#
+R cmota_gb_rp_gp_1/cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_n186_n86# 3022
+C cmota_gb_rp_gp_1/gated_iref_0/a_1444_106# GND 3.08
+R cmota_gb_rp_gp_1/gated_iref_0/a_1444_106# 4163
+C VREF GND 80.28
+R VREF 264
+= VREF sky130hd_esd_0/DIODE
+= VREF cmota_gb_rp_gp_1/VREF
+= VREF cmota_gb_rp_gp_1/gated_iref_0/IN
+C SBAR GND 75.62
+R SBAR 1891
+= SBAR cmota_gb_rp_gp_1/SBAR
+= SBAR cmota_gb_rp_gp_1/gated_iref_0/S
+C S GND 71.11
+R S 1891
+= S cmota_gb_rp_gp_1/S
+= S cmota_gb_rp_gp_1/gated_iref_0/SBAR
+R cmota_gb_rp_gp_1/gated_iref_0/a_1278_538# 10514

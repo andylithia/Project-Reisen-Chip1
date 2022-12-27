@@ -1,0 +1,37 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/tgate_test.sch
+**.subckt tgate_test
+XM1 vout net1 vin GND sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 vout s vin vdd sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+V1 vdd GND 1.8
+.save i(v1)
+x1 s gnd gnd vdd vdd net1 sky130_fd_sc_hd__inv_1
+V2 s GND 0
+.save i(v2)
+V3 vin GND 1.8
+.save i(v3)
+vimeas vout net2 0
+.save i(vimeas)
+V4 net2 GND 0
+.save i(v4)
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+.dc v3 0.001 1.8 0.001
+.save all
+.control
+run
+display
+plot vin
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

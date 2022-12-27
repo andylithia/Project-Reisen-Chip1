@@ -10,6 +10,7 @@ XM6 net1 net1 vlo vlo sky130_fd_pr__nfet_01v8 L=2 W=5 nf=1 ad='int((nf+1)/2) * W
 + sa=0 sb=0 sd=0 mult=1 m=1
 I1 vhi net1 10u
 XR1 vref net1 vlo sky130_fd_pr__res_high_po_0p35 L=0.35 mult=1 m=1
+C1 vref vlo 1p m=1
 **** begin user architecture code
 
 * NGSPICE file created from cmota_1_flat.ext - technology: sky130A

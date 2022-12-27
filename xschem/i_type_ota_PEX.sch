@@ -45,6 +45,12 @@ N 530 -50 530 90 {
 lab=vlo}
 N 560 -100 630 -100 {
 lab=vref}
+N 580 -100 580 -60 {
+lab=vref}
+N 580 0 580 90 {
+lab=vlo}
+N 530 90 580 90 {
+lab=vlo}
 C {sky130_fd_pr/nfet_01v8.sym} 340 -100 0 1 {name=M6
 L=2
 W=5
@@ -59,7 +65,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/isource.sym} 320 -220 0 0 {name=I1 value=5u}
+C {devices/isource.sym} 320 -220 0 0 {name=I1 value=10u}
 C {devices/ipin.sym} 580 -300 0 0 {name=p1 lab=vip}
 C {devices/ipin.sym} 580 -320 0 0 {name=p3 lab=vin}
 C {devices/opin.sym} 610 -320 0 0 {name=p4 lab=vop}
@@ -184,3 +190,8 @@ L=0.35
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
+C {devices/capa.sym} 580 -30 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}

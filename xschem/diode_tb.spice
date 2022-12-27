@@ -1,0 +1,32 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/diode_tb.sch
+**.subckt diode_tb
+V1 vdd GND 1.8
+.save i(v1)
+Vt diode GND 0
+.save i(vt)
+**** begin user architecture code
+.lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+
+
+.dc vt -1.8 3.6 0.1
+.save all
+.control
+run
+plot i(vimeas)
+.endc
+
+
+
+.subckt sky130hd_esd DIODE VGND VPWR VNB VPB
+D0 VNB DIODE sky130_fd_pr__diode_pw2nd_05v5 pj=2.64e+06 area=4.347e+11
+D1 DIODE VPB sky130_fd_pr__diode_pd2nw_05v5 pj=3.34e+06 area=6.552e+11
+.ends
+
+XDUT diode gnd gnd vdd vdd sky130hd_esd
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,39 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1671574347
+<< error_s >>
+rect 224 2178 318 2179
+rect 196 2150 231 2151
+rect 281 2150 327 2151
+<< locali >>
+rect 10 150 122 2152
+rect 292 166 414 2142
+<< metal1 >>
+rect 224 2178 318 2314
+rect 182 230 240 238
+rect 182 160 184 230
+rect 236 160 240 230
+rect 182 152 240 160
+rect 74 48 192 120
+<< via1 >>
+rect 184 160 236 230
+<< metal2 >>
+rect 182 230 240 238
+rect 182 160 184 230
+rect 236 160 240 230
+rect 182 152 240 160
+rect 200 82 240 152
+rect 500 82 540 174
+rect 200 42 540 82
+rect 200 38 240 42
+use sky130_fd_pr__nfet_01v8_FPZFGB  sky130_fd_pr__nfet_01v8_FPZFGB_0
+timestamp 0
+transform 1 0 208 0 1 1151
+box -263 -1210 263 1210
+<< labels >>
+rlabel metal1 74 48 122 120 1 G1
+rlabel metal2 504 62 536 162 1 A
+rlabel space 362 164 416 294 1 VSUB
+rlabel metal1 224 2178 318 2314 1 G2
+<< end >>

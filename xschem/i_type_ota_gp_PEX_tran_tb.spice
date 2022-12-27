@@ -51,6 +51,8 @@ run
 .subckt cmota_gp VHI VLO VREF VIP VIN VOP S SBAR
 * NGSPICE file created from cmota_gp.ext - technology: sky130A
 
+* NGSPICE file created from cmota_gp.ext - technology: sky130A
+
 X0 gated_iref_0/a_1086_150# S VREF VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u
 + l=150000u
 X1 VLO SBAR gated_iref_0/a_1086_150# VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u
@@ -230,24 +232,22 @@ X94 VHI cmota_1_flat_1_0/a_2626_188# VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u
 + w=1e+07u l=300000u
 X95 VHI VLO sky130_fd_pr__cap_mim_m3_1 l=3.2e+07u w=1.3e+07u
 X96 VLO VHI sky130_fd_pr__cap_mim_m3_2 l=3.2e+07u w=1.3e+07u
-C0 VHI VLO 74.47fF
-C1 VOP VHI 35.24fF
-C2 cmota_1_flat_1_0/VREF gated_iref_0/OUT 3.15fF
-C3 cmota_1_flat_1_0/a_266_188# VHI 14.23fF
-C4 cmota_1_flat_1_0/a_266_188# cmota_1_flat_1_0/a_147_n2312# 2.70fF
-C5 VLO gated_iref_0/OUT 37.58fF
-C6 cmota_1_flat_1_0/a_2626_188# VHI 14.15fF
-C7 VHI cmota_1_flat_1_0/a_147_n2312# 36.19fF
-C8 cmota_1_flat_1_0/a_266_188# gated_iref_0/OUT 6.42fF
-C9 VHI gated_iref_0/OUT 4.50fF
-C10 cmota_1_flat_1_0/a_2626_188# gated_iref_0/OUT 5.97fF
-C11 cmota_1_flat_1_0/a_147_n2312# gated_iref_0/OUT 2.74fF
-C12 cmota_1_flat_1_0/VREF 0 7.19fF $ **FLOATING
-C13 VOP 0 17.35fF $ **FLOATING
-C14 cmota_1_flat_1_0/a_147_n2312# 0 22.96fF $ **FLOATING
-C15 VHI 0 52.32fF $ **FLOATING
-C16 VLO 0 12.48fF $ **FLOATING
-C17 gated_iref_0/OUT 0 12.44fF $ **FLOATING
+C0 VHI gated_iref_0/OUT 4.50fF
+C1 cmota_1_flat_1_0/VREF gated_iref_0/OUT 3.15fF
+C2 cmota_1_flat_1_0/a_266_188# gated_iref_0/OUT 6.42fF
+C3 VHI cmota_1_flat_1_0/a_266_188# 14.23fF
+C4 cmota_1_flat_1_0/a_147_n2312# gated_iref_0/OUT 2.74fF
+C5 cmota_1_flat_1_0/a_147_n2312# VHI 36.19fF
+C6 gated_iref_0/OUT cmota_1_flat_1_0/a_2626_188# 5.97fF
+C7 VHI cmota_1_flat_1_0/a_2626_188# 14.15fF
+C8 VOP VHI 35.24fF
+C9 cmota_1_flat_1_0/a_147_n2312# cmota_1_flat_1_0/a_266_188# 2.70fF
+C10 cmota_1_flat_1_0/VREF VLO 7.56fF $ **FLOATING
+C11 VOP VLO 17.36fF $ **FLOATING
+C12 cmota_1_flat_1_0/a_147_n2312# VLO 23.80fF $ **FLOATING
+C13 VHI VLO 126.80fF $ **FLOATING
+C14 gated_iref_0/OUT VLO 50.02fF $ **FLOATING
+C15 gated_iref_0/a_1086_150# VLO 2.13fF $ **FLOATING
 
 
 .ends

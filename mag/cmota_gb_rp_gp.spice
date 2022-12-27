@@ -1,0 +1,100 @@
+* NGSPICE file created from cmota_gb_rp_gp.ext - technology: sky130A
+
+X0 VREF gated_iref_0/a_1444_106# VLO sky130_fd_pr__res_xhigh_po w=350000u l=1.49e+06u
+X1 VLO SBAR gated_iref_0/a_1444_106# VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X2 VREF_GATED S gated_iref_0/a_1444_106# VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X3 gated_iref_0/a_1444_106# S VREF_GATED VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X4 gated_iref_0/a_1444_106# SBAR VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X5 VLO VREF_GATED sky130_fd_pr__cap_mim_m3_1 l=5.5e+06u w=2.7e+07u
+X6 VREF_GATED VLO sky130_fd_pr__cap_mim_m3_2 l=5.5e+06u w=2.7e+07u
+X7 cmota_gb_rp_0/VMN cmota_gb_rp_0/li_5300_n960# VLO sky130_fd_pr__res_high_po w=690000u l=5.83e+06u
+X8 VHI cmota_gb_rp_0/DN cmota_gb_rp_0/VMN VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X9 VHI cmota_gb_rp_0/DN cmota_gb_rp_0/DN VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X10 VHI cmota_gb_rp_0/DP cmota_gb_rp_0/VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X11 cmota_gb_rp_0/DN VIN cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X12 cmota_gb_rp_0/COM VIN cmota_gb_rp_0/DN VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X13 cmota_gb_rp_0/DP VIP cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X14 cmota_gb_rp_0/VMN cmota_gb_rp_0/DN VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X15 cmota_gb_rp_0/VMN cmota_gb_rp_0/DN VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X16 VHI VHI cmota_gb_rp_0/VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X17 cmota_gb_rp_0/a_2925_285# cmota_gb_rp_0/DN VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X18 cmota_gb_rp_0/DP VIP cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X19 cmota_gb_rp_0/li_5300_n960# cmota_gb_rp_0/VOP sky130_fd_pr__cap_mim_m3_2 l=1.32e+07u w=3.7e+06u
+X20 cmota_gb_rp_0/VOP cmota_gb_rp_0/DP VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X21 cmota_gb_rp_0/VOP cmota_gb_rp_0/DP VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X22 cmota_gb_rp_0/VOP cmota_gb_rp_0/DP VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X23 cmota_gb_rp_0/COM VLO VLO VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X24 VLO cmota_gb_rp_0/VMN cmota_gb_rp_0/VOP VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X25 VHI cmota_gb_rp_0/DN cmota_gb_rp_0/VMN VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X26 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X27 VHI cmota_gb_rp_0/DN cmota_gb_rp_0/DP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X28 VHI cmota_gb_rp_0/DP cmota_gb_rp_0/DP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X29 cmota_gb_rp_0/COM VIP cmota_gb_rp_0/DP VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X30 VLO VREF_GATED cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+X31 cmota_gb_rp_0/VMN VHI VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X32 cmota_gb_rp_0/DN cmota_gb_rp_0/DN VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X33 VHI cmota_gb_rp_0/DP cmota_gb_rp_0/VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X34 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X35 VLO VREF_GATED cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+X36 cmota_gb_rp_0/COM VIN cmota_gb_rp_0/DN VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X37 cmota_gb_rp_0/DN cmota_gb_rp_0/DN VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X38 cmota_gb_rp_0/DP cmota_gb_rp_0/DN VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X39 cmota_gb_rp_0/DN cmota_gb_rp_0/DP VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X40 cmota_gb_rp_0/DP cmota_gb_rp_0/DP VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X41 cmota_gb_rp_0/DN VIN cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X42 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X43 cmota_gb_rp_0/COM VIP cmota_gb_rp_0/DP VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X44 VHI cmota_gb_rp_0/DN cmota_gb_rp_0/DN VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X45 cmota_gb_rp_0/VOP cmota_gb_rp_0/DP VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X46 cmota_gb_rp_0/VMN cmota_gb_rp_0/VMN VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X47 VLO cmota_gb_rp_0/VMN cmota_gb_rp_0/VMN VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X48 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X49 cmota_gb_rp_0/VOP cmota_gb_rp_0/VMN VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X50 VHI cmota_gb_rp_0/DP cmota_gb_rp_0/DN VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X51 VLO cmota_gb_rp_0/VMN cmota_gb_rp_0/VOP VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X52 VHI cmota_gb_rp_0/DN cmota_gb_rp_0/VMN VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X53 VLO VLO cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X54 cmota_gb_rp_0/DN VIN cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X55 VHI cmota_gb_rp_0/DP cmota_gb_rp_0/a_2217_285# VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X56 VHI cmota_gb_rp_0/DP cmota_gb_rp_0/DP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X57 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X58 cmota_gb_rp_0/COM VREF_GATED VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+X59 VLO VLO VLO VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X60 cmota_gb_rp_0/COM VIN cmota_gb_rp_0/DN VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X61 cmota_gb_rp_0/COM VREF_GATED VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+X62 cmota_gb_rp_0/DP VIP cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X63 cmota_gb_rp_0/COM VIN cmota_gb_rp_0/DN VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X64 cmota_gb_rp_0/VMN cmota_gb_rp_0/DN VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X65 cmota_gb_rp_0/DP cmota_gb_rp_0/DP VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X66 cmota_gb_rp_0/DP VIP cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X67 cmota_gb_rp_0/a_2217_285# cmota_gb_rp_0/DP VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X68 cmota_gb_rp_0/VMN cmota_gb_rp_0/VMN VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X69 cmota_gb_rp_0/COM VIP cmota_gb_rp_0/DP VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X70 VLO cmota_gb_rp_0/VMN cmota_gb_rp_0/VMN VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X71 cmota_gb_rp_0/VOP cmota_gb_rp_0/VMN VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X72 cmota_gb_rp_0/COM VIP cmota_gb_rp_0/DP VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X73 VHI cmota_gb_rp_0/DN cmota_gb_rp_0/VMN VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X74 cmota_gb_rp_0/DN VIN cmota_gb_rp_0/COM VLO sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X75 cmota_gb_rp_0/VOP cmota_gb_rp_0/li_5300_n960# sky130_fd_pr__cap_mim_m3_1 l=1.32e+07u w=3.7e+06u
+X76 VHI cmota_gb_rp_0/DN cmota_gb_rp_0/a_2925_285# VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X77 VHI cmota_gb_rp_0/DP cmota_gb_rp_0/VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
+X78 VLO VHI sky130_fd_pr__cap_mim_m3_2 l=3.1e+07u w=1.3e+07u
+X79 VHI VLO sky130_fd_pr__cap_mim_m3_1 l=3.1e+07u w=1.3e+07u
+C0 VHI VREF_GATED 3.82fF
+C1 cmota_gb_rp_0/VMN VHI 17.90fF
+C2 cmota_gb_rp_0/li_5300_n960# cmota_gb_rp_0/VOP 9.33fF
+C3 cmota_gb_rp_0/a_2217_285# VHI 4.36fF
+C4 VHI cmota_gb_rp_0/a_2925_285# 4.36fF
+C5 VHI cmota_gb_rp_0/DP 17.03fF
+C6 cmota_gb_rp_0/COM cmota_gb_rp_0/DN 6.05fF
+C7 cmota_gb_rp_0/li_5300_n960# VHI 2.04fF
+C8 cmota_gb_rp_0/COM VREF_GATED 2.52fF
+C9 cmota_gb_rp_0/VOP VHI 18.33fF
+C10 cmota_gb_rp_0/COM cmota_gb_rp_0/DP 6.02fF
+C11 VHI cmota_gb_rp_0/DN 17.11fF
+C12 VREF_GATED VLO 51.60fF $ **FLOATING
+C13 cmota_gb_rp_0/COM VLO 6.15fF $ **FLOATING
+C14 cmota_gb_rp_0/VOP VLO 9.34fF $ **FLOATING
+C15 VHI VLO 112.32fF $ **FLOATING
+C16 cmota_gb_rp_0/li_5300_n960# VLO 3.02fF $ **FLOATING
+C17 cmota_gb_rp_0/VMN VLO 14.11fF $ **FLOATING

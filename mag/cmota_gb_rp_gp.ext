@@ -1,0 +1,314 @@
+timestamp 1671855392
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use gated_iref gated_iref_0 0 1 -3700 1 0 -7948
+use cmota_gb_rp cmota_gb_rp_0 1 0 -2798 0 1 -3200
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+parameters sky130_fd_pr__cap_mim_m3_2 w=w l=l
+node "m3_n3200_n5800#" 0 147.667 -3200 -5800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0
+node "VIP" 0 23.4655 120 -4200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800 120 0 0 0 0 0 0
+node "VIN" 0 23.4655 -660 -4200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800 120 0 0 0 0 0 0
+node "VREF" 0 117.271 -3600 -7084 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20400 670 0 0 0 0 0 0 0 0
+node "VLO" 2 23762.7 -2820 -7000 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4242000 14040 23520000 29600 6802152 20536 21280000 20800 0 0
+node "VOP" 0 68.4674 1680 -3180 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6320 348 0 0 0 0 0 0 0 0
+node "VHI" 1 10488.9 -2000 -600 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2380000 8200 2380000 8200 25120000 33000 0 0 0 0
+node "SBAR" 1 63.0692 -3701 -7084 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 480 0 0 0 0 0 0 0 0 0 0
+node "S" 1 63.0692 -3769 -7084 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 480 0 0 0 0 0 0 0 0 0 0
+node "VREF_GATED" 1 1412.17 -1142 -4510 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5120 288 25760 804 682600 6300 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "S" "VREF" 2.70735
+cap "VLO" "VREF_GATED" 916.241
+cap "VLO" "VREF" 75.1891
+cap "m3_n3200_n5800#" "VHI" 12.4922
+cap "VIN" "VIP" 1.80488
+cap "S" "VLO" 28.418
+cap "SBAR" "VREF" 6.38985
+cap "VLO" "VHI" 70492.1
+cap "VLO" "m3_n3200_n5800#" 22.3485
+cap "SBAR" "S" 112.821
+cap "SBAR" "VLO" 23.1327
+cap "m3_n3200_n5800#" "VREF_GATED" 26.299
+device csubckt sky130_fd_pr__cap_mim_m3_2 -6900 -6500 -6899 -6499 w=2600 l=6200 "None" "VLO" 17280 0 "VHI" 2000 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -6900 -6500 -6899 -6499 w=2600 l=6200 "None" "VHI" 17280 0 "VLO" 2000 0
+cap "gated_iref_0/OUT" "gated_iref_0/IN" 10.3921
+cap "gated_iref_0/S" "gated_iref_0/VSUB" 48.8724
+cap "gated_iref_0/VSUB" "gated_iref_0/IN" 92.6225
+cap "VHI" "gated_iref_0/a_1444_106#" 0.0652376
+cap "gated_iref_0/S" "gated_iref_0/IN" 0.417173
+cap "gated_iref_0/a_1444_106#" "gated_iref_0/VSUB" 28.4518
+cap "VHI" "gated_iref_0/SBAR" 0.0888992
+cap "gated_iref_0/OUT" "gated_iref_0/SBAR" 4.20104
+cap "gated_iref_0/a_1444_106#" "gated_iref_0/IN" 0.170079
+cap "VHI" "gated_iref_0/OUT" 42.4434
+cap "gated_iref_0/SBAR" "gated_iref_0/VSUB" 15.9986
+cap "VHI" "gated_iref_0/VSUB" 2.96292
+cap "gated_iref_0/OUT" "gated_iref_0/VSUB" 869.119
+cap "gated_iref_0/S" "gated_iref_0/SBAR" -14.1026
+cap "gated_iref_0/S" "gated_iref_0/OUT" 4.67361
+cap "gated_iref_0/SBAR" "gated_iref_0/IN" 0.921694
+cap "gated_iref_0/S" "VHI" 3.19892
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VREF" 2.9168
+cap "gated_iref_0/VSUB" "gated_iref_0/OUT" -42.7053
+cap "gated_iref_0/S" "gated_iref_0/VSUB" 0.146582
+cap "gated_iref_0/IN" "gated_iref_0/VSUB" 1.49086
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/VSUB" 0.016061
+cap "gated_iref_0/VSUB" "gated_iref_0/a_1444_106#" 0.989773
+cap "gated_iref_0/SBAR" "gated_iref_0/VSUB" 0.174578
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/VSUB" 0.016061
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VMN" 0.953907
+cap "gated_iref_0/VSUB" "gated_iref_0/OUT" 0.0916396
+cap "cmota_gb_rp_0/VREF" "gated_iref_0/VSUB" 204.823
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/COM" 15.9104
+cap "cmota_gb_rp_0/VREF" "cmota_gb_rp_0/VLO" 176.647
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VMN" 0.19306
+cap "cmota_gb_rp_0/COM" "cmota_gb_rp_0/VLO" 15.9104
+cap "cmota_gb_rp_0/VOP" "cmota_gb_rp_0/VLO" 0.027245
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VOP" 0.027245
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VMN" 1.4508
+cap "gated_iref_0/OUT" "gated_iref_0/S" 0.688795
+cap "gated_iref_0/IN" "gated_iref_0/OUT" 0.0802145
+cap "gated_iref_0/a_1444_106#" "VHI" 2.03536
+cap "gated_iref_0/a_1444_106#" "gated_iref_0/IN" 0.988586
+cap "gated_iref_0/VSUB" "VHI" 79.5014
+cap "gated_iref_0/SBAR" "gated_iref_0/VSUB" 18.2195
+cap "gated_iref_0/VSUB" "gated_iref_0/IN" 14.7052
+cap "gated_iref_0/VSUB" "gated_iref_0/S" 58.1957
+cap "gated_iref_0/a_1444_106#" "gated_iref_0/OUT" 0.449001
+cap "gated_iref_0/VSUB" "gated_iref_0/OUT" 795.385
+cap "gated_iref_0/SBAR" "VHI" 1.49049
+cap "gated_iref_0/SBAR" "gated_iref_0/IN" 0.790105
+cap "VHI" "gated_iref_0/S" 11.4839
+cap "gated_iref_0/IN" "gated_iref_0/S" 0.152282
+cap "gated_iref_0/a_1444_106#" "gated_iref_0/VSUB" 55.7191
+cap "VHI" "gated_iref_0/OUT" 230.502
+cap "gated_iref_0/OUT" "gated_iref_0/S" 0.418546
+cap "gated_iref_0/VSUB" "VHI" 11.9441
+cap "gated_iref_0/SBAR" "gated_iref_0/VSUB" 0.919372
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/OUT" 179.422
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VMN" 57.0399
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VMN" 64.2039
+cap "gated_iref_0/VSUB" "gated_iref_0/S" 0.961266
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VMN" 87.823
+cap "gated_iref_0/a_1444_106#" "gated_iref_0/OUT" 2.993
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VMN" 15.6809
+cap "gated_iref_0/VSUB" "gated_iref_0/OUT" 1536.36
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VMN" 17.9482
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/COM" 0.988675
+cap "gated_iref_0/VSUB" "gated_iref_0/a_1444_106#" 7.93228
+cap "cmota_gb_rp_0/COM" "gated_iref_0/OUT" 85.1315
+cap "gated_iref_0/OUT" "gated_iref_0/VSUB" 455.782
+cap "gated_iref_0/VSUB" "gated_iref_0/a_1444_106#" 0.400412
+cap "cmota_gb_rp_0/COM" "gated_iref_0/VSUB" 8.70168
+cap "cmota_gb_rp_0/COM" "cmota_gb_rp_0/VLO" 8.70168
+cap "cmota_gb_rp_0/COM" "cmota_gb_rp_0/VREF" 1.65975
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VLO" 5.68581
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VMN" 56.9718
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VOP" 0.413698
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VOP" 0.413698
+cap "gated_iref_0/VSUB" "VHI" 128.016
+cap "gated_iref_0/OUT" "VLO" 237.814
+cap "VLO" "gated_iref_0/OUT" 130.306
+cap "VLO" "gated_iref_0/VSUB" 77.6983
+cap "gated_iref_0/OUT" "VHI" 207.493
+cap "VLO" "gated_iref_0/VSUB" 116.63
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VMN" 162.195
+cap "cmota_gb_rp_0/DN" "gated_iref_0/OUT" 0.00318937
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VMN" 444.79
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/VSUB" 0.0612192
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/COM" -1.14677
+cap "gated_iref_0/VSUB" "gated_iref_0/OUT" 1561.44
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/OUT" 2.00315
+cap "cmota_gb_rp_0/DN" "gated_iref_0/VSUB" 0.00136672
+cap "cmota_gb_rp_0/COM" "gated_iref_0/OUT" 4.39816
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/VSUB" 0.00131801
+cap "cmota_gb_rp_0/VIN" "cmota_gb_rp_0/COM" -5.64839e-05
+cap "cmota_gb_rp_0/DN" "gated_iref_0/VSUB" -0.0204037
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/OUT" 1.81935
+cap "cmota_gb_rp_0/DN" "gated_iref_0/OUT" 2.07382
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/COM" -16.477
+cap "gated_iref_0/VSUB" "gated_iref_0/OUT" 402.023
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VHI" -0.104667
+cap "cmota_gb_rp_0/COM" "gated_iref_0/OUT" 76.868
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VIN" -0.000311603
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 5.34825
+cap "cmota_gb_rp_0/VLO" "gated_iref_0/OUT" 19.1139
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/VSUB" -0.153301
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/COM" -2.53591
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/OUT" 12.8835
+cap "cmota_gb_rp_0/VIN" "cmota_gb_rp_0/VIP" -0.902439
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 0.266197
+cap "cmota_gb_rp_0/VHI" "gated_iref_0/OUT" 0.310148
+cap "cmota_gb_rp_0/VREF" "cmota_gb_rp_0/COM" 0.830144
+cap "cmota_gb_rp_0/VIN" "cmota_gb_rp_0/VIP" -0.902439
+cap "VLO" "gated_iref_0/OUT" 107.917
+cap "VLO" "gated_iref_0/VSUB" 77.6983
+cap "VLO" "gated_iref_0/OUT" 217
+cap "VHI" "gated_iref_0/VSUB" 128.016
+cap "gated_iref_0/OUT" "VHI" 136.973
+cap "VLO" "gated_iref_0/OUT" 20.8137
+cap "VLO" "gated_iref_0/VSUB" 116.63
+cap "gated_iref_0/OUT" "VLO" 22.3891
+cap "VHI" "gated_iref_0/OUT" 70.5205
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VMN" -3.37581
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/DN" 52.1106
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/COM" 0.00177859
+cap "cmota_gb_rp_0/VLO" "gated_iref_0/VSUB" 72.0525
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VIN" 0.00269955
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/OUT" 276.842
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VLO" 5.74207
+cap "cmota_gb_rp_0/VLO" "gated_iref_0/OUT" 12.4486
+cap "cmota_gb_rp_0/VLO" "gated_iref_0/OUT" 10.5195
+cap "cmota_gb_rp_0/VHI" "gated_iref_0/OUT" 442.017
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/VSUB" 173.252
+cap "cmota_gb_rp_0/VLO" "gated_iref_0/OUT" 66.3004
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VLO" 7.71521
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VLO" 5.65945
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VLO" 6.85514
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/DN" 97.395
+cap "cmota_gb_rp_0/COM" "gated_iref_0/OUT" 0.0020189
+cap "cmota_gb_rp_0/VHI" "gated_iref_0/VSUB" 222.771
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/OUT" 0.00294441
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VMN" 158.579
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VLO" 7.55902
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/DN" 50.0728
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/COM" 0.00171635
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VLO" 6.74853
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 209.143
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/VSUB" 0.0025778
+cap "cmota_gb_rp_0/VLO" "gated_iref_0/OUT" 149.838
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VLO" 8.30245
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/VSUB" 0.86643
+cap "cmota_gb_rp_0/VHI" "gated_iref_0/OUT" 0.492853
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VLO" 0.201348
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VHI" 0.668715
+cap "cmota_gb_rp_0/COM" "gated_iref_0/OUT" 6.08779e-05
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/DN" 0.350063
+cap "cmota_gb_rp_0/COM" "gated_iref_0/OUT" 2.92427e-05
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/OUT" 4.05458e-05
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/DN" 0.140167
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VLO" -1.14214
+cap "cmota_gb_rp_0/COM" "gated_iref_0/VSUB" 3.88116e-05
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/OUT" 2.80735e-05
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/DN" 0.183514
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VHI" 0.298817
+cap "cmota_gb_rp_0/VIN" "gated_iref_0/VSUB" 2.74679e-05
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VHI" 3.73321
+cap "cmota_gb_rp_0/VREF" "cmota_gb_rp_0/VMN" 12.5968
+cap "cmota_gb_rp_0/VREF" "cmota_gb_rp_0/VLO" 1.19173
+cap "cmota_gb_rp_0/VREF" "cmota_gb_rp_0/VHI" 0.646276
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/OUT" 1.74512
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VLO" 0.331943
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/DN" 0.293466
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/OUT" 0.624988
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 1.23647
+cap "cmota_gb_rp_0/VLO" "gated_iref_0/OUT" 0.171257
+cap "cmota_gb_rp_0/VREF" "cmota_gb_rp_0/DN" 0.81333
+cap "cmota_gb_rp_0/DP" "cmota_gb_rp_0/VOP" -5.68434e-14
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/VOP" 0.253113
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VLO" -0.0180411
+cap "cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_48_n518#" "cmota_gb_rp_0/VOP" 1.37903
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VOP" 0.00601378
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VOP" -5.68434e-14
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VOP" 0.180087
+cap "cmota_gb_rp_0/VLO" "cmota_gb_rp_0/VMN" -0.0205289
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/VLO" -0.352593
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VOP" 0.116437
+cap "VLO" "gated_iref_0/VSUB" 77.6983
+cap "VLO" "gated_iref_0/OUT" 107.917
+cap "cmota_gb_rp_0/VHI" "gated_iref_0/OUT" 70.5205
+cap "VLO" "gated_iref_0/OUT" 20.8137
+cap "VLO" "gated_iref_0/OUT" 22.3891
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 136.973
+cap "VLO" "gated_iref_0/VSUB" 116.63
+cap "VLO" "gated_iref_0/OUT" 217
+cap "cmota_gb_rp_0/VHI" "gated_iref_0/VSUB" 128.016
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VHI" 364.927
+cap "cmota_gb_rp_0/VHI" "gated_iref_0/OUT" 752.277
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 339.013
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/DN" 80.1949
+cap "cmota_gb_rp_0/DN" "gated_iref_0/OUT" 162.801
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/DN" 83.5956
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 131.474
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/OUT" 202.634
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VMN" 140.337
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VMN" 138.982
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VHI" 15.9906
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/VSUB" 1.33666
+cap "cmota_gb_rp_0/DN" "gated_iref_0/OUT" 0.461471
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/DN" 0.185554
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VHI" 1.27382
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 191.514
+cap "cmota_gb_rp_0/DP" "cmota_gb_rp_0/VHI" 27.7416
+cap "cmota_gb_rp_0/DN" "gated_iref_0/VSUB" 0.245354
+cap "cmota_gb_rp_0/VMN" "gated_iref_0/OUT" 2.6413
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VMN" 0.968263
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VHI" 2.23908
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 2.37949
+cap "cmota_gb_rp_0/a_2217_285#" "cmota_gb_rp_0/VHI" 11.5219
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 0.936264
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/DN" 8.79513
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/a_2925_285#" 11.4691
+cap "cmota_gb_rp_0/VOP" "cmota_gb_rp_0/VHI" 6.68
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/DP" 266.929
+cap "gated_iref_0/OUT" "VHI" 4.52769
+cap "gated_iref_0/VSUB" "VHI" 3.42297
+cap "gated_iref_0/OUT" "VHI" 3.01632
+cap "cmota_gb_rp_0/VHI" "gated_iref_0/OUT" 288.915
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VHI" 313.2
+cap "gated_iref_0/OUT" "VLO" 7.98987
+cap "gated_iref_0/OUT" "VLO" 84.94
+cap "gated_iref_0/OUT" "VLO" 46.25
+cap "gated_iref_0/VSUB" "VLO" 33.2993
+cap "VLO" "gated_iref_0/OUT" 9.59533
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 191.138
+cap "gated_iref_0/VSUB" "VLO" 49.9843
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VHI" 31.9179
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VHI" 261.421
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VHI" 31.9179
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 295.249
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 339.069
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VHI" 31.9179
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 157.234
+cap "gated_iref_0/VSUB" "cmota_gb_rp_0/VHI" 0.101944
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 222.702
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 0.222761
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 31.9179
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 28.2614
+cap "cmota_gb_rp_0/DP" "cmota_gb_rp_0/VHI" 28.2614
+cap "cmota_gb_rp_0/DP" "cmota_gb_rp_0/VHI" 28.2614
+cap "cmota_gb_rp_0/DP" "cmota_gb_rp_0/VHI" 28.2614
+cap "gated_iref_0/OUT" "cmota_gb_rp_0/VHI" 0.07163
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 23.9683
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 31.9179
+cap "cmota_gb_rp_0/DP" "cmota_gb_rp_0/VHI" 28.2614
+cap "cmota_gb_rp_0/DP" "cmota_gb_rp_0/VHI" 31.9179
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/a_2217_285#" 31.9413
+cap "cmota_gb_rp_0/VMN" "cmota_gb_rp_0/VHI" 31.9179
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/a_2925_285#" 31.9413
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/DN" 4.29307
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/VOP" 31.9179
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/DN" 28.2614
+cap "cmota_gb_rp_0/DN" "cmota_gb_rp_0/VHI" 28.2614
+cap "cmota_gb_rp_0/DP" "cmota_gb_rp_0/VHI" 31.9179
+cap "cmota_gb_rp_0/VOP" "cmota_gb_rp_0/VHI" 31.9179
+cap "cmota_gb_rp_0/VOP" "cmota_gb_rp_0/VHI" 31.9179
+cap "cmota_gb_rp_0/VHI" "cmota_gb_rp_0/DP" 335.536
+cap "cmota_gb_rp_0/li_5300_n960#" "cmota_gb_rp_0/VHI" 32.3821
+cap "cmota_gb_rp_0/li_5300_n960#" "cmota_gb_rp_0/VHI" -5.76891
+cap "cmota_gb_rp_0/VOP" "cmota_gb_rp_0/VHI" 4.25427
+merge "cmota_gb_rp_0/VLO" "gated_iref_0/VSUB" -12454.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -468800 -10696 -5764800 -15601 -11472 -574 -5764800 -15601 0 0
+merge "gated_iref_0/VSUB" "VSUBS"
+merge "VSUBS" "VLO"
+merge "cmota_gb_rp_0/VREF" "gated_iref_0/OUT" -4172.28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2208 -188 0 0 -60000 -1400 0 0 0 0 0 0
+merge "gated_iref_0/OUT" "VREF_GATED"
+merge "VREF_GATED" "m3_n3200_n5800#"
+merge "cmota_gb_rp_0/VHI" "VHI" -5452.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -680000 -7400 0 0 -3302800 -8101 0 0 0 0
+merge "cmota_gb_rp_0/VOP" "VOP" -68.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4084 -348 0 0 0 0 0 0 0 0
+merge "gated_iref_0/IN" "VREF" -41.9438 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1520 -198 0 0 0 0 0 0 0 0
+merge "gated_iref_0/S" "S" -19.5523 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -850 -118 0 0 0 0 0 0 0 0 0 0
+merge "cmota_gb_rp_0/VIN" "VIN" -23.4654 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0
+merge "cmota_gb_rp_0/VIP" "VIP" -23.4655 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0
+merge "gated_iref_0/SBAR" "SBAR" -20.5668 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -884 -120 0 0 0 0 0 0 0 0 0 0

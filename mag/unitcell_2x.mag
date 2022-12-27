@@ -1,0 +1,12 @@
+magic
+tech sky130A
+timestamp 1672032142
+use unitcell  unitcell_0
+timestamp 1672032082
+transform -1 0 45100 0 1 10900
+box 900 -10900 25500 3500
+use unitcell  unitcell_1
+timestamp 1672032082
+transform 1 0 -900 0 1 10900
+box 900 -10900 25500 3500
+<< end >>

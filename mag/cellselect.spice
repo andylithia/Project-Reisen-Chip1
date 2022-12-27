@@ -1,0 +1,116 @@
+* NGSPICE file created from cellselect.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hs__and2_2 A B VGND VPWR X VNB VPB a_31_74#
+X0 X a_31_74# VGND VNB sky130_fd_pr__nfet_01v8_lvt ad=2.072e+11p pd=2.04e+06u as=5.217e+11p ps=4.37e+06u w=740000u l=150000u
+X1 a_118_74# A a_31_74# VNB sky130_fd_pr__nfet_01v8_lvt ad=1.776e+11p pd=1.96e+06u as=2.109e+11p ps=2.05e+06u w=740000u l=150000u
+X2 VPWR a_31_74# X VPB sky130_fd_pr__pfet_01v8 ad=9.96e+11p pd=8.34e+06u as=3.36e+11p ps=2.84e+06u w=1.12e+06u l=150000u
+X3 X a_31_74# VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X4 VGND B a_118_74# VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X5 VPWR B a_31_74# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3e+11p ps=2.6e+06u w=1e+06u l=150000u
+X6 VGND a_31_74# X VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X7 a_31_74# A VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+C0 a_31_74# VGND 0.12fF
+C1 a_31_74# X 0.11fF
+C2 VPB A 0.02fF
+C3 A VPWR 0.04fF
+C4 A B 0.11fF
+C5 VPB VPWR 0.07fF
+C6 VPB B 0.02fF
+C7 VPB VGND 0.02fF
+C8 VPWR VGND 0.06fF
+C9 VPWR X 0.12fF
+C10 X VGND 0.09fF
+C11 A a_31_74# 0.03fF
+C12 VPB a_31_74# 0.03fF
+C13 VPWR a_31_74# 0.21fF
+C14 B a_31_74# 0.19fF
+C15 VGND VNB 0.34fF
+C16 X VNB 0.06fF
+C17 VPWR VNB 0.37fF
+C18 B VNB 0.09fF
+C19 A VNB 0.18fF
+C20 VPB VNB 0.62fF
+C21 a_31_74# VNB 0.28fF
+.ends
+
+.subckt sky130_fd_sc_hs__diode_2 DIODE VGND VPB VPWR VNB
+D0 VNB DIODE sky130_fd_pr__diode_pw2nd_05v5 pj=3.24e+06 area=6.417e+11
+C0 VPB VPWR 0.02fF
+C1 VPB DIODE 0.05fF
+C2 DIODE VPWR 0.08fF
+C3 VPWR VGND 0.02fF
+C4 DIODE VGND 0.08fF
+C5 VGND VNB 0.15fF
+C6 VPWR VNB 0.14fF
+C7 DIODE VNB 0.24fF
+C8 VPB VNB 0.30fF
+.ends
+
+.subckt sky130_fd_sc_hs__nand2_2 A B VGND VPWR Y VNB VPB a_27_74#
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8 ad=1.008e+12p pd=8.52e+06u as=6.72e+11p ps=5.68e+06u w=1.12e+06u l=150000u
+X1 Y A a_27_74# VNB sky130_fd_pr__nfet_01v8_lvt ad=2.442e+11p pd=2.14e+06u as=6.438e+11p ps=6.18e+06u w=740000u l=150000u
+X2 Y A VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X3 Y B VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X4 VGND B a_27_74# VNB sky130_fd_pr__nfet_01v8_lvt ad=2.442e+11p pd=2.14e+06u as=0p ps=0u w=740000u l=150000u
+X5 VPWR B Y VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X6 a_27_74# B VGND VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X7 a_27_74# A Y VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+C0 B VGND 0.01fF
+C1 a_27_74# VGND 0.24fF
+C2 VPB VGND 0.02fF
+C3 Y VPWR 0.34fF
+C4 Y A 0.12fF
+C5 VGND VPWR 0.05fF
+C6 VGND Y 0.01fF
+C7 B a_27_74# 0.07fF
+C8 VPB B 0.03fF
+C9 B VPWR 0.01fF
+C10 a_27_74# VPWR 0.03fF
+C11 VPB VPWR 0.07fF
+C12 B A 0.09fF
+C13 VPB A 0.03fF
+C14 A VPWR 0.01fF
+C15 B Y 0.10fF
+C16 a_27_74# Y 0.13fF
+C17 VPB Y 0.01fF
+C18 VGND VNB 0.31fF
+C19 Y VNB 0.09fF
+C20 VPWR VNB 0.36fF
+C21 A VNB 0.21fF
+C22 B VNB 0.23fF
+C23 VPB VNB 0.62fF
+C24 a_27_74# VNB 0.09fF
+.ends
+
+.subckt cellselect
+Xsky130_fd_sc_hs__and2_2_0 sky130_fd_sc_hs__and2_2_0/A sky130_fd_sc_hs__and2_2_0/B
++ VSUBS sky130_fd_sc_hs__and2_2_0/VPB sky130_fd_sc_hs__and2_2_0/X VSUBS sky130_fd_sc_hs__and2_2_0/VPB
++ sky130_fd_sc_hs__and2_2_0/a_31_74# sky130_fd_sc_hs__and2_2
+Xsky130_fd_sc_hs__diode_2_1 sky130_fd_sc_hs__and2_2_0/A VSUBS sky130_fd_sc_hs__and2_2_0/VPB
++ sky130_fd_sc_hs__and2_2_0/VPB VSUBS sky130_fd_sc_hs__diode_2
+Xsky130_fd_sc_hs__diode_2_0 sky130_fd_sc_hs__and2_2_0/B VSUBS sky130_fd_sc_hs__and2_2_0/VPB
++ sky130_fd_sc_hs__and2_2_0/VPB VSUBS sky130_fd_sc_hs__diode_2
+Xsky130_fd_sc_hs__nand2_2_0 sky130_fd_sc_hs__and2_2_0/B sky130_fd_sc_hs__and2_2_0/A
++ VSUBS sky130_fd_sc_hs__and2_2_0/VPB sky130_fd_sc_hs__nand2_2_0/Y VSUBS sky130_fd_sc_hs__and2_2_0/VPB
++ sky130_fd_sc_hs__nand2_2_0/a_27_74# sky130_fd_sc_hs__nand2_2
+C0 sky130_fd_sc_hs__and2_2_0/a_31_74# sky130_fd_sc_hs__and2_2_0/B 0.02fF
+C1 sky130_fd_sc_hs__and2_2_0/a_31_74# sky130_fd_sc_hs__and2_2_0/A 0.08fF
+C2 sky130_fd_sc_hs__and2_2_0/VPB sky130_fd_sc_hs__and2_2_0/X 0.03fF
+C3 sky130_fd_sc_hs__nand2_2_0/Y sky130_fd_sc_hs__and2_2_0/VPB 0.03fF
+C4 sky130_fd_sc_hs__and2_2_0/X sky130_fd_sc_hs__and2_2_0/B 0.10fF
+C5 sky130_fd_sc_hs__and2_2_0/VPB sky130_fd_sc_hs__and2_2_0/B 0.25fF
+C6 sky130_fd_sc_hs__and2_2_0/X sky130_fd_sc_hs__and2_2_0/A 0.03fF
+C7 sky130_fd_sc_hs__and2_2_0/VPB sky130_fd_sc_hs__and2_2_0/A 0.36fF
+C8 sky130_fd_sc_hs__nand2_2_0/Y sky130_fd_sc_hs__and2_2_0/B 0.07fF
+C9 sky130_fd_sc_hs__nand2_2_0/Y sky130_fd_sc_hs__and2_2_0/A 0.02fF
+C10 sky130_fd_sc_hs__and2_2_0/A sky130_fd_sc_hs__and2_2_0/B 1.10fF
+C11 sky130_fd_sc_hs__nand2_2_0/a_27_74# sky130_fd_sc_hs__and2_2_0/X 0.02fF
+C12 sky130_fd_sc_hs__nand2_2_0/Y VSUBS 0.16fF
+C13 sky130_fd_sc_hs__and2_2_0/B VSUBS 0.88fF
+C14 sky130_fd_sc_hs__and2_2_0/A VSUBS 0.52fF
+C15 sky130_fd_sc_hs__and2_2_0/VPB VSUBS 2.98fF
+C16 sky130_fd_sc_hs__nand2_2_0/a_27_74# VSUBS 0.16fF
+C17 sky130_fd_sc_hs__and2_2_0/X VSUBS 0.05fF
+C18 sky130_fd_sc_hs__and2_2_0/a_31_74# VSUBS 0.28fF
+.ends
+

@@ -1,0 +1,29 @@
+| units: 500000 tech: sky130A format: MIT
+x S2 a_1121_26# VLO VLO l=30 w=148 x=1178 y=26 sky130_fd_pr__nfet_01v8_lvt
+x S2 YNAND VHI VHI l=30 w=224 x=1271 y=320 sky130_fd_pr__pfet_01v8
+x S2 a_645_26# a_732_26# VLO l=30 w=148 x=702 y=26 sky130_fd_pr__nfet_01v8_lvt
+x S2 VHI YNAND VHI l=30 w=224 x=1181 y=320 sky130_fd_pr__pfet_01v8
+x S1 VLO VLO l=0 w=0 x=257 y=16 sky130_fd_pr__diode_pw2nd_05v5
+x a_645_26# VLO YAND VLO l=30 w=148 x=882 y=26 sky130_fd_pr__nfet_01v8_lvt
+x S1 YNAND VHI VHI l=30 w=224 x=1453 y=320 sky130_fd_pr__pfet_01v8
+x S1 VHI YNAND VHI l=30 w=224 x=1363 y=320 sky130_fd_pr__pfet_01v8
+x S1 a_645_26# VHI VHI l=30 w=200 x=789 y=344 sky130_fd_pr__pfet_01v8
+x S2 VHI a_645_26# VHI l=30 w=200 x=699 y=344 sky130_fd_pr__pfet_01v8
+x a_645_26# YAND VHI VHI l=30 w=224 x=980 y=320 sky130_fd_pr__pfet_01v8
+x S2 VLO VLO l=0 w=0 x=449 y=16 sky130_fd_pr__diode_pw2nd_05v5
+x a_645_26# YAND VLO VLO l=30 w=148 x=968 y=26 sky130_fd_pr__nfet_01v8_lvt
+x a_645_26# VHI YAND VHI l=30 w=224 x=890 y=320 sky130_fd_pr__pfet_01v8
+x S1 a_732_26# VLO VLO l=30 w=148 x=780 y=26 sky130_fd_pr__nfet_01v8_lvt
+x S1 a_1121_26# YNAND VLO l=30 w=148 x=1360 y=26 sky130_fd_pr__nfet_01v8_lvt
+x S2 VLO a_1121_26# VLO l=30 w=148 x=1274 y=26 sky130_fd_pr__nfet_01v8_lvt
+x S1 YNAND a_1121_26# VLO l=30 w=148 x=1456 y=26 sky130_fd_pr__nfet_01v8_lvt
+R a_1121_26# 1783
+R a_732_26# 370
+R YNAND 2550
+R YAND 1248
+R a_645_26# 2916
+R S1 2800
+R S2 2803
+C VHI GND 3.19
+R VHI 13047
+R VLO 4465

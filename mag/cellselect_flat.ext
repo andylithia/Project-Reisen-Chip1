@@ -1,0 +1,64 @@
+timestamp 1671823962
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__diode_pw2nd_05v5 a=area*1e+12 p=pj*1e+06
+node "a_1121_26#" 1783 341.222 1121 26 ndif 0 0 0 0 0 0 0 0 25752 1236 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31968 1668 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_732_26#" 370 1.28919 732 26 ndif 0 0 0 0 0 0 0 0 7104 392 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "YNAND" 2550 175.663 1211 320 pdif 0 0 0 0 0 0 0 0 9768 428 26880 1136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44570 2228 3380 234 3380 234 0 0 0 0 0 0 0 0
+node "YAND" 1248 142.854 912 26 ndif 0 0 0 0 0 0 0 0 8288 408 13440 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28486 1404 3380 234 3380 234 0 0 0 0 0 0 0 0
+node "a_645_26#" 2916 308.967 645 26 ndif 0 0 0 0 0 0 0 0 8436 410 12000 520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39402 2410 0 0 39572 1912 0 0 0 0 0 0 0 0 0 0 0 0
+node "S1" 2800 979.048 257 16 ndi 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58542 3672 0 0 101132 2116 21760 968 63610 3638 13000 460 0 0 0 0 0 0
+node "S2" 2803 616.2 449 16 ndi 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60588 3734 0 0 104888 2210 24010 958 44770 2442 13000 460 0 0 0 0 0 0
+node "VHI" 13047 3187.73 96 284 nw 0 0 0 0 599664 3968 0 0 11424 808 80160 3372 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 158196 6680 150528 3268 50400 1300 50400 1300 0 0 0 0 0 0
+substrate "VLO" 0 0 165 16 ppd 0 0 0 0 0 0 0 0 30636 1302 11220 796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103354 4778 150528 3268 50400 1300 50400 1300 0 0 0 0 0 0
+cap "a_732_26#" "a_645_26#" 2.55513
+cap "a_732_26#" "a_1121_26#" 0.254687
+cap "YNAND" "YAND" 3.76828
+cap "S1" "S2" 1307.27
+cap "YAND" "VHI" 148.868
+cap "YNAND" "VHI" 381.688
+cap "a_732_26#" "YAND" 0.12916
+cap "S2" "a_645_26#" 114.838
+cap "a_732_26#" "YNAND" 0.0309537
+cap "S2" "a_1121_26#" 68.2098
+cap "S1" "a_645_26#" 214.437
+cap "a_732_26#" "VHI" 1.88242
+cap "S1" "a_1121_26#" 16.8772
+cap "S2" "YAND" 33.7018
+cap "S1" "YAND" 101.012
+cap "a_645_26#" "a_1121_26#" 1.50888
+cap "YNAND" "S2" 111.39
+cap "S1" "YNAND" 186.671
+cap "S2" "VHI" 587.662
+cap "S1" "VHI" 442.66
+cap "YAND" "a_645_26#" 119.707
+cap "a_732_26#" "S2" 0.284709
+cap "YAND" "a_1121_26#" 17.3535
+cap "S1" "a_732_26#" 1.29776
+cap "YNAND" "a_645_26#" 2.19321
+cap "YNAND" "a_1121_26#" 132.517
+cap "a_645_26#" "VHI" 256.844
+cap "a_1121_26#" "VHI" 32.8643
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1456 26 1457 27 l=30 w=148 "VLO" "S1" 60 0 "YNAND" 148 0 "a_1121_26#" 148 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1360 26 1361 27 l=30 w=148 "VLO" "S1" 60 0 "a_1121_26#" 148 0 "YNAND" 148 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1274 26 1275 27 l=30 w=148 "VLO" "S2" 60 0 "VLO" 148 0 "a_1121_26#" 148 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1178 26 1179 27 l=30 w=148 "VLO" "S2" 60 0 "a_1121_26#" 148 0 "VLO" 148 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 968 26 969 27 l=30 w=148 "VLO" "a_645_26#" 60 0 "YAND" 148 0 "VLO" 148 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 882 26 883 27 l=30 w=148 "VLO" "a_645_26#" 60 0 "VLO" 148 0 "YAND" 148 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 780 26 781 27 l=30 w=148 "VLO" "S1" 60 0 "a_732_26#" 148 0 "VLO" 148 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 702 26 703 27 l=30 w=148 "VLO" "S2" 60 0 "a_645_26#" 148 0 "a_732_26#" 148 0
+device ndiode sky130_fd_pr__diode_pw2nd_05v5 449 16 450 17 a=25668 p=648 "VLO" "S2" 816 0 "VLO" 148 0
+device ndiode sky130_fd_pr__diode_pw2nd_05v5 257 16 258 17 a=25668 p=648 "VLO" "S1" 816 0 "VLO" 148 0
+device msubckt sky130_fd_pr__pfet_01v8 1453 320 1454 321 l=30 w=224 "VHI" "S1" 60 0 "YNAND" 224 0 "VHI" 224 0
+device msubckt sky130_fd_pr__pfet_01v8 1363 320 1364 321 l=30 w=224 "VHI" "S1" 60 0 "VHI" 224 0 "YNAND" 224 0
+device msubckt sky130_fd_pr__pfet_01v8 1271 320 1272 321 l=30 w=224 "VHI" "S2" 60 0 "YNAND" 224 0 "VHI" 224 0
+device msubckt sky130_fd_pr__pfet_01v8 1181 320 1182 321 l=30 w=224 "VHI" "S2" 60 0 "VHI" 224 0 "YNAND" 224 0
+device msubckt sky130_fd_pr__pfet_01v8 980 320 981 321 l=30 w=224 "VHI" "a_645_26#" 60 0 "YAND" 224 0 "VHI" 224 0
+device msubckt sky130_fd_pr__pfet_01v8 890 320 891 321 l=30 w=224 "VHI" "a_645_26#" 60 0 "VHI" 224 0 "YAND" 224 0
+device msubckt sky130_fd_pr__pfet_01v8 789 344 790 345 l=30 w=200 "VHI" "S1" 60 0 "a_645_26#" 200 0 "VHI" 200 0
+device msubckt sky130_fd_pr__pfet_01v8 699 344 700 345 l=30 w=200 "VHI" "S2" 60 0 "VHI" 200 0 "a_645_26#" 200 0

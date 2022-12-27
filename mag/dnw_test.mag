@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1671210538
+timestamp 1671648335
 << error_s >>
 rect 3640 4874 3698 4880
 rect 3832 4874 3890 4880
@@ -642,7 +642,7 @@ rect 4492 1080 4512 1140
 rect 3992 1070 4512 1080
 rect 4022 530 4142 1070
 use cmota_1_flat_1  cmota_1_flat_1_0
-timestamp 1671204228
+timestamp 1671334909
 transform 1 0 -2776 0 1 3180
 box -164 -3800 5363 2800
 use sky130_fd_pr__nfet_01v8_NMSMYT  sky130_fd_pr__nfet_01v8_NMSMYT_0

@@ -1,0 +1,6 @@
+| units: 500000 tech: sky130A format: MIT
+x DIODE VGND VGND l=0 w=0 x=383 y=27 sky130_fd_pr__diode_pw2nd_05v5
+x DIODE VPWR VPWR l=0 w=0 x=383 y=285 sky130_fd_pr__diode_pd2nw_05v5
+R DIODE 38
+R VPWR 3044
+R VGND 1899

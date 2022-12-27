@@ -1,0 +1,26 @@
+magic
+tech sky130A
+timestamp 1671647065
+use Pad$11  Pad$11_0
+array 0 0 0 0 1 6000
+timestamp 1671647065
+transform 1 0 24003 0 1 2136
+box -6003 -2000 -2003 2000
+use Pad$11  Pad$11_1
+array 0 0 0 0 1 6000
+timestamp 1671647065
+transform 1 0 18003 0 1 2136
+box -6003 -2000 -2003 2000
+use Pad$11  Pad$11_2
+array 0 0 0 0 1 6000
+timestamp 1671647065
+transform 1 0 12003 0 1 2136
+box -6003 -2000 -2003 2000
+use Pad$11  Pad$11_3
+array 0 0 0 0 1 6000
+timestamp 1671647065
+transform 1 0 6003 0 1 2136
+box -6003 -2000 -2003 2000
+<< properties >>
+string path 61.065 63.760 58.640 63.760 
+<< end >>

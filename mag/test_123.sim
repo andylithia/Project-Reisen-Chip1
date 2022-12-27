@@ -1,0 +1,16 @@
+| units: 500000 tech: sky130A format: MIT
+x G2 A VSUBS VSUBS l=30 w=2000 x=241 y=152 sky130_fd_pr__nfet_01v8
+x G1 VSUBS A VSUBS l=30 w=2000 x=146 y=152 sky130_fd_pr__nfet_01v8
+C A GND 3.23
+R A 4400
+= A sky130_fd_pr__nfet_01v8_FPZFGB_0/a_n33_n1000#
+R G1 3409
+= G1 sky130_fd_pr__nfet_01v8_FPZFGB_0/a_n81_n1088#
+R G2 3409
+= G2 sky130_fd_pr__nfet_01v8_FPZFGB_0/a_15_1022#
+R VSUBS 39917
+= VSUBS sky130_fd_pr__nfet_01v8_FPZFGB_0/a_n125_n1000#
+= VSUBS li_10_150#
+= VSUBS sky130_fd_pr__nfet_01v8_FPZFGB_0/a_63_n1000#
+= VSUBS li_292_166#
+= VSUBS sky130_fd_pr__nfet_01v8_FPZFGB_0/a_n227_n1174#
