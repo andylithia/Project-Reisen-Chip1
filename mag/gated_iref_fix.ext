@@ -1,0 +1,163 @@
+timestamp 1672168431
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use imirror2 imirror2_0 0 1 1260 1 0 -6240
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__res_xhigh_po l=l w=w
+parameters sky130_fd_pr__res_xhigh_po_5p73 l=l
+parameters sky130_fd_pr__res_xhigh_po_2p85 l=l
+parameters sky130_fd_pr__res_xhigh_po_1p41 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p69 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p35 l=l
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+parameters sky130_fd_pr__cap_mim_m3_2 w=w l=l
+node "m2_5060_n300#" 1 399.807 5060 -300 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48000 1040 48000 1040 0 0 0 0 0 0
+node "m2_940_200#" 7 2167.79 940 200 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 370000 9240 0 0 0 0 0 0 0 0
+node "a_1712_150#" 2498 38507.4 1712 150 ndif 0 0 0 0 0 0 0 0 66000 2264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34544 2168 52052 2210 97532 2904 8180000 15800 639000 3220 8180000 15800 0 0
+node "a_1444_106#" 2738 1226.36 1444 106 xpc 0 0 0 0 0 0 0 0 64000 2256 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 106458 4546 61776 2828 0 0 0 0 0 0 0 0 0 0
+node "a_1278_106#" 198 1806.58 1278 106 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63210 2086 32970 1082 242124 5372 0 0 0 0 0 0 0 0
+node "SBAR" 1872 641.569 1970 62 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41196 2576 0 0 2244 200 39414 2354 0 0 0 0 0 0 0 0 0 0
+node "S" 1872 653.615 1682 62 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41196 2576 0 0 2244 200 31780 1908 13260 614 0 0 0 0 0 0 0 0
+node "a_1278_538#" 10514 0 1278 538 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25760 876 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUB" 0 0 1102 -24 ppd 0 0 0 0 0 0 0 0 64000 2256 131784 7752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21864 1390 0 0 528660 12210 276400 4584 409600 5320 307200 2560 7551680 16064 0 0 0 0
+cap "a_1712_150#" "S" 278.167
+cap "m2_940_200#" "S" 9.35761
+cap "a_1444_106#" "S" 26.5155
+cap "a_1712_150#" "SBAR" 249.096
+cap "SBAR" "m2_940_200#" 5.3655
+cap "a_1444_106#" "SBAR" 70.8943
+cap "SBAR" "S" 714.187
+cap "a_1712_150#" "a_1278_106#" 617.528
+cap "m2_940_200#" "a_1278_106#" 17.1123
+cap "a_1444_106#" "a_1278_106#" 299.447
+cap "a_1278_106#" "S" 113.814
+cap "SBAR" "a_1278_106#" 103.094
+cap "a_1712_150#" "m2_5060_n300#" 391.078
+cap "a_1712_150#" "m2_940_200#" 39.6455
+cap "a_1712_150#" "a_1444_106#" 925.399
+cap "a_1444_106#" "m2_940_200#" 2.83356
+device csubckt sky130_fd_pr__cap_mim_m3_2 2250 -70 2251 -69 w=5520 l=1240 "None" "a_1712_150#" 13360 0 "VSUB" 2000 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 2250 -70 2251 -69 w=5520 l=1240 "None" "VSUB" 13360 0 "a_1712_150#" 2000 0
+device msubckt sky130_fd_pr__nfet_01v8 2066 150 2067 151 l=30 w=500 "VSUB" "SBAR" 60 0 "a_1712_150#" 500 0 "VSUB" 500 0
+device msubckt sky130_fd_pr__nfet_01v8 1970 150 1971 151 l=30 w=500 "VSUB" "SBAR" 60 0 "VSUB" 500 0 "a_1712_150#" 500 0
+device msubckt sky130_fd_pr__nfet_01v8 1874 150 1875 151 l=30 w=500 "VSUB" "VSUB" 60 0 "a_1444_106#" 500 0 "VSUB" 500 0
+device msubckt sky130_fd_pr__nfet_01v8 1778 150 1779 151 l=30 w=500 "VSUB" "S" 60 0 "a_1712_150#" 500 0 "a_1444_106#" 500 0
+device msubckt sky130_fd_pr__nfet_01v8 1682 150 1683 151 l=30 w=500 "VSUB" "S" 60 0 "a_1444_106#" 500 0 "a_1712_150#" 500 0
+device rsubckt sky130_fd_pr__res_xhigh_po 1278 538 1279 539 l=298 w=70 "VSUB" "a_1278_538#" 0 0 "a_1278_106#" 70 0 "a_1444_106#" 70 0
+cap "a_1712_150#" "imirror2_0/a_4493_207#" 0.0120423
+cap "imirror2_0/VLO" "imirror2_0/a_4493_207#" -47.4078
+cap "imirror2_0/a_4493_207#" "VSUB" 0.00061603
+cap "imirror2_0/VLO" "S" 5.66289
+cap "imirror2_0/IN" "imirror2_0/a_4493_207#" 99.0949
+cap "S" "imirror2_0/IN" 0.0100978
+cap "imirror2_0/VLO" "VSUB" 1.13991
+cap "imirror2_0/OUT" "imirror2_0/a_4493_207#" 0.869032
+cap "imirror2_0/VLO" "VSUB" 1.17249
+cap "imirror2_0/VLO" "a_1712_150#" 50.5319
+cap "imirror2_0/VLO" "VSUB" 1.84843
+cap "a_1712_150#" "imirror2_0/IN" 0.199536
+cap "imirror2_0/VLO" "imirror2_0/IN" 577.119
+cap "imirror2_0/VLO" "a_1444_106#" 3.66541
+cap "a_1444_106#" "imirror2_0/IN" 0.00469865
+cap "imirror2_0/VLO" "SBAR" 5.64353
+cap "SBAR" "imirror2_0/IN" 0.00806844
+cap "imirror2_0/VLO" "imirror2_0/OUT" 11.0185
+cap "imirror2_0/OUT" "imirror2_0/IN" 28.5986
+cap "imirror2_0/VLO" "a_1444_106#" 1.17249
+cap "a_1712_150#" "imirror2_0/a_4493_207#" 0.0743712
+cap "imirror2_0/VLO" "imirror2_0/a_4493_207#" -6.27106
+cap "imirror2_0/VHI" "imirror2_0/IN" 0.449856
+cap "imirror2_0/IN" "imirror2_0/a_4493_207#" 21.4885
+cap "imirror2_0/VLO" "VSUB" 1.67862
+cap "imirror2_0/IN" "VSUB" 0.512071
+cap "imirror2_0/OUT" "imirror2_0/a_4493_207#" 0.127421
+cap "imirror2_0/VLO" "a_1712_150#" 5.16764
+cap "imirror2_0/VHI" "VSUB" 6.50553
+cap "a_1712_150#" "imirror2_0/IN" 1.38125
+cap "imirror2_0/VLO" "imirror2_0/IN" 27.0538
+cap "imirror2_0/a_4493_207#" "VSUB" 0.0281716
+cap "imirror2_0/VLO" "imirror2_0/OUT" 0.871646
+cap "imirror2_0/OUT" "imirror2_0/IN" 3.82584
+cap "imirror2_0/VHI" "a_1712_150#" 19.3041
+cap "imirror2_0/a_4493_207#" "VSUB" 0.0372909
+cap "imirror2_0/VHI" "a_1712_150#" 6.8575
+cap "imirror2_0/VHI" "a_1712_150#" 21.4605
+cap "imirror2_0/a_4493_207#" "a_1712_150#" 0.0307342
+cap "imirror2_0/a_4493_207#" "a_1712_150#" 0.0699049
+cap "imirror2_0/VHI" "VSUB" 9.49927
+cap "imirror2_0/VLO" "imirror2_0/a_5868_1637#" -2.94715e-05
+cap "a_1444_106#" "imirror2_0/IN" 0.37518
+cap "S" "SBAR" 0.373624
+cap "imirror2_0/VLO" "a_1712_150#" 687.304
+cap "imirror2_0/OUT" "a_1712_150#" 413.431
+cap "SBAR" "imirror2_0/IN" 3.94912
+cap "imirror2_0/VLO" "imirror2_0/OUT" 280.986
+cap "S" "a_1712_150#" -3.96595
+cap "imirror2_0/VLO" "S" 107.176
+cap "imirror2_0/VLO" "imirror2_0/a_5468_1540#" -0.00346825
+cap "a_1712_150#" "imirror2_0/IN" 57.5392
+cap "imirror2_0/VLO" "imirror2_0/IN" 134.398
+cap "S" "imirror2_0/OUT" 15.9586
+cap "a_1712_150#" "imirror2_0/a_4493_207#" 0.0602176
+cap "imirror2_0/VLO" "imirror2_0/a_4493_207#" 0.00343863
+cap "imirror2_0/VLO" "imirror2_0/VHI" 0.139452
+cap "imirror2_0/OUT" "imirror2_0/IN" 21.2394
+cap "imirror2_0/VLO" "a_1444_106#" 52.8202
+cap "imirror2_0/OUT" "imirror2_0/a_4493_207#" 1.62205
+cap "SBAR" "a_1712_150#" 5.04633
+cap "S" "imirror2_0/IN" -1.3466
+cap "imirror2_0/OUT" "a_1444_106#" 34.7623
+cap "imirror2_0/VLO" "SBAR" 111.102
+cap "SBAR" "imirror2_0/OUT" 36.9738
+cap "a_1712_150#" "imirror2_0/VHI" 223.577
+cap "imirror2_0/VLO" "imirror2_0/VHI" 79.506
+cap "imirror2_0/IN" "imirror2_0/VLO" 7.76268
+cap "imirror2_0/OUT" "imirror2_0/IN" 2.2276
+cap "imirror2_0/OUT" "imirror2_0/VHI" 26.9796
+cap "a_1712_150#" "imirror2_0/a_5468_1540#" 218.767
+cap "imirror2_0/a_5468_1540#" "imirror2_0/VLO" 68.652
+cap "a_1712_150#" "imirror2_0/a_4493_207#" 192.516
+cap "imirror2_0/OUT" "imirror2_0/a_5468_1540#" 0.287986
+cap "imirror2_0/a_4493_207#" "imirror2_0/VLO" 61.725
+cap "imirror2_0/OUT" "imirror2_0/a_4493_207#" 0.237338
+cap "a_1712_150#" "imirror2_0/VLO" 129.528
+cap "imirror2_0/OUT" "a_1712_150#" 331.061
+cap "imirror2_0/OUT" "imirror2_0/VLO" 132.836
+cap "a_1712_150#" "imirror2_0/a_5868_1637#" 153.101
+cap "imirror2_0/a_5868_1637#" "imirror2_0/VLO" 38.7986
+cap "a_1712_150#" "imirror2_0/IN" 16.439
+cap "imirror2_0/OUT" "imirror2_0/a_5868_1637#" 0.0249337
+cap "a_1712_150#" "imirror2_0/OUT" 62.3488
+cap "imirror2_0/a_4493_207#" "a_1712_150#" 13.6452
+cap "a_1712_150#" "imirror2_0/OUT" 139.067
+cap "VSUB" "imirror2_0/VHI" 113.763
+cap "imirror2_0/a_5868_1637#" "a_1712_150#" 48.0638
+cap "imirror2_0/a_5468_1540#" "VSUB" 89.5043
+cap "imirror2_0/a_5868_1637#" "a_1712_150#" 128.943
+cap "imirror2_0/a_4493_207#" "VSUB" 80.5587
+cap "VSUB" "imirror2_0/OUT" 72.1958
+cap "a_1712_150#" "imirror2_0/VHI" 111.857
+cap "a_1712_150#" "imirror2_0/VHI" 110.461
+cap "imirror2_0/a_5468_1540#" "a_1712_150#" 93.312
+cap "imirror2_0/a_5868_1637#" "VSUB" 53.232
+cap "imirror2_0/a_4493_207#" "a_1712_150#" 84.2245
+cap "imirror2_0/a_5468_1540#" "a_1712_150#" 22.6216
+cap "a_1712_150#" "imirror2_0/VHI" 0.0995882
+cap "a_1712_150#" "imirror2_0/VHI" -2.84217e-14
+cap "VSUB" "imirror2_0/VHI" 0.101314
+cap "SBAR" "imirror2_0/OUT" 0.0967079
+cap "imirror2_0/OUT" "S" 0.0967079
+cap "imirror2_0/VLO" "a_1444_106#" 4.40917
+cap "imirror2_0/OUT" "a_1712_150#" 3.53767
+cap "imirror2_0/VLO" "SBAR" 0.429305
+cap "imirror2_0/VLO" "S" 0.429305
+cap "imirror2_0/VLO" "a_1712_150#" 17.3049
+cap "imirror2_0/VLO" "imirror2_0/OUT" 0.183347
+cap "imirror2_0/OUT" "a_1444_106#" 0.271725
+merge "imirror2_0/IN" "m2_940_200#" -686.826 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8400 -400 0 0 0 0 0 0 0 0
+merge "imirror2_0/VHI" "m2_5060_n300#" -128.659 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -400 0 0 0 0 0 0 0 0
+merge "imirror2_0/VLO" "VSUB" -2595.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12800 -720 0 0 0 -640 0 0 -3901300 -7302 0 0 0 0
+merge "imirror2_0/OUT" "a_1278_106#" -615.759 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36900 -1000 0 0 0 0 0 0 0 0

@@ -1,15 +1,12 @@
 magic
 tech sky130A
-timestamp 1672031135
-<< checkpaint >>
-rect -630 -630 44830 15030
-rect 15920 -1260 41780 -630
+timestamp 1672206264
 use unitcell_simplify  unitcell_simplify_0
-timestamp 1672031135
+timestamp 1672206264
 transform -1 0 45100 0 1 10900
 box 900 -10900 25500 3500
 use unitcell_simplify  unitcell_simplify_1
-timestamp 1672031135
+timestamp 1672206264
 transform 1 0 -900 0 1 10900
 box 900 -10900 25500 3500
 << end >>

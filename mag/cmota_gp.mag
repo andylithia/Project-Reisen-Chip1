@@ -213,7 +213,7 @@ use cmota_1_flat_1  cmota_1_flat_1_0
 timestamp 1671334909
 transform 1 0 -2836 0 1 -3200
 box -164 -3800 5363 2800
-use gated_iref  gated_iref_0
+use gated_iref_fix  gated_iref_fix_0
 timestamp 1671634351
 transform 0 1 -4300 1 0 -7948
 box 1038 -100 7800 1200

@@ -1,0 +1,21 @@
+| units: 500000 tech: sky130A format: MIT
+x a_4493_207# a_4493_207# VHI VHI l=400 w=2000 x=4552 y=1637 sky130_fd_pr__pfet_01v8
+x VLO VLO a_4493_207# VLO l=400 w=1000 x=4093 y=207 sky130_fd_pr__nfet_01v8
+x VLO OUT VLO VLO l=400 w=1000 x=5467 y=207 sky130_fd_pr__nfet_01v8
+x a_5468_1540# OUT a_5868_1637# VHI l=400 w=2000 x=5468 y=1637 sky130_fd_pr__pfet_01v8
+x OUT VLO OUT VLO l=400 w=1000 x=5009 y=207 sky130_fd_pr__nfet_01v8
+x IN a_4493_207# VLO VLO l=400 w=1000 x=4551 y=207 sky130_fd_pr__nfet_01v8
+x a_4094_1540# a_4036_1637# a_4493_207# VHI l=400 w=2000 x=4094 y=1637 sky130_fd_pr__pfet_01v8
+x a_4493_207# VHI OUT VHI l=400 w=2000 x=5010 y=1637 sky130_fd_pr__pfet_01v8
+C a_4493_207# VHI 3.26
+R IN 435
+C OUT GND 3.20
+R OUT 10501
+C VHI GND 18.78
+R VHI 41707
+R VLO 49411
+R a_5868_1637# 7554
+R a_4036_1637# 7554
+R a_5468_1540# 595
+R a_4493_207# 11391
+R a_4094_1540# 595

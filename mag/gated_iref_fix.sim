@@ -1,0 +1,17 @@
+| units: 500000 tech: sky130A format: MIT
+x a_1278_538# IN a_1444_106# VSUB l=298 w=70 x=1278 y=538 sky130_fd_pr__res_xhigh_po
+x SBAR a_1712_150# VSUB VSUB l=30 w=500 x=2066 y=150 sky130_fd_pr__nfet_01v8
+x VSUB a_1712_150# l=1240 w=5520 x=2250 y=-69 sky130_fd_pr__cap_mim_m3_1
+x a_1712_150# VSUB l=1240 w=5520 x=2250 y=-69 sky130_fd_pr__cap_mim_m3_2
+x S a_1444_106# a_1712_150# VSUB l=30 w=500 x=1682 y=150 sky130_fd_pr__nfet_01v8
+x VSUB a_1444_106# VSUB VSUB l=30 w=500 x=1874 y=150 sky130_fd_pr__nfet_01v8
+x SBAR VSUB a_1712_150# VSUB l=30 w=500 x=1970 y=150 sky130_fd_pr__nfet_01v8
+x S a_1712_150# a_1444_106# VSUB l=30 w=500 x=1778 y=150 sky130_fd_pr__nfet_01v8
+C a_1712_150# GND 39.61
+R a_1712_150# 2498
+R a_1444_106# 2738
+R IN 195
+R SBAR 1872
+R S 1872
+R a_1278_538# 10514
+R VSUB 26040

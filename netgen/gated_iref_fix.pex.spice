@@ -1,0 +1,8 @@
+* NGSPICE file created from gated_iref_fix.ext - technology: sky130A
+X0 IN a_1444_106# VSUB sky130_fd_pr__res_xhigh_po w=350000u l=1.49e+06u
+X1 VSUB SBAR a_1712_150# VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X2 VSUB a_1712_150# sky130_fd_pr__cap_mim_m3_1 l=6.2e+06u w=2.76e+07u
+X3 a_1712_150# VSUB sky130_fd_pr__cap_mim_m3_2 l=6.2e+06u w=2.76e+07u
+X4 a_1712_150# S a_1444_106# VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X6 a_1712_150# SBAR VSUB VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X7 a_1444_106# S a_1712_150# VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u

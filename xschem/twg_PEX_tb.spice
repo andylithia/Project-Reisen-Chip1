@@ -17,7 +17,7 @@ x1 net3 net1 vdd vdd clkin vdd vdd vdd vdd vdd GND GND GND vdd GND vout vdd vref
 V7 clkin GND PULSE(1.8 0 0 1n 1n 200n 400n)
 .save i(v7)
 x16 net4 net5 net6 net7 net8 net9 net10 net11 vout GND swcap_array_PEX
-x2 vdd vout1 vout1 vout vref vdd GND GND i_type_ota_gb_rp_gp_PEX
+x2 vdd vout1 vout1 vout vref GND vdd GND i_type_ota_gb_rp_gp_PEX
 L11 net4 vdd 1n m=1
 L12 net5 vdd 1n m=1
 L13 net6 vdd 1n m=1
@@ -26,6 +26,7 @@ L17 net8 vdd 1n m=1
 L18 net9 GND 1n m=1
 L19 net10 GND 1n m=1
 L20 net11 GND 1n m=1
+C1 vout1 GND 1p m=1
 **** begin user architecture code
 .lib /home/andylithia/openmpw/pdk_1/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /home/andylithia/openmpw/pdk_1/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice

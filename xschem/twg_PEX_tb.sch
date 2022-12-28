@@ -175,9 +175,9 @@ N 500 80 570 80 {
 lab=vout}
 N 500 100 570 100 {
 lab=vref}
-N 500 120 570 120 {
+N 450 120 520 120 {
 lab=vdd}
-N 570 140 570 160 {
+N 520 140 520 160 {
 lab=GND}
 N -260 -740 -190 -740 {
 lab=#net4}
@@ -195,6 +195,18 @@ N -260 -620 -190 -620 {
 lab=#net10}
 N -260 -600 -190 -600 {
 lab=#net11}
+N 920 80 920 120 {
+lab=vout1}
+N 900 80 920 80 {
+lab=vout1}
+N 920 180 920 210 {
+lab=GND}
+N 920 210 920 230 {
+lab=GND}
+N 520 120 570 140 {
+lab=vdd}
+N 520 140 570 120 {
+lab=GND}
 C {devices/gnd.sym} 710 -430 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 710 -470 0 0 {name=V1 value=0.9}
 C {devices/vsource.sym} 640 -470 0 0 {name=V2 value=1.8}
@@ -267,8 +279,8 @@ C {devices/gnd.sym} 870 130 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 530 80 0 0 {name=p20 sig_type=std_logic lab=vout}
 C {devices/lab_wire.sym} 900 80 0 1 {name=p21 sig_type=std_logic lab=vout1}
 C {devices/lab_wire.sym} 530 100 0 0 {name=p22 sig_type=std_logic lab=vref}
-C {devices/lab_wire.sym} 530 120 0 0 {name=p23 sig_type=std_logic lab=vdd}
-C {devices/gnd.sym} 570 160 0 0 {name=l10 lab=GND}
+C {devices/lab_wire.sym} 480 120 0 0 {name=p23 sig_type=std_logic lab=vdd}
+C {devices/gnd.sym} 520 160 0 0 {name=l10 lab=GND}
 C {devices/ind.sym} -290 -740 1 0 {name=L11
 m=1
 value=1n
@@ -309,3 +321,9 @@ m=1
 value=1n
 footprint=1206
 device=inductor}
+C {devices/capa.sym} 920 150 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 920 230 0 0 {name=l21 lab=GND}

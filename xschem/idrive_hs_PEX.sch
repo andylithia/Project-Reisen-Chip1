@@ -211,6 +211,32 @@ N 420 -560 420 -480 {
 lab=vdd}
 N 420 -460 420 -390 {
 lab=GND}
+N 560 110 580 110 {
+lab=vout_buf}
+N 560 30 560 110 {
+lab=vout_buf}
+N 560 30 900 30 {
+lab=vout_buf}
+N 900 30 900 130 {
+lab=vout_buf}
+N 890 130 900 130 {
+lab=vout_buf}
+N 880 130 890 130 {
+lab=vout_buf}
+N 880 150 880 170 {
+lab=GND}
+N 550 190 550 210 {
+lab=GND}
+N 470 150 490 150 {
+lab=vrefn}
+N 490 150 580 150 {
+lab=vrefn}
+N 510 130 520 130 {
+lab=vout}
+N 550 170 580 170 {
+lab=vdd}
+N 550 190 580 190 {
+lab=GND}
 C {devices/gnd.sym} 440 0 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 440 -40 0 0 {name=V1 value=0.9}
 C {devices/vsource.sym} 370 -40 0 0 {name=V2 value=1.8}
@@ -287,3 +313,15 @@ C {devices/gnd.sym} 900 270 0 0 {name=l9 lab=GND}
 C {i_type_ota_gb_rp_gp_PEX.sym} 710 620 0 0 {name=x3}
 C {devices/lab_wire.sym} 930 600 0 1 {name=p21 sig_type=std_logic lab=llim}
 C {devices/lab_wire.sym} 360 460 0 0 {name=p9 sig_type=std_logic lab=vrefn}
+C {i_type_ota_gb_rp_gp_PEX.sym} 730 150 0 0 {name=x4}
+C {devices/lab_wire.sym} 880 110 0 1 {name=p22 sig_type=std_logic lab=vdd}
+C {devices/gnd.sym} 880 170 0 0 {name=l5 lab=GND}
+C {devices/lab_wire.sym} 470 150 0 0 {name=p23 sig_type=std_logic lab=vrefn}
+C {devices/gnd.sym} 550 210 0 0 {name=l10 lab=GND}
+C {devices/lab_wire.sym} 550 170 0 0 {name=p24 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 870 30 0 0 {name=p31 sig_type=std_logic lab=vout_buf}
+C {devices/res.sym} 550 130 1 0 {name=R2
+value=10k
+footprint=1206
+device=resistor
+m=1}
