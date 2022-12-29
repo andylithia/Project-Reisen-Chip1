@@ -1,0 +1,109 @@
+| units: 500000 tech: sky130A format: MIT
+x sky130_fd_pr__res_xhigh_po_0p35_FE9J4G_0/a_n35_n10000# A B VLO l=20000 w=0 x=45434 y=25996 sky130_fd_pr__res_xhigh_po_0p35
+x A B l=19720 w=8320 x=177640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=86040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=186040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=167640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=237640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=126040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=246040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=247640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=77640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=276040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=67640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=216040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=56040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=156040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=76040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=176040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=137640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=187640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=127640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=177640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=207640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=257640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=126040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=246040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=247640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=46040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=146040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=266040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=87640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=216040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=77640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=147640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=76040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=176040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=137640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=116040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=236040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=197640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=217640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=187640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=207640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=257640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=96040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=196040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=267640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=146040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=266040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=206040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=47640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=97640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=46040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=87640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=66040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=166040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=107640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=157640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=116040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=236040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=147640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=197640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=217640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=227640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=277640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=96040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=196040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=267640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=136040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=256040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=57640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=206040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=47640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=97640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=226040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=66040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=166040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=106040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=117640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=167640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=107640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=157640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=86040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=186040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=237640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=227640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=277640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=136040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=256040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=156040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=276040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=67640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=57640 y=6040 sky130_fd_pr__cap_mim_m3_2
+x A B l=19720 w=8320 x=56040 y=26240 sky130_fd_pr__cap_mim_m3_1
+x A B l=19720 w=8320 x=127640 y=6040 sky130_fd_pr__cap_mim_m3_1
+x B A l=19720 w=8320 x=106040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=226040 y=26240 sky130_fd_pr__cap_mim_m3_2
+x B A l=19720 w=8320 x=117640 y=6040 sky130_fd_pr__cap_mim_m3_2
+C A B 30956.81
+R VLO 263507
+= VLO sky130_fd_pr__res_xhigh_po_0p35_FE9J4G_0/a_n165_n10562#
+= VLO VSUBS
+C A GND 392.52
+R A 188
+= A sky130_fd_pr__res_xhigh_po_0p35_FE9J4G_0/a_n35_n10432#
+R sky130_fd_pr__res_xhigh_po_0p35_FE9J4G_0/a_n35_n10000# 571429
+C B GND 3661.24
+R B 245
+= B sky130_fd_pr__res_xhigh_po_0p35_FE9J4G_0/a_n35_10000#

@@ -1,18 +1,5 @@
 * NGSPICE file created from twg_top_test.ext - technology: sky130A
 
-.subckt sky130_fd_pr__res_xhigh_po_0p35_KD7HM5 a_380_n482# a_n616_n482# a_214_n482#
-+ a_48_50# a_n616_50# a_546_50# a_48_n482# a_n746_n612# a_546_n482# a_n450_50# a_380_50#
-+ a_214_50# a_n284_50# a_n450_n482# a_n118_50# a_n284_n482# a_n118_n482#
-X0 a_546_n482# a_546_50# a_n746_n612# sky130_fd_pr__res_xhigh_po_0p35 l=500000u
-X1 a_n118_n482# a_n118_50# a_n746_n612# sky130_fd_pr__res_xhigh_po_0p35 l=500000u
-X2 a_48_n482# a_48_50# a_n746_n612# sky130_fd_pr__res_xhigh_po_0p35 l=500000u
-X3 a_214_n482# a_214_50# a_n746_n612# sky130_fd_pr__res_xhigh_po_0p35 l=500000u
-X4 a_n616_n482# a_n616_50# a_n746_n612# sky130_fd_pr__res_xhigh_po_0p35 l=500000u
-X5 a_n284_n482# a_n284_50# a_n746_n612# sky130_fd_pr__res_xhigh_po_0p35 l=500000u
-X6 a_380_n482# a_380_50# a_n746_n612# sky130_fd_pr__res_xhigh_po_0p35 l=500000u
-X7 a_n450_n482# a_n450_50# a_n746_n612# sky130_fd_pr__res_xhigh_po_0p35 l=500000u
-.ends
-
 .subckt sky130_fd_sc_hs__diode_2 DIODE VGND VPB VPWR VNB
 D0 VNB DIODE sky130_fd_pr__diode_pw2nd_05v5 pj=3.24e+06 area=6.417e+11
 .ends
@@ -207,14 +194,27 @@ Xsky130_fd_sc_hs__and2_4_0 sky130_fd_sc_hs__mux2_1_1/S sky130_fd_sc_hs__and2_4_0
 + VLO VHI GN VLO VHI sky130_fd_sc_hs__and2_4
 .ends
 
-.subckt gated_iref OUT SBAR VSUB S IN
-X0 IN a_1444_106# VSUB sky130_fd_pr__res_xhigh_po w=350000u l=1.49e+06u
-X1 VSUB SBAR a_1444_106# VSUB sky130_fd_pr__nfet_01v8 ad=8.25e+11p pd=5.66e+06u as=2.375e+12p ps=1.69e+07u w=2.5e+06u l=150000u
-X2 OUT S a_1444_106# VSUB sky130_fd_pr__nfet_01v8 ad=8.25e+11p pd=5.66e+06u as=0p ps=0u w=2.5e+06u l=150000u
-X3 a_1444_106# S OUT VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
-X4 a_1444_106# SBAR VSUB VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
-X5 VSUB OUT sky130_fd_pr__cap_mim_m3_1 l=5.5e+06u w=2.7e+07u
-X6 OUT VSUB sky130_fd_pr__cap_mim_m3_2 l=5.5e+06u w=2.7e+07u
+.subckt imirror2 OUT VLO VHI IN
+X0 VHI a_4493_207# a_4493_207# VHI sky130_fd_pr__pfet_01v8 ad=2.9e+12p pd=2.058e+07u as=2.9e+12p ps=2.058e+07u w=1e+07u l=2e+06u
+X1 a_4493_207# VLO VLO VLO sky130_fd_pr__nfet_01v8 ad=1.45e+12p pd=1.058e+07u as=4.35e+12p ps=3.174e+07u w=5e+06u l=2e+06u
+X2 VLO VLO OUT VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=2e+06u
+X3 a_5868_1637# a_5468_1540# OUT VHI sky130_fd_pr__pfet_01v8 ad=2.9e+12p pd=2.058e+07u as=2.9e+12p ps=2.058e+07u w=1e+07u l=2e+06u
+X4 OUT OUT VLO VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+X5 VLO IN a_4493_207# VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+X6 a_4493_207# a_4094_1540# a_4036_1637# VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.9e+12p ps=2.058e+07u w=1e+07u l=2e+06u
+X7 OUT a_4493_207# VHI VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=2e+06u
+.ends
+
+.subckt gated_iref_fix imirror2_0/VHI SBAR VSUB a_1712_150# S imirror2_0/IN
+Ximirror2_0 imirror2_0/OUT VSUB imirror2_0/VHI imirror2_0/IN imirror2
+X0 imirror2_0/OUT a_1444_106# VSUB sky130_fd_pr__res_xhigh_po w=350000u l=1.49e+06u
+X1 VSUB SBAR a_1712_150# VSUB sky130_fd_pr__nfet_01v8 ad=5.95e+12p pd=4.302e+07u as=1.65e+12p ps=1.132e+07u w=2.5e+06u l=150000u
+X2 VSUB a_1712_150# sky130_fd_pr__cap_mim_m3_1 l=6.2e+06u w=2.76e+07u
+X3 a_1712_150# VSUB sky130_fd_pr__cap_mim_m3_2 l=6.2e+06u w=2.76e+07u
+X4 a_1712_150# S a_1444_106# VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.6e+12p ps=1.128e+07u w=2.5e+06u l=150000u
+X5 VSUB VSUB a_1444_106# VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X6 a_1712_150# SBAR VSUB VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X7 a_1444_106# S a_1712_150# VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
 .ends
 
 .subckt sky130_fd_pr__res_high_po_0p69_G8QCSG a_48_n518# a_n186_n518# a_n316_n648#
@@ -295,8 +295,8 @@ X68 VHI DN a_2925_285# VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+
 X69 VHI DP VOP VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=300000u
 .ends
 
-.subckt cmota_gb_rp_gp SBAR VREF VIP VIN S VOP VHI VLO
-Xgated_iref_0 VREF_GATED SBAR VLO S VREF gated_iref
+.subckt cmota_gb_rp_gp SBAR VREF VIP VIN VLO S VOP VHI
+Xgated_iref_fix_0 VHI SBAR VLO VREF_GATED S VREF gated_iref_fix
 Xcmota_gb_rp_0 VREF_GATED VIP VIN VLO VOP VHI cmota_gb_rp
 X0 VLO VHI sky130_fd_pr__cap_mim_m3_2 l=3.1e+07u w=1.3e+07u
 X1 VHI VLO sky130_fd_pr__cap_mim_m3_1 l=3.1e+07u w=1.3e+07u
@@ -407,28 +407,31 @@ X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.69e+11p p
 X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=2.6e+11p ps=2.52e+06u w=1e+06u l=150000u
 .ends
 
-.subckt twg_top_test IREF ULIM C50 C100 CLKIN LLIM B0 B1 B2 B3 B4 B5 B6 B7 VHI VLO
-+ VOUT OPAEN GP GN LLIM_A ULIM_A MUX_OUT UPDN ENCLK VREF_OPA RSTB
-Xsky130_fd_pr__res_xhigh_po_0p35_KD7HM5_0 swcap_array_1_0/B6 swcap_array_1_0/B0 swcap_array_1_0/B5
-+ B4 B0 B7 swcap_array_1_0/B4 VLO swcap_array_1_0/B7 B1 B6 B5 B2 swcap_array_1_0/B1
-+ B3 swcap_array_1_0/B2 swcap_array_1_0/B3 sky130_fd_pr__res_xhigh_po_0p35_KD7HM5
+.subckt twg_top_test IREF ULIM C50 C100 CLKIN LLIM VHI VLO VOUT OPAEN GP GN LLIM_A
++ ULIM_A MUX_OUT UPDN ENCLK VREF_OPA RSTB GATE1 GATE2 OUT1 OUT2 B0 B1 B2 B3 B4 B5
++ B6 B7
 Xsky130_fd_sc_hs__diode_2_1 CLKIN VLO VHI VHI VLO sky130_fd_sc_hs__diode_2
 Xsky130_fd_sc_hs__diode_2_0 ULIM_A VLO VHI VHI VLO sky130_fd_sc_hs__diode_2
 Xsky130_fd_sc_hs__diode_2_2 LLIM_A VLO VHI VHI VLO sky130_fd_sc_hs__diode_2
 Xtwcon_0 UPDN ULIM_A LLIM_A RSTB C100 C50 MUX_OUT ENCLK GN GP CLKIN VHI VLO twcon
-Xcmota_gb_rp_gp_0 cmota_gb_rp_gp_1/SBAR VREF_OPA VOUT ULIM OPAEN ULIM_A VHI VLO cmota_gb_rp_gp
-Xcmota_gb_rp_gp_1 cmota_gb_rp_gp_1/SBAR VREF_OPA LLIM VOUT OPAEN LLIM_A VHI VLO cmota_gb_rp_gp
+Xcmota_gb_rp_gp_0 cmota_gb_rp_gp_1/SBAR VREF_OPA VOUT ULIM VLO OPAEN ULIM_A VHI cmota_gb_rp_gp
+Xcmota_gb_rp_gp_1 cmota_gb_rp_gp_1/SBAR VREF_OPA LLIM VOUT VLO OPAEN LLIM_A VHI cmota_gb_rp_gp
 Xsky130hd_esd_0 C50 VHI VLO sky130hd_esd
+Xcmota_gb_rp_gp_3 cmota_gb_rp_gp_3/SBAR VREF_OPA VOUT OUT1 VLO GATE1 OUT1 VHI cmota_gb_rp_gp
+Xcmota_gb_rp_gp_2 cmota_gb_rp_gp_2/SBAR VREF_OPA VOUT OUT2 VLO GATE2 OUT2 VHI cmota_gb_rp_gp
 Xsky130hd_esd_1 RSTB VHI VLO sky130hd_esd
 Xsky130hd_esd_3 IREF VHI VLO sky130hd_esd
 Xsky130hd_esd_2 C100 VHI VLO sky130hd_esd
 Xsky130hd_esd_4 VREF_OPA VHI VLO sky130hd_esd
 Xsky130hd_esd_5 OPAEN VHI VLO sky130hd_esd
-Xswcap_array_1_0 swcap_array_1_0/B7 swcap_array_1_0/B6 swcap_array_1_0/B5 swcap_array_1_0/B4
-+ swcap_array_1_0/B3 swcap_array_1_0/B2 swcap_array_1_0/B0 swcap_array_1_0/B1 VLO
-+ VOUT swcap_array_1
+Xswcap_array_1_0 B7 B6 B5 B4 B3 B2 B0 B1 VLO VOUT swcap_array_1
 Xsky130hd_esd_6 CLKIN VHI VLO sky130hd_esd
+Xsky130hd_esd_7 GATE1 VHI VLO sky130hd_esd
+Xsky130hd_esd_9 GATE2 VHI VLO sky130hd_esd
 Xisrc_0 VOUT VLO GP VHI GN IREF isrc
+Xsky130_fd_sc_hd__inv_1_1 GATE2 VLO VHI cmota_gb_rp_gp_2/SBAR VLO VHI sky130_fd_sc_hd__inv_1
 Xsky130_fd_sc_hd__inv_1_0 OPAEN VLO VHI cmota_gb_rp_gp_1/SBAR VLO VHI sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_2 GATE1 VLO VHI cmota_gb_rp_gp_3/SBAR VLO VHI sky130_fd_sc_hd__inv_1
+Xsky130hd_esd_10 VREF_OPA VHI VLO sky130hd_esd
 .ends
 

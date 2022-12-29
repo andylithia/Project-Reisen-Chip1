@@ -26,24 +26,24 @@ node "A" 900 172.217 223 242 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "B" 900 166.286 31 242 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21714 1332 0 0 4884 280 0 0 0 0 0 0 0 0 0 0 0 0
 node "VPB" 971 406.224 0 617 nw 0 0 0 0 135408 1472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VNB" 0 0 0 0 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "Y" "A" 61.7587
-cap "VPB" "VGND" 13.4053
-cap "VPB" "B" 17.1154
-cap "a_117_74#" "VGND" 1.31686
-cap "B" "VGND" 40.3766
-cap "VPWR" "VPB" 47.9574
-cap "VPWR" "a_117_74#" 0.958887
-cap "VPWR" "VGND" 39.2836
-cap "VPWR" "B" 32.5913
-cap "VPB" "A" 17.7051
-cap "A" "VGND" 7.69111
-cap "B" "A" 61.8446
-cap "VPWR" "A" 32.127
-cap "Y" "VPB" 5.26411
-cap "Y" "a_117_74#" 2.73573
-cap "Y" "VGND" 70.7962
-cap "Y" "B" 21.1309
 cap "Y" "VPWR" 215.248
+cap "VPB" "Y" 5.26411
+cap "Y" "B" 21.1309
+cap "VPWR" "A" 32.127
+cap "B" "A" 61.8446
+cap "VPB" "A" 17.7051
+cap "VGND" "VPWR" 39.2836
+cap "Y" "a_117_74#" 2.73573
+cap "VPB" "VGND" 13.4053
+cap "B" "VGND" 40.3766
+cap "Y" "A" 61.7587
+cap "VPB" "VPWR" 47.9574
+cap "B" "VPWR" 32.5913
+cap "VGND" "a_117_74#" 1.31686
+cap "VPB" "B" 17.1154
+cap "Y" "VGND" 70.7962
+cap "a_117_74#" "VPWR" 0.958887
+cap "VGND" "A" 7.69111
 device msubckt sky130_fd_pr__nfet_01v8_lvt 165 74 166 75 l=30 w=148 "VNB" "A" 60 0 "a_117_74#" 148 0 "Y" 148 0
 device msubckt sky130_fd_pr__nfet_01v8_lvt 87 74 88 75 l=30 w=148 "VNB" "B" 60 0 "VGND" 148 0 "a_117_74#" 148 0
 device msubckt sky130_fd_pr__pfet_01v8 174 368 175 369 l=30 w=224 "VPB" "A" 60 0 "Y" 224 0 "VPWR" 224 0

@@ -143,69 +143,17 @@ N -40 -110 -10 -110 {
 lab=GND}
 N -40 -110 -40 -90 {
 lab=GND}
-N 140 -720 140 -700 {
+N -40 -10 -10 -10 {
 lab=GND}
-N 110 -720 140 -720 {
-lab=GND}
-N 110 -740 190 -740 {
-lab=vout}
-N 190 -740 190 -550 {
-lab=vout}
-N -320 -770 -320 -740 {
+N -60 10 -10 10 {
 lab=vdd}
-N -320 -740 -320 -660 {
+N -60 -30 -60 10 {
 lab=vdd}
-N -320 -640 -320 -570 {
-lab=GND}
-N 190 -550 390 -280 {
-lab=vout}
-N 540 60 570 60 {
-lab=vout1}
-N 540 20 540 60 {
-lab=vout1}
-N 540 20 900 20 {
-lab=vout1}
-N 900 20 900 80 {
-lab=vout1}
-N 870 80 900 80 {
-lab=vout1}
-N 870 100 870 130 {
-lab=GND}
-N 500 80 570 80 {
-lab=vout}
-N 500 100 570 100 {
-lab=vref}
-N 450 120 520 120 {
-lab=vdd}
-N 520 140 520 160 {
-lab=GND}
-N -260 -740 -190 -740 {
-lab=#net4}
-N -260 -720 -190 -720 {
-lab=#net5}
-N -260 -700 -190 -700 {
-lab=#net6}
-N -260 -680 -190 -680 {
-lab=#net7}
-N -260 -660 -190 -660 {
-lab=#net8}
-N -260 -640 -190 -640 {
-lab=#net9}
-N -260 -620 -190 -620 {
-lab=#net10}
-N -260 -600 -190 -600 {
-lab=#net11}
-N 920 80 920 120 {
-lab=vout1}
-N 900 80 920 80 {
-lab=vout1}
-N 920 180 920 210 {
-lab=GND}
-N 920 210 920 230 {
-lab=GND}
-N 520 120 570 140 {
-lab=vdd}
-N 520 140 570 120 {
+N 290 -70 380 -70 {
+lab=OUT1}
+N 290 -50 380 -50 {
+lab=OUT2}
+N 300 -60 300 -20 {
 lab=GND}
 C {devices/gnd.sym} 710 -430 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 710 -470 0 0 {name=V1 value=0.9}
@@ -251,9 +199,9 @@ C {devices/lab_wire.sym} 800 -260 0 0 {name=p19 sig_type=std_logic lab=vout_amp}
 C {devices/isource.sym} 350 -500 0 0 {name=I2 value=10u}
 C {devices/lab_wire.sym} 350 -560 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {devices/gnd.sym} 640 -430 0 0 {name=l3 lab=GND}
-C {twg_PEX.sym} 140 -170 0 0 {name=x1}
+C {twg_PEX.sym} 140 -150 0 0 {name=x1}
 C {devices/lab_wire.sym} 290 -310 0 1 {name=p3 sig_type=std_logic lab=vdd}
-C {devices/gnd.sym} 300 -60 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} 300 -20 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} -100 -20 0 0 {name=V7 value="PULSE(1.8 0 0 1n 1n 200n 400n)"}
 C {devices/gnd.sym} -100 30 0 0 {name=l8 lab=GND}
 C {devices/lab_wire.sym} -20 -230 0 0 {name=p16 sig_type=std_logic lab=clkin}
@@ -269,61 +217,5 @@ C {devices/lab_wire.sym} 350 -130 0 1 {name=p12 sig_type=std_logic lab=LIMN_PULS
 }
 C {devices/lab_wire.sym} 350 -110 0 1 {name=p13 sig_type=std_logic lab=UPDN}
 C {devices/lab_wire.sym} 350 -90 0 1 {name=p15 sig_type=std_logic lab=ENCLK}
-C {swcap_array_PEX.sym} -40 -670 0 0 {name=x16}
-C {devices/gnd.sym} 140 -700 0 0 {name=l14 lab=GND}
-C {devices/gnd.sym} -320 -570 0 0 {name=l15 lab=GND}
-C {devices/lab_wire.sym} -320 -770 0 0 {name=p25 sig_type=std_logic lab=vdd}
-C {i_type_ota_gb_rp_gp_PEX.sym} 720 100 0 0 {name=x2}
-C {devices/lab_wire.sym} 870 60 0 1 {name=p17 sig_type=std_logic lab=vdd}
-C {devices/gnd.sym} 870 130 0 0 {name=l9 lab=GND}
-C {devices/lab_wire.sym} 530 80 0 0 {name=p20 sig_type=std_logic lab=vout}
-C {devices/lab_wire.sym} 900 80 0 1 {name=p21 sig_type=std_logic lab=vout1}
-C {devices/lab_wire.sym} 530 100 0 0 {name=p22 sig_type=std_logic lab=vref}
-C {devices/lab_wire.sym} 480 120 0 0 {name=p23 sig_type=std_logic lab=vdd}
-C {devices/gnd.sym} 520 160 0 0 {name=l10 lab=GND}
-C {devices/ind.sym} -290 -740 1 0 {name=L11
-m=1
-value=1n
-footprint=1206
-device=inductor}
-C {devices/ind.sym} -290 -720 1 0 {name=L12
-m=1
-value=1n
-footprint=1206
-device=inductor}
-C {devices/ind.sym} -290 -700 1 0 {name=L13
-m=1
-value=1n
-footprint=1206
-device=inductor}
-C {devices/ind.sym} -290 -680 1 0 {name=L16
-m=1
-value=1n
-footprint=1206
-device=inductor}
-C {devices/ind.sym} -290 -660 1 0 {name=L17
-m=1
-value=1n
-footprint=1206
-device=inductor}
-C {devices/ind.sym} -290 -640 1 0 {name=L18
-m=1
-value=1n
-footprint=1206
-device=inductor}
-C {devices/ind.sym} -290 -620 1 0 {name=L19
-m=1
-value=1n
-footprint=1206
-device=inductor}
-C {devices/ind.sym} -290 -600 1 0 {name=L20
-m=1
-value=1n
-footprint=1206
-device=inductor}
-C {devices/capa.sym} 920 150 0 0 {name=C1
-m=1
-value=1p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 920 230 0 0 {name=l21 lab=GND}
+C {devices/lab_wire.sym} 350 -70 0 1 {name=p24 sig_type=std_logic lab=OUT1}
+C {devices/lab_wire.sym} 350 -50 0 1 {name=p26 sig_type=std_logic lab=OUT2}

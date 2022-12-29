@@ -88,20 +88,20 @@ x cmota_gb_rp_0/DN cmota_gb_rp_0/a_2925_285# VHI VHI l=60 w=2000 x=185 y=-2915 s
 x cmota_gb_rp_0/DP VOP VHI VHI l=60 w=2000 x=1129 y=-2915 sky130_fd_pr__pfet_01v8
 x VLO VHI l=6200 w=2600 x=-6899 y=-6499 sky130_fd_pr__cap_mim_m3_2
 x VHI VLO l=6200 w=2600 x=-6899 y=-6499 sky130_fd_pr__cap_mim_m3_1
-C VHI VOP 18.33
-C VHI cmota_gb_rp_0/a_2217_285# 4.36
-C cmota_gb_rp_0/DN VHI 17.11
-C VHI gated_iref_fix_0/imirror2_0/a_4493_207# 3.44
-C cmota_gb_rp_0/DN cmota_gb_rp_0/COM 6.05
-C VHI cmota_gb_rp_0/VMN 17.90
-C VHI cmota_gb_rp_0/a_2925_285# 4.36
-C cmota_gb_rp_0/DP VHI 17.03
-C VREF_GATED VHI 4.61
-C VHI cmota_gb_rp_0/li_5300_n960# 2.04
-C cmota_gb_rp_0/DP cmota_gb_rp_0/COM 6.02
+C cmota_gb_rp_0/li_5300_n960# VHI 2.04
+C VREF_GATED VHI 4.36
+C VOP VHI 18.33
 C VREF_GATED cmota_gb_rp_0/COM 2.52
+C cmota_gb_rp_0/a_2925_285# VHI 4.36
+C cmota_gb_rp_0/DN VHI 17.11
+C cmota_gb_rp_0/DN cmota_gb_rp_0/COM 6.05
+C VHI cmota_gb_rp_0/DP 17.03
+C cmota_gb_rp_0/COM cmota_gb_rp_0/DP 6.02
+C VHI gated_iref_fix_0/imirror2_0/a_4493_207# 3.45
+C VHI cmota_gb_rp_0/a_2217_285# 4.36
 C cmota_gb_rp_0/li_5300_n960# VOP 9.33
-C VREF_GATED GND 53.05
+C cmota_gb_rp_0/VMN VHI 17.90
+C VREF_GATED GND 54.32
 R VREF_GATED 5300
 = VREF_GATED cmota_gb_rp_0/VREF
 = VREF_GATED gated_iref_fix_0/a_1712_150#
@@ -135,11 +135,10 @@ R gated_iref_fix_0/a_1278_538# 10514
 C gated_iref_fix_0/imirror2_0/OUT GND 6.93
 R gated_iref_fix_0/imirror2_0/OUT 10619
 = gated_iref_fix_0/imirror2_0/OUT gated_iref_fix_0/a_1278_106#
-C VHI GND 134.40
+C VHI GND 135.56
 R VHI 235064
 = VHI cmota_gb_rp_0/VHI
 = VHI gated_iref_fix_0/imirror2_0/VHI
-= VHI gated_iref_fix_0/m2_5060_n300#
 R VLO 311440
 = VLO cmota_gb_rp_0/VLO
 = VLO cmota_gb_rp_0/sky130_fd_pr__res_high_po_0p69_G8QCSG_0/a_n316_n648#
@@ -153,6 +152,6 @@ R VREF 442
 R gated_iref_fix_0/imirror2_0/a_5868_1637# 7554
 R gated_iref_fix_0/imirror2_0/a_4036_1637# 7554
 R gated_iref_fix_0/imirror2_0/a_5468_1540# 595
-C gated_iref_fix_0/imirror2_0/a_4493_207# GND 4.64
+C gated_iref_fix_0/imirror2_0/a_4493_207# GND 4.63
 R gated_iref_fix_0/imirror2_0/a_4493_207# 11391
 R gated_iref_fix_0/imirror2_0/a_4094_1540# 595
