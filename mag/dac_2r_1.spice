@@ -1,0 +1,7 @@
+* NGSPICE file created from dac_2r_1.ext - technology: sky130A
+
+.subckt dac_2r_1 BUS_OUT SOUT SGND IN VMID VSUB
+X0 SWNODE SGND VMID VSUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.55e+12p ps=1.062e+07u w=5e+06u l=150000u
+X1 BUS_OUT SOUT SWNODE VSUB sky130_fd_pr__nfet_01v8 ad=1.55e+12p pd=1.062e+07u as=0p ps=0u w=5e+06u l=150000u
+X2 SWNODE IN VSUB sky130_fd_pr__res_high_po w=690000u l=500000u
+.ends

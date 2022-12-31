@@ -1,0 +1,11 @@
+* NGSPICE file created from dac_top.ext - technology: sky130A
+
+.subckt dac_top IO S SBAR VMID VLO VHI
+X0 VMID SBAR SWNODE VHI sky130_fd_pr__pfet_01v8 ad=3.1e+12p pd=2.124e+07u as=0p ps=0u w=5e+06u l=150000u
+X1 SWNODE S VMID VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.55e+12p ps=1.124e+07u w=2.5e+06u l=150000u
+X2 VMID S SWNODE VLO sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+06u l=150000u
+X3 SWNODE SBAR VMID VHI sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=5e+06u l=150000u
+X4 SWNODE IO VLO sky130_fd_pr__res_high_po w=690000u l=500000u
+C0 SWNODE VMID 4.30fF
+C1 VHI VLO 3.72fF
+.ends

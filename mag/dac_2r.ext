@@ -1,0 +1,41 @@
+timestamp 1672463780
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__res_high_po l=l w=w
+parameters sky130_fd_pr__res_high_po_5p73 l=l
+parameters sky130_fd_pr__res_high_po_2p85 l=l
+parameters sky130_fd_pr__res_high_po_1p41 l=l
+parameters sky130_fd_pr__res_high_po_0p69 l=l
+parameters sky130_fd_pr__res_high_po_0p35 l=l
+port "SBAR" 5 4540 -1030 4610 -1020 m2
+port "S" 4 4310 -1030 4380 -1020 m2
+port "IO" 1 4650 2340 4670 2440 m3
+port "VHI" 3 4200 2580 4210 2650 m4
+port "VLO" 2 4250 2660 4280 2670 m2
+node "SBAR" 3537 1040.74 4540 -1030 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74112 4684 0 0 5508 392 90904 4054 11900 480 0 0 0 0 0 0 0 0
+node "S" 1909 1001.61 4310 -1030 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43572 2648 0 0 5508 392 104848 4630 7700 360 0 0 0 0 0 0 0 0
+node "SWNODE" 4433 5597.89 4346 1527 xpc 0 0 0 0 0 0 0 0 33000 1132 66000 2132 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 170776 5448 137616 4348 170740 5414 0 0 0 0 0 0 0 0
+node "a_4346_1959#" 441 0 4346 1959 ppres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13800 476 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "IO" 114 1539.34 4650 2340 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 119232 2280 49678 1078 59616 1140 88216 1824 0 0 0 0 0 0
+node "VHI" 14771 4915.88 4200 2580 m4 0 0 0 0 719042 3786 0 0 114308 6724 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 88934 4410 29665 868 33298 902 30906 810 283798 7810 0 0 0 0
+substrate "VLO" 0 0 4250 2660 m2 0 0 0 0 0 0 0 0 62000 2248 295836 14288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 305192 14260 292280 10504 352448 12088 46308 1112 0 0 0 0 0 0
+cap "IO" "SWNODE" 191.653
+cap "SBAR" "SWNODE" 164.26
+cap "IO" "SBAR" 0.0340112
+cap "S" "VHI" 202.783
+cap "S" "SWNODE" 162.518
+cap "IO" "S" 16.3658
+cap "S" "SBAR" 936.46
+cap "SWNODE" "VHI" 279.918
+cap "IO" "VHI" 104.167
+cap "SBAR" "VHI" 646.381
+device msubckt sky130_fd_pr__pfet_01v8 4476 -610 4477 -609 l=30 w=1000 "VHI" "SBAR" 60 0 "SWNODE" 1000 0 "VLO" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8 4380 -610 4381 -609 l=30 w=1000 "VHI" "SBAR" 60 0 "VLO" 1000 0 "SWNODE" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8 4476 819 4477 820 l=30 w=500 "VLO" "S" 60 0 "SWNODE" 500 0 "VLO" 500 0
+device msubckt sky130_fd_pr__nfet_01v8 4380 819 4381 820 l=30 w=500 "VLO" "S" 60 0 "VLO" 500 0 "SWNODE" 500 0
+device rsubckt sky130_fd_pr__res_high_po 4346 1959 4347 1960 l=100 w=138 "VLO" "a_4346_1959#" 0 0 "SWNODE" 138 0 "IO" 138 0

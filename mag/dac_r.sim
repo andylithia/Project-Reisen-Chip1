@@ -1,0 +1,10 @@
+| units: 500000 tech: sky130A format: MIT
+x a_4710_1959# IO2 IO1 VLO l=100 w=138 x=4710 y=1959 sky130_fd_pr__res_high_po
+x a_4346_1959# IO2 IO1 VLO l=100 w=138 x=4346 y=1959 sky130_fd_pr__res_high_po
+C IO2 GND 2.10
+R IO2 256
+C IO1 GND 2.00
+R IO1 256
+R VLO 21217
+R a_4710_1959# 441
+R a_4346_1959# 441

@@ -1,0 +1,16 @@
+| units: 500000 tech: sky130A format: MIT
+x SBAR SWNODE VMID VHI l=30 w=1000 x=4476 y=-609 sky130_fd_pr__pfet_01v8
+x S VMID SWNODE VLO l=30 w=500 x=4380 y=819 sky130_fd_pr__nfet_01v8
+x S SWNODE VMID VLO l=30 w=500 x=4476 y=819 sky130_fd_pr__nfet_01v8
+x SBAR VMID SWNODE VHI l=30 w=1000 x=4380 y=-609 sky130_fd_pr__pfet_01v8
+x a_4346_1959# SWNODE IO VLO l=100 w=138 x=4346 y=1959 sky130_fd_pr__res_high_po
+C SWNODE VMID 4.30
+R SBAR 3537
+R VMID 10201
+R S 1909
+R IO 114
+C VHI GND 3.72
+R VHI 14802
+R VLO 21043
+R SWNODE 4433
+R a_4346_1959# 441

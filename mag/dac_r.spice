@@ -1,0 +1,8 @@
+* NGSPICE file created from dac_r.ext - technology: sky130A
+
+.subckt dac_r IO2 IO1 VLO
+X0 IO2 IO1 VLO sky130_fd_pr__res_high_po w=690000u l=500000u
+X1 IO2 IO1 VLO sky130_fd_pr__res_high_po w=690000u l=500000u
+C0 IO2 VLO 2.10fF
+C1 IO1 VLO 2.00fF
+.ends
