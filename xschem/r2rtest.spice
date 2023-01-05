@@ -1,0 +1,29 @@
+** sch_path: /home/andylithia/openmpw/Project-Reisen-Chip1/xschem/r2rtest.sch
+**.subckt r2rtest
+R1 net1 net5 2k m=1
+R2 net2 net1 1k m=1
+R3 net2 net5 2k m=1
+R4 net3 net2 1k m=1
+R5 net3 net6 2k m=1
+R6 net4 net3 1k m=1
+R7 net4 net6 2k m=1
+V1 net1 GND 2
+.save i(v1)
+V2 net5 GND 1
+.save i(v2)
+V3 net6 GND 1
+.save i(v3)
+**** begin user architecture code
+
+.op
+.save all
+.control
+run
+print i(v3)
+print i(v2)
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

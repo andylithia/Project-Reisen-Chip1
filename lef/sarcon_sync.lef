@@ -1,0 +1,186 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sarcon_sync
+  CLASS BLOCK ;
+  FOREIGN sarcon_sync ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 50.000 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 37.350 0.000 37.630 4.000 ;
+    END
+  END clk
+  PIN comp
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 49.770 46.000 50.050 50.000 ;
+    END
+  END comp
+  PIN dq[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 5.610 46.000 5.890 50.000 ;
+    END
+  END dq[0]
+  PIN dq[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.650 46.000 16.930 50.000 ;
+    END
+  END dq[1]
+  PIN dq[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 27.690 46.000 27.970 50.000 ;
+    END
+  END dq[2]
+  PIN dq[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 46.000 39.010 50.000 ;
+    END
+  END dq[3]
+  PIN dq[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 60.810 46.000 61.090 50.000 ;
+    END
+  END dq[4]
+  PIN dq[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 71.850 46.000 72.130 50.000 ;
+    END
+  END dq[5]
+  PIN dq[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 82.890 46.000 83.170 50.000 ;
+    END
+  END dq[6]
+  PIN dq[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 93.930 46.000 94.210 50.000 ;
+    END
+  END dq[7]
+  PIN last_cycle
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 87.030 0.000 87.310 4.000 ;
+    END
+  END last_cycle
+  PIN rst_n
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.510 0.000 12.790 4.000 ;
+    END
+  END rst_n
+  PIN valid
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 62.190 0.000 62.470 4.000 ;
+    END
+  END valid
+  PIN vccd1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 15.815 10.640 17.415 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 38.010 10.640 39.610 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 60.205 10.640 61.805 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 82.400 10.640 84.000 38.320 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 26.910 10.640 28.510 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 49.105 10.640 50.705 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 71.300 10.640 72.900 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 93.495 10.640 95.095 38.320 ;
+    END
+  END vssd1
+  OBS
+      LAYER nwell ;
+        RECT 5.330 33.945 94.490 36.775 ;
+        RECT 5.330 28.505 94.490 31.335 ;
+        RECT 5.330 23.065 94.490 25.895 ;
+        RECT 5.330 17.625 94.490 20.455 ;
+        RECT 5.330 12.185 94.490 15.015 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 94.300 38.165 ;
+      LAYER met1 ;
+        RECT 5.520 10.240 95.095 38.320 ;
+      LAYER met2 ;
+        RECT 6.170 45.720 16.370 46.650 ;
+        RECT 17.210 45.720 27.410 46.650 ;
+        RECT 28.250 45.720 38.450 46.650 ;
+        RECT 39.290 45.720 49.490 46.650 ;
+        RECT 50.330 45.720 60.530 46.650 ;
+        RECT 61.370 45.720 71.570 46.650 ;
+        RECT 72.410 45.720 82.610 46.650 ;
+        RECT 83.450 45.720 93.650 46.650 ;
+        RECT 94.490 45.720 95.065 46.650 ;
+        RECT 5.620 4.280 95.065 45.720 ;
+        RECT 5.620 4.000 12.230 4.280 ;
+        RECT 13.070 4.000 37.070 4.280 ;
+        RECT 37.910 4.000 61.910 4.280 ;
+        RECT 62.750 4.000 86.750 4.280 ;
+        RECT 87.590 4.000 95.065 4.280 ;
+      LAYER met3 ;
+        RECT 15.825 10.715 95.085 38.245 ;
+  END
+END sarcon_sync
+END LIBRARY
+
